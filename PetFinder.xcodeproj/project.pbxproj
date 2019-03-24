@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECFC65402247E00800AB3C56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFC653F2247E00800AB3C56 /* AppDelegate.swift */; };
+		ECFC65422247E00800AB3C56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFC65412247E00800AB3C56 /* ViewController.swift */; };
+		ECFC65452247E00800AB3C56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECFC65432247E00800AB3C56 /* Main.storyboard */; };
+		ECFC65482247E00800AB3C56 /* PetFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECFC65462247E00800AB3C56 /* PetFinder.xcdatamodeld */; };
+		ECFC654A2247E00900AB3C56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECFC65492247E00900AB3C56 /* Assets.xcassets */; };
+		ECFC654D2247E00900AB3C56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECFC654B2247E00900AB3C56 /* LaunchScreen.storyboard */; };
+		ECFC65582247E00900AB3C56 /* PetFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFC65572247E00900AB3C56 /* PetFinderTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECFC65542247E00900AB3C56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECFC65342247E00800AB3C56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECFC653B2247E00800AB3C56;
+			remoteInfo = PetFinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ECFC653C2247E00800AB3C56 /* PetFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECFC653F2247E00800AB3C56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ECFC65412247E00800AB3C56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ECFC65442247E00800AB3C56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECFC65472247E00800AB3C56 /* PetFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PetFinder.xcdatamodel; sourceTree = "<group>"; };
+		ECFC65492247E00900AB3C56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECFC654C2247E00900AB3C56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ECFC654E2247E00900AB3C56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECFC65532247E00900AB3C56 /* PetFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECFC65572247E00900AB3C56 /* PetFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetFinderTests.swift; sourceTree = "<group>"; };
+		ECFC65592247E00900AB3C56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECFC65392247E00800AB3C56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECFC65502247E00900AB3C56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECFC65332247E00800AB3C56 = {
+			isa = PBXGroup;
+			children = (
+				ECFC653E2247E00800AB3C56 /* PetFinder */,
+				ECFC65562247E00900AB3C56 /* PetFinderTests */,
+				ECFC653D2247E00800AB3C56 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECFC653D2247E00800AB3C56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECFC653C2247E00800AB3C56 /* PetFinder.app */,
+				ECFC65532247E00900AB3C56 /* PetFinderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECFC653E2247E00800AB3C56 /* PetFinder */ = {
+			isa = PBXGroup;
+			children = (
+				ECFC653F2247E00800AB3C56 /* AppDelegate.swift */,
+				ECFC65412247E00800AB3C56 /* ViewController.swift */,
+				ECFC65432247E00800AB3C56 /* Main.storyboard */,
+				ECFC65492247E00900AB3C56 /* Assets.xcassets */,
+				ECFC654B2247E00900AB3C56 /* LaunchScreen.storyboard */,
+				ECFC654E2247E00900AB3C56 /* Info.plist */,
+				ECFC65462247E00800AB3C56 /* PetFinder.xcdatamodeld */,
+			);
+			path = PetFinder;
+			sourceTree = "<group>";
+		};
+		ECFC65562247E00900AB3C56 /* PetFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECFC65572247E00900AB3C56 /* PetFinderTests.swift */,
+				ECFC65592247E00900AB3C56 /* Info.plist */,
+			);
+			path = PetFinderTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECFC653B2247E00800AB3C56 /* PetFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECFC655C2247E00900AB3C56 /* Build configuration list for PBXNativeTarget "PetFinder" */;
+			buildPhases = (
+				ECFC65382247E00800AB3C56 /* Sources */,
+				ECFC65392247E00800AB3C56 /* Frameworks */,
+				ECFC653A2247E00800AB3C56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PetFinder;
+			productName = PetFinder;
+			productReference = ECFC653C2247E00800AB3C56 /* PetFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECFC65522247E00900AB3C56 /* PetFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECFC655F2247E00900AB3C56 /* Build configuration list for PBXNativeTarget "PetFinderTests" */;
+			buildPhases = (
+				ECFC654F2247E00900AB3C56 /* Sources */,
+				ECFC65502247E00900AB3C56 /* Frameworks */,
+				ECFC65512247E00900AB3C56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECFC65552247E00900AB3C56 /* PBXTargetDependency */,
+			);
+			name = PetFinderTests;
+			productName = PetFinderTests;
+			productReference = ECFC65532247E00900AB3C56 /* PetFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECFC65342247E00800AB3C56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Carlos Garcia-Muskat";
+				TargetAttributes = {
+					ECFC653B2247E00800AB3C56 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					ECFC65522247E00900AB3C56 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = ECFC653B2247E00800AB3C56;
+					};
+				};
+			};
+			buildConfigurationList = ECFC65372247E00800AB3C56 /* Build configuration list for PBXProject "PetFinder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECFC65332247E00800AB3C56;
+			productRefGroup = ECFC653D2247E00800AB3C56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECFC653B2247E00800AB3C56 /* PetFinder */,
+				ECFC65522247E00900AB3C56 /* PetFinderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECFC653A2247E00800AB3C56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECFC654D2247E00900AB3C56 /* LaunchScreen.storyboard in Resources */,
+				ECFC654A2247E00900AB3C56 /* Assets.xcassets in Resources */,
+				ECFC65452247E00800AB3C56 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECFC65512247E00900AB3C56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECFC65382247E00800AB3C56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECFC65482247E00800AB3C56 /* PetFinder.xcdatamodeld in Sources */,
+				ECFC65422247E00800AB3C56 /* ViewController.swift in Sources */,
+				ECFC65402247E00800AB3C56 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECFC654F2247E00900AB3C56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECFC65582247E00900AB3C56 /* PetFinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECFC65552247E00900AB3C56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECFC653B2247E00800AB3C56 /* PetFinder */;
+			targetProxy = ECFC65542247E00900AB3C56 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECFC65432247E00800AB3C56 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECFC65442247E00800AB3C56 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ECFC654B2247E00900AB3C56 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECFC654C2247E00900AB3C56 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECFC655A2247E00900AB3C56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ECFC655B2247E00900AB3C56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECFC655D2247E00900AB3C56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GR9XHTTF29;
+				INFOPLIST_FILE = PetFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cgmuskat.PetFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECFC655E2247E00900AB3C56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GR9XHTTF29;
+				INFOPLIST_FILE = PetFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cgmuskat.PetFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ECFC65602247E00900AB3C56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GR9XHTTF29;
+				INFOPLIST_FILE = PetFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cgmuskat.PetFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PetFinder.app/PetFinder";
+			};
+			name = Debug;
+		};
+		ECFC65612247E00900AB3C56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GR9XHTTF29;
+				INFOPLIST_FILE = PetFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cgmuskat.PetFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PetFinder.app/PetFinder";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECFC65372247E00800AB3C56 /* Build configuration list for PBXProject "PetFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECFC655A2247E00900AB3C56 /* Debug */,
+				ECFC655B2247E00900AB3C56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECFC655C2247E00900AB3C56 /* Build configuration list for PBXNativeTarget "PetFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECFC655D2247E00900AB3C56 /* Debug */,
+				ECFC655E2247E00900AB3C56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECFC655F2247E00900AB3C56 /* Build configuration list for PBXNativeTarget "PetFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECFC65602247E00900AB3C56 /* Debug */,
+				ECFC65612247E00900AB3C56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ECFC65462247E00800AB3C56 /* PetFinder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ECFC65472247E00800AB3C56 /* PetFinder.xcdatamodel */,
+			);
+			currentVersion = ECFC65472247E00800AB3C56 /* PetFinder.xcdatamodel */;
+			path = PetFinder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ECFC65342247E00800AB3C56 /* Project object */;
+}
