@@ -14,6 +14,7 @@
 		ECFC654A2247E00900AB3C56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECFC65492247E00900AB3C56 /* Assets.xcassets */; };
 		ECFC654D2247E00900AB3C56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECFC654B2247E00900AB3C56 /* LaunchScreen.storyboard */; };
 		ECFC65582247E00900AB3C56 /* PetFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFC65572247E00900AB3C56 /* PetFinderTests.swift */; };
+		ECFC65662247E0B800AB3C56 /* PetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFC65652247E0B800AB3C56 /* PetService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		ECFC65532247E00900AB3C56 /* PetFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECFC65572247E00900AB3C56 /* PetFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetFinderTests.swift; sourceTree = "<group>"; };
 		ECFC65592247E00900AB3C56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECFC65652247E0B800AB3C56 /* PetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +81,12 @@
 		ECFC653E2247E00800AB3C56 /* PetFinder */ = {
 			isa = PBXGroup;
 			children = (
+				ECFC65622247E02300AB3C56 /* Model */,
+				ECFC65632247E02B00AB3C56 /* View */,
+				ECFC65642247E02F00AB3C56 /* Controller */,
 				ECFC653F2247E00800AB3C56 /* AppDelegate.swift */,
-				ECFC65412247E00800AB3C56 /* ViewController.swift */,
-				ECFC65432247E00800AB3C56 /* Main.storyboard */,
 				ECFC65492247E00900AB3C56 /* Assets.xcassets */,
-				ECFC654B2247E00900AB3C56 /* LaunchScreen.storyboard */,
 				ECFC654E2247E00900AB3C56 /* Info.plist */,
-				ECFC65462247E00800AB3C56 /* PetFinder.xcdatamodeld */,
 			);
 			path = PetFinder;
 			sourceTree = "<group>";
@@ -97,6 +98,32 @@
 				ECFC65592247E00900AB3C56 /* Info.plist */,
 			);
 			path = PetFinderTests;
+			sourceTree = "<group>";
+		};
+		ECFC65622247E02300AB3C56 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ECFC65462247E00800AB3C56 /* PetFinder.xcdatamodeld */,
+				ECFC65652247E0B800AB3C56 /* PetService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ECFC65632247E02B00AB3C56 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ECFC654B2247E00900AB3C56 /* LaunchScreen.storyboard */,
+				ECFC65432247E00800AB3C56 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ECFC65642247E02F00AB3C56 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ECFC65412247E00800AB3C56 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECFC65482247E00800AB3C56 /* PetFinder.xcdatamodeld in Sources */,
+				ECFC65662247E0B800AB3C56 /* PetService.swift in Sources */,
 				ECFC65422247E00800AB3C56 /* ViewController.swift in Sources */,
 				ECFC65402247E00800AB3C56 /* AppDelegate.swift in Sources */,
 			);
