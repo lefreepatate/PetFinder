@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC69DB0822491FB90096EB8A /* JSON_PetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69DB0722491FB90096EB8A /* JSON_PetService.swift */; };
+		EC69DB0A224938EB0096EB8A /* JSON_Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69DB09224938EB0096EB8A /* JSON_Token.swift */; };
+		EC69DB0C224939AE0096EB8A /* DogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69DB0B224939AE0096EB8A /* DogViewController.swift */; };
 		ECFC65402247E00800AB3C56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFC653F2247E00800AB3C56 /* AppDelegate.swift */; };
-		ECFC65422247E00800AB3C56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFC65412247E00800AB3C56 /* ViewController.swift */; };
 		ECFC65452247E00800AB3C56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECFC65432247E00800AB3C56 /* Main.storyboard */; };
 		ECFC65482247E00800AB3C56 /* PetFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECFC65462247E00800AB3C56 /* PetFinder.xcdatamodeld */; };
 		ECFC654A2247E00900AB3C56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECFC65492247E00900AB3C56 /* Assets.xcassets */; };
@@ -28,9 +30,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC69DB0722491FB90096EB8A /* JSON_PetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON_PetService.swift; sourceTree = "<group>"; };
+		EC69DB09224938EB0096EB8A /* JSON_Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON_Token.swift; sourceTree = "<group>"; };
+		EC69DB0B224939AE0096EB8A /* DogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DogViewController.swift; path = PetFinder/Controller/DogViewController.swift; sourceTree = SOURCE_ROOT; };
 		ECFC653C2247E00800AB3C56 /* PetFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECFC653F2247E00800AB3C56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ECFC65412247E00800AB3C56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ECFC65442247E00800AB3C56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECFC65472247E00800AB3C56 /* PetFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PetFinder.xcdatamodel; sourceTree = "<group>"; };
 		ECFC65492247E00900AB3C56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 			children = (
 				ECFC65462247E00800AB3C56 /* PetFinder.xcdatamodeld */,
 				ECFC65652247E0B800AB3C56 /* PetService.swift */,
+				EC69DB09224938EB0096EB8A /* JSON_Token.swift */,
+				EC69DB0722491FB90096EB8A /* JSON_PetService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -112,8 +118,8 @@
 		ECFC65632247E02B00AB3C56 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				ECFC654B2247E00900AB3C56 /* LaunchScreen.storyboard */,
 				ECFC65432247E00800AB3C56 /* Main.storyboard */,
+				ECFC654B2247E00900AB3C56 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -121,7 +127,7 @@
 		ECFC65642247E02F00AB3C56 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				ECFC65412247E00800AB3C56 /* ViewController.swift */,
+				EC69DB0B224939AE0096EB8A /* DogViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -228,9 +234,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECFC65482247E00800AB3C56 /* PetFinder.xcdatamodeld in Sources */,
+				EC69DB0A224938EB0096EB8A /* JSON_Token.swift in Sources */,
 				ECFC65662247E0B800AB3C56 /* PetService.swift in Sources */,
-				ECFC65422247E00800AB3C56 /* ViewController.swift in Sources */,
 				ECFC65402247E00800AB3C56 /* AppDelegate.swift in Sources */,
+				EC69DB0822491FB90096EB8A /* JSON_PetService.swift in Sources */,
+				EC69DB0C224939AE0096EB8A /* DogViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
