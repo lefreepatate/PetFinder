@@ -6,16 +6,12 @@
 //  Copyright © 2019 Carlos Garcia-Muskat. All rights reserved.
 //
 
-// To parse the JSON, add this file to your project and do:
-//
-//   let token = try? newJSONDecoder().decode(Token.self, from: jsonData)
-
 import Foundation
 
 struct Token: Codable {
    let tokenType: String
    let expiresIn: Int
-   let accessToken: String
+   let accessToken: String?
    
    enum CodingKeys: String, CodingKey {
       case tokenType = "token_type"

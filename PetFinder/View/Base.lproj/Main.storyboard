@@ -92,13 +92,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4G3-Tw-mFj">
-                                <rect key="frame" x="162.5" y="558" width="50" height="40"/>
+                                <rect key="frame" x="137.5" y="558" width="100" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.42368221680000001" blue="0.34853918379999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="251-hD-MYe"/>
-                                    <constraint firstAttribute="width" constant="50" id="QT4-Sk-d3s"/>
+                                    <constraint firstAttribute="width" constant="100" id="QT4-Sk-d3s"/>
                                 </constraints>
-                                <state key="normal" title="Token">
+                                <state key="normal" title="Animals">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>

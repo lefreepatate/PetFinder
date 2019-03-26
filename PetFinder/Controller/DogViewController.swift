@@ -14,10 +14,11 @@ class DogViewController: UIViewController {
    }
    
    func getToken() {
-      PetService.shared.getToken { (success, token) in
-         if success, let token = token {
-         }
+      PetService.shared.getPets { (success, response) in
+         if success!, let response = response {
+            print(response)
       }
+   }
    }
    
     override func viewDidLoad() {

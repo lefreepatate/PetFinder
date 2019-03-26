@@ -10,8 +10,8 @@
 
 import Foundation
 
-struct PetFinder: Codable {
-   let animals: [Animal]
+struct PetFinder: Decodable {
+   let animals: [Animal]?
    let pagination: Pagination
    
    enum CodingKeys: String, CodingKey {
@@ -20,7 +20,7 @@ struct PetFinder: Codable {
    }
 }
 
-struct Animal: Codable {
+struct Animal: Decodable {
    let id: Int
    let organizationid: String
    let url: String
@@ -68,14 +68,14 @@ struct Animal: Codable {
    }
 }
 
-enum Age: String, Codable {
+enum Age: String, Decodable {
    case adult = "Adult"
    case baby = "Baby"
    case senior = "Senior"
    case young = "Young"
 }
 
-struct Attributes: Codable {
+struct Attributes: Decodable {
    let spayedNeutered: Bool
    let houseTrained: Bool
    let declawed: Bool?
@@ -91,7 +91,7 @@ struct Attributes: Codable {
    }
 }
 
-struct Breeds: Codable {
+struct Breeds: Decodable {
    let primary: String
    let secondary: String?
    let mixed: Bool
@@ -105,12 +105,12 @@ struct Breeds: Codable {
    }
 }
 
-enum Coat: String, Codable {
+enum Coat: String, Decodable {
    case medium = "Medium"
    case short = "Short"
 }
 
-struct Colors: Codable {
+struct Colors: Decodable {
    let primary: String?
    let secondary: String?
    let tertiary: JSONNull?
@@ -122,7 +122,7 @@ struct Colors: Codable {
    }
 }
 
-struct Contact: Codable {
+struct Contact: Decodable {
    let email: String
    let phone: String?
    let address: Address
@@ -134,7 +134,7 @@ struct Contact: Codable {
    }
 }
 
-struct Address: Codable {
+struct Address: Decodable {
    let address1: String?
    let address2: String?
    let city: String
@@ -152,11 +152,11 @@ struct Address: Codable {
    }
 }
 
-enum Country: String, Codable {
+enum Country: String, Decodable {
    case us = "US"
 }
 
-struct Environment: Codable {
+struct Environment: Decodable {
    let children: Bool?
    let dogs: Bool?
    let cats: Bool?
@@ -168,12 +168,12 @@ struct Environment: Codable {
    }
 }
 
-enum Gender: String, Codable {
+enum Gender: String, Decodable {
    case female = "Female"
    case male = "Male"
 }
 
-struct AnimalLinks: Codable {
+struct AnimalLinks: Decodable {
    let linksSelf: Next
    let type: Next
    let organization: Next
@@ -185,7 +185,7 @@ struct AnimalLinks: Codable {
    }
 }
 
-struct Next: Codable {
+struct Next: Decodable {
    let href: String
    
    enum CodingKeys: String, CodingKey {
@@ -193,7 +193,7 @@ struct Next: Codable {
    }
 }
 
-struct Photo: Codable {
+struct Photo: Decodable {
    let small: String
    let medium: String
    let large: String
@@ -207,22 +207,22 @@ struct Photo: Codable {
    }
 }
 
-enum Size: String, Codable {
+enum Size: String, Decodable {
    case large = "Large"
    case medium = "Medium"
    case small = "Small"
 }
 
-enum Species: String, Codable {
+enum Species: String, Decodable {
    case cat = "Cat"
    case dog = "Dog"
 }
 
-enum Status: String, Codable {
+enum Status: String, Decodable {
    case adoptable = "adoptable"
 }
 
-struct Pagination: Codable {
+struct Pagination: Decodable {
    let countPerPage: Int
    let totalCount: Int
    let currentPage: Int
@@ -238,7 +238,7 @@ struct Pagination: Codable {
    }
 }
 
-struct PaginationLinks: Codable {
+struct PaginationLinks: Decodable {
    let next: Next
    
    enum CodingKeys: String, CodingKey {
@@ -248,7 +248,7 @@ struct PaginationLinks: Codable {
 
 // MARK: Encode/decode helpers
 
-class JSONNull: Codable, Hashable {
+class JSONNull: Decodable, Hashable {
    
    public static func == (lhs: JSONNull, rhs: JSONNull) -> Bool {
       return true
