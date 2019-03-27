@@ -9,33 +9,20 @@
 import UIKit
 
 class DogViewController: UIViewController {
+   @IBOutlet weak var textfieldtest: UITextView!
    @IBAction func tokenbutton(_ sender: UIButton) {
       getToken()
    }
-   
+   var animals = [Animal]()
+   override func viewDidLoad() {
+      super.viewDidLoad()
+      PetService.shared.checkValidToken()
+   }
    func getToken() {
       PetService.shared.getPets { (success, response) in
-         if success!, let response = response {
-            print(response)
+         if success, let response = response {
+            self.animals = response
+         }
       }
    }
-   }
-   
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
