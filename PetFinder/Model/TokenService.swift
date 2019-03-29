@@ -47,7 +47,7 @@ class TokenService {
          "grant_type": "client_credentials",
          "client_id": "***",
          "client_secret": "***",
-         "redirect_uri": "https://api.petfinder.com/v2/animals?"
+         "redirect_uri": "https://api.petfinder.com/v2/animals"
       ]
       
       let postData = try? JSONSerialization.data(withJSONObject: parameters, options: .sortedKeys)

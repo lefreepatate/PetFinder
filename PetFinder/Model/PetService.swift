@@ -18,64 +18,47 @@ class PetService {
    init(session: URLSession) {
       self.session = session
    }
-   
-   func getPets(_ callback: @escaping (Bool, [Animal]?) -> Void) {
-      let request = createRequest(with: newTokenCode)
+   var token = TokenNumber()
+   func getPets(with parameters: Any, _ callback: @escaping (Bool, [Animal]?) -> Void) {
+      let request = createRequest(with: token.code, parameters: parameters)
       let session = URLSession.shared
       task?.cancel()
       task = session.dataTask(with: request){ (data, response, error) in
          DispatchQueue.main.async {
-            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else
-            { return callback(false, nil) }
-            guard let data = data, error == nil else { return callback(false, nil)}
-            do {
-               let decoder = JSONDecoder()
-               let response = try decoder.decode(Pets.self, from: data)
-               callback(true, response.animals)
-            } catch { print(error) }
+            
+            guard let response = response as? HTTPURLResponse else { return callback(false, nil) }
+            print(response.statusCode)
+            if response.statusCode == 401 {
+               print(response.statusCode)
+               self.token.newToken()
+               self.task?.cancel()
+            } else {
+               guard let data = data, error == nil else { return callback(false, nil)}
+               print(data.description)
+               do {
+                  let decoder = JSONDecoder()
+                  let response = try decoder.decode(Pets.self, from: data)
+                  //                  print(response.animals?[0] )
+                  callback(true, response.animals)
+               } catch { print("JSON ERROR") }
             }
-         
          }
-      task?.resume()
       }
+      task?.resume()
+   }
    
-   func createRequest(with token: String) -> URLRequest {
+   func createRequest(with token: String, parameters: Any) -> URLRequest {
       let headers = [
          "Content-Type": "application/json",
          "Authorization": "Bearer \(token)",
          "cache-control": "no-cache"
       ]
-      var request = URLRequest(url: URL(string: "https://api.petfinder.com/v2/animals?")!,
+      var request = URLRequest(url: URL(string: "https://api.petfinder.com/v2/animals/\(parameters)")!,
                                cachePolicy: .useProtocolCachePolicy,
                                timeoutInterval: 10.0)
       request.httpMethod = "GET"
       request.allHTTPHeaderFields = headers
+      print(request)
       return request
    }
-   
-   func checkValidToken() {
-      var request = createRequest(with: newTokenCode)
-      task?.cancel()
-      task = session.dataTask(with: request) { (data, response, error) in
-         guard let response = response as? HTTPURLResponse else { return }
-         print(response.statusCode)
-         if response.statusCode == 401 {
-            request = self.createRequest(with: "\(self.newToken())")
-         } else {
-            print(response.statusCode)
-            self.task?.cancel()
-         }
-      }
-      task?.resume()
-   }
-   
-   private func newToken() {
-      TokenService.shared.getToken { (success, token) in
-         if success, let token = token {
-            print("NEW TOKEN :\n\(token)\n")
-            self.newTokenCode = token
-         }
-      }
-   }
-   var newTokenCode = "***"
 }
