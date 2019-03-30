@@ -34,11 +34,10 @@ class PetService {
                self.task?.cancel()
             } else {
                guard let data = data, error == nil else { return callback(false, nil)}
-               print(data.description)
                do {
                   let decoder = JSONDecoder()
+                  decoder.keyDecodingStrategy = .convertFromSnakeCase
                   let response = try decoder.decode(Pets.self, from: data)
-                  //                  print(response.animals?[0] )
                   callback(true, response.animals)
                } catch { print("JSON ERROR") }
             }

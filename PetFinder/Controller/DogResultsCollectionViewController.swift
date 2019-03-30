@@ -13,6 +13,7 @@ class DogResultsCollectionViewController: UICollectionViewController {
    @IBOutlet var dogsCollectionView: UICollectionView!
    var animals = [Animal]()
    let reuseIdentifier = "DogsResults"
+   var petImage = UIImage()
    override func viewDidLoad() {
       super.viewDidLoad()
       setDogsResults()
@@ -28,38 +29,33 @@ class DogResultsCollectionViewController: UICollectionViewController {
       }
    }
    // MARK: UICollectionViewDataSource
-   
    override func numberOfSections(in collectionView: UICollectionView) -> Int {
       return 1
    }
-   
-   
    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
       // #warning Incomplete implementation, return the number of items
       return animals.count
    }
-   
    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath)
       -> UICollectionViewCell {
          guard let cell =
             collectionView.dequeueReusableCell(withReuseIdentifier: "DogsResults", for: indexPath)
                as? DogsCollectionViewCell else { return UICollectionViewCell() }
          let pet = animals[indexPath.row]
-         DispatchQueue.main.async {
-            cell.dogAge.text = pet.age
-            cell.dogName.text = pet.name?.capitalized
-            cell.dogBreed.text = self.getBreedString(with: pet.breeds!)
-            cell.dogGender.text = pet.gender
-         }
+         cell.ageLabel.text = pet.age
+         cell.petName.text = pet.name?.capitalized
+         cell.breedLabel.text = self.getBreedString(with: pet.breeds!)
+         cell.genderLabel.text = pet.gender
+         guard let urlImage = pet.photos?[0].medium else { return cell}
+         cell.petImage.loadImageFromURL(stringUrl:urlImage)
          return cell
    }
-   
    func getBreedString(with breed: Breeds) -> String {
       var breedString = String()
-      if (breed.primary != nil) && (breed.secondary != nil) {
-         breedString = breed.primary! + " & " + breed.secondary!
-      } else if breed.primary != nil && breed.secondary == nil {
-         breedString = breed.primary!
+      if breed.primary != "" && breed.secondary != "" {
+         breedString = (breed.primary ?? "") + " & " + (breed.secondary ?? "")
+      } else if breed.primary != "" && breed.secondary == "" {
+         breedString = (breed.primary ?? "")
       }
       if breed.mixed == true {
          breedString += " Mix"
@@ -75,5 +71,19 @@ class DogResultsCollectionViewController: UICollectionViewController {
       destinationVC.petDetail = pet
       destinationVC.petBreed = self.getBreedString(with: pet.breeds!)
       navigationController?.pushViewController(destinationVC, animated: true)
+   }
+}
+extension UIImageView {
+   func loadImageFromURL(stringUrl: String){
+      let url = URL(string: stringUrl)
+      image = nil
+      URLSession.shared.dataTask(with: url!) { (data, response, error) in
+         if error != nil {
+            return
+         }
+         DispatchQueue.main.async {
+            self.image = UIImage(data: data!)
+         }
+         }.resume()
    }
 }

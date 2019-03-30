@@ -10,11 +10,11 @@ import UIKit
 import Foundation
 
 class DogsCollectionViewCell: UICollectionViewCell {
-   @IBOutlet weak var dogImage: UIImageView!
-   @IBOutlet weak var dogName: UILabel!
-   @IBOutlet weak var dogBreed: UILabel!
-   @IBOutlet weak var dogAge: UILabel!
-   @IBOutlet weak var dogGender: UILabel!
+   @IBOutlet weak var petImage: UIImageView!
+   @IBOutlet weak var petName: UILabel!
+   @IBOutlet weak var breedLabel: UILabel!
+   @IBOutlet weak var ageLabel: UILabel!
+   @IBOutlet weak var genderLabel: UILabel!
    
    override func awakeFromNib() {
       super.awakeFromNib()
