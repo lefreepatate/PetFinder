@@ -34,8 +34,9 @@ class DogDetailViewController: UIViewController {
    }
    
    func setDatas() {
-      let imageURL = petDetail.photos?[0].medium
-      petImage?.loadImageFromURL(stringUrl:imageURL!)
+//      if let imageURL = petDetail.photos?[0].medium {
+//         self.setImage(with: imageURL)
+//      }
       petName.text = petDetail.name
       breedLocalization.text = petBreed
       ageGenderSizeColor.text = ((petDetail.age ?? "") + " " + (petDetail.size ?? "") + " ")
@@ -46,6 +47,15 @@ class DogDetailViewController: UIViewController {
       status.text = petDetail.status?.capitalized
       status.text?.append(contentsOf: " #" + ((petDetail.tags?.joined(separator: " #"))!))
    }
+   
+   func setImage(with url: String) {
+      UIImageView().loadImageFromURL(stringUrl: url) { (image) in
+         if let image = image {
+            self.petImage.image = image
+         }
+      }
+   }
+   
    
    func getEnvironnementString(with environnement: Environment) -> String {
       var envString = String()

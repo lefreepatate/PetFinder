@@ -18,16 +18,17 @@ class PetService {
    init(session: URLSession) {
       self.session = session
    }
+   
+   var parameters = Parameters()
    var token = TokenNumber()
-   func getPets(with parameters: Any, _ callback: @escaping (Bool, [Animal]?) -> Void) {
-      let request = createRequest(with: token.code, parameters: parameters)
+   
+   func getPets(_ callback: @escaping (Bool, [Animal]?) -> Void) {
+      let request = createRequest(with: token.code)
       let session = URLSession.shared
       task?.cancel()
       task = session.dataTask(with: request){ (data, response, error) in
          DispatchQueue.main.async {
-            
             guard let response = response as? HTTPURLResponse else { return callback(false, nil) }
-            print(response.statusCode)
             if response.statusCode == 401 {
                print(response.statusCode)
                self.token.newToken()
@@ -46,18 +47,32 @@ class PetService {
       task?.resume()
    }
    
-   func createRequest(with token: String, parameters: Any) -> URLRequest {
+   private func createRequest(with token: String) -> URLRequest {
       let headers = [
          "Content-Type": "application/json",
          "Authorization": "Bearer \(token)",
          "cache-control": "no-cache"
       ]
-      var request = URLRequest(url: URL(string: "https://api.petfinder.com/v2/animals/\(parameters)")!,
-                               cachePolicy: .useProtocolCachePolicy,
-                               timeoutInterval: 10.0)
+      var request = URLRequest(url: URL(string: "https://api.petfinder.com/v2/animals?" + valuesString())!,
+                                        cachePolicy: .useProtocolCachePolicy,
+                                        timeoutInterval: 10.0)
       request.httpMethod = "GET"
       request.allHTTPHeaderFields = headers
       print(request)
       return request
+   }
+   
+   private func valuesString() -> String {
+      var values = String()
+      for element in [parameters] {
+         if !element.age.isEmpty{ values += "&age=" + element.age }
+         if !element.breed.isEmpty{ values += "&breed=" + element.breed  }
+         if !element.color.isEmpty{ values += "&color[]=" + element.color}
+         if !element.environnement.isEmpty{ values += "&environnement=" + element.environnement  }
+         if !element.gender.isEmpty{ values += "&gender=" + element.gender  }
+         if !element.size.isEmpty{ values += "&size=" + element.size  }
+      }
+      let stringParameters = parameters.type + values.replacingOccurrences(of: ",&", with: "&")
+      return  stringParameters
    }
 }
