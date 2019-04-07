@@ -31,7 +31,7 @@ class DogResultsCollectionViewController: UICollectionViewController {
          layout?.itemSize = CGSize(width: width, height: width)
       }
    }
-
+   
    func setDogsResults() {
       PetService.shared.getPets() { (success, response) in
          if success, let response = response {
@@ -47,25 +47,27 @@ class DogResultsCollectionViewController: UICollectionViewController {
       return 1
    }
    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-      // #warning Incomplete implementation, return the number of items
       return animals.count
    }
    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath)
       -> UICollectionViewCell {
          guard let cell =
             collectionView.dequeueReusableCell(withReuseIdentifier: "DogsResults", for: indexPath)
-               as? DogsCollectionViewCell else { return UICollectionViewCell() }
+               as? PetCollectionViewCell else { return UICollectionViewCell() }
          let pet = animals[indexPath.row]
          let imageURL = pet.photos
          cell.ageLabel.text = pet.age
          cell.petName.text = pet.name?.capitalized
          cell.breedLabel.text = self.getBreedString(with: pet.breeds!)
          cell.genderLabel.text = pet.gender
-//         UIImageView().loadImageFromURL(stringUrl: (imageURL?[0].small)!) { (image) in
-//            cell.petImage.image = image
+//         DispatchQueue.main.async {
+//            UIImage().loadImageFromURL(stringUrl: (imageURL?[0].medium)!) { (image) in
+//               cell.petImage.image = image
+//            }
 //         }
          return cell
    }
+   
    func getBreedString(with breed: Breeds) -> String {
       var breedString = String()
       if breed.primary != "" && breed.secondary != "" {
@@ -89,19 +91,18 @@ class DogResultsCollectionViewController: UICollectionViewController {
       navigationController?.pushViewController(destinationVC, animated: true)
    }
 }
-extension UIImageView {
+extension UIImage {
    func loadImageFromURL(stringUrl: String, completion: @escaping (UIImage?) -> Void) {
       let url = URL(string: stringUrl)
-      image = nil
       URLSession.shared.dataTask(with: url!) { (data, response, error) in
          if error != nil {
             completion(nil)
             return
          }
-         DispatchQueue.main.async {
-            self.image = UIImage(data: data!)
-            completion(self.image)
-         }
+         //         DispatchQueue.main.async {
+         //            self.image = UIImage(data: data!)
+         //            completion(self.image)
+         //         }
          }.resume()
    }
 }

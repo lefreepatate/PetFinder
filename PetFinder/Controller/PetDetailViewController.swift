@@ -49,7 +49,7 @@ class DogDetailViewController: UIViewController {
    }
    
    func setImage(with url: String) {
-      UIImageView().loadImageFromURL(stringUrl: url) { (image) in
+      UIImage().loadImageFromURL(stringUrl: url) { (image) in
          if let image = image {
             self.petImage.image = image
          }

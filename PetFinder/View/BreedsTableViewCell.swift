@@ -10,30 +10,30 @@ import UIKit
 import Foundation
 
 class BreedsTableViewCell: UITableViewCell{
-   @IBOutlet var breedButtons: UIButton!
+   @IBOutlet var breedBtn: UIButton!
    @IBAction func breedAction(_ sender: UIButton) {
-//      PetService.shared.parameters.breed.append(options(on: sender).joined(separator: ","))
+      guard let name = breedBtn.titleLabel?.text else {return}
+      print(name)
+      if !breedBtn.isSelected {
+         breedBtn.isSelected = true
+         PetService.shared.parameters.breed.append(name.replacingOccurrences(of: " ", with: "%20") + ",")
+         print(PetService.shared.parameters.breed)
+      } else {
+         breedBtn.isSelected = false
+         if let range = PetService.shared.parameters.breed.range(of: name + ",") {
+            PetService.shared.parameters.breed.removeSubrange(range)
+         }
+      }
+   }
+   
+   override func prepareForReuse() {
+      super.prepareForReuse()
    }
    
    override func awakeFromNib() {
       super.awakeFromNib()
-      breedButtons.setImage(UIImage(named: "checkButtonOFF"), for: .normal)
-      breedButtons.setImage(UIImage(named: "checkButtonON"), for: .selected)
+      breedBtn.setImage(UIImage(named: "checkButtonOFF"), for: .normal)
+      breedBtn.setImage(UIImage(named: "checkButtonON"), for: .selected)
    }
-//   func options(on button: UIButton) -> String {
-//      var values = String()
-//      button.setImage(UIImage(named: "checkButtonOFF"), for: .normal)
-//      button.setImage(UIImage(named: "checkButtonON"), for: .selected)
-//      guard let name = button.title(for: .normal) else { return ""}
-//      if !button.isSelected {
-//         button.isSelected = true
-//         values += name + ","
-//      } else {
-//         button.isSelected = false
-//         values = values.replacingOccurrences(of: name + ",", with: "")
-//      }
-//      print(values)
-//      return values
-//   }
 }
 
