@@ -11,16 +11,24 @@ import UIKit
 class PetSearchViewController: UIViewController {
    
    @IBOutlet weak var petimage: UIImageView!
+   // Breed options
    @IBOutlet weak var breedSearchBar: UISearchBar!
    @IBOutlet weak var breedTableView: UITableView!
+   // Color options
+   @IBOutlet weak var colorSearchBar: UISearchBar!
+   @IBOutlet weak var colorTableView: UITableView!
+   
    @IBOutlet var ageBtns: [UIButton]!
    @IBOutlet var sizeBtns: [UIButton]!
    @IBOutlet var envBtns: [UIButton]!
    @IBOutlet weak var gender: UISegmentedControl!
-   @IBOutlet var breedDropDownBtn: UIButton!
    @IBOutlet weak var showPets: UIButton!
+   
    @IBAction func breedList(_ sender: UIButton) {
-      breedsOptions(tableview: breedTableView, searchBar: breedSearchBar, size: sizeBtns)
+      tableOptions(tableview: breedTableView, searchBar: breedSearchBar, size: sizeBtns)
+   }
+   @IBAction func colorList(_ sender: UIButton) {
+      tableOptions(tableview: colorTableView, searchBar: colorSearchBar, size: [UIButton()])
    }
    @IBAction func ageTappedBtn(_ sender: UIButton) {
       options(on: sender, buttons: ageBtns, parameters: &PetService.shared.parameters.age)
@@ -35,69 +43,77 @@ class PetSearchViewController: UIViewController {
    }
    @IBAction func environnementTappedBtn(_ sender: UIButton) {
       options(on: sender, buttons: envBtns,parameters: &PetService.shared.parameters.environnement)
-      print(PetService.shared.parameters.environnement)
    }
-   @IBAction func searchButton(_ sender: UIButton) {
-      PetService.shared.parameters.type.removeAll()
-   }
-   var tabBarcontroller: UITabBarController!
+   
    override func viewDidLoad() {
       super.viewDidLoad()
-   }
-   var catBreeds = BreedLists().catBreed
-   var dogBreeds = BreedLists().dogBreed
-   var currentBreedArray = BreedLists().dogBreed
-   var colorsArray = ColorsList().dogColors
-   
-   override func viewDidAppear(_ animated: Bool) {
-      super.viewDidAppear(animated)
-      let dataModel = (self.tabBarController as! MainTabBarController)
-      dataModel.navigationController?.navigationBar.prefersLargeTitles = true
-      if dataModel.selectedIndex == 0 {
-         dataModel.navigationItem.title = "Dog search"
+      corners(image: petimage)
+      if buttonTag == 0 {
          dogValues()
-      }  else if dataModel.selectedIndex == 1 {
-         dataModel.navigationItem.title = "Cat search"
+      } else if buttonTag == 1 {
          catValues()
       }
    }
-   
+   var buttonTag = 0
+   var catBreeds = BreedLists().catBreed
+   var dogBreeds = BreedLists().dogBreed
+   var currentBreedArray = BreedLists().dogBreed
+   var dogColors = ColorsList().dogColors
+   var catColors = ColorsList().catColors
+   var currentColorsArray = ColorsList().dogColors
+   override func viewWillAppear(_ animated: Bool) {
+      super.viewWillAppear(animated)
+      
+      
+      //      let customTabBar = (self.tabBarController as! MainTabBarController)
+      
+      //      PetService.shared.parameters.type.removeAll()
+      //      if customTabBar.selectedIndex == 0 {
+      //         customTabBar.navigationItem.title = "DOG SEARCH"
+      //         dogValues()
+      //      }  else if customTabBar.selectedIndex == 1 {
+      //         customTabBar.navigationItem.title = "CAT SEARCH"
+      //         catValues()
+      //      }
+   }
+   //   override func viewWillAppear(_ animated: Bool) {
+   //      super.viewWillAppear(animated)
+   //      let customTabBar = (self.tabBarController as! MainTabBarController)
+   //      self.navigationController?.navigationBar.prefersLargeTitles = true
+   //   }
    func dogValues() {
-      currentBreedArray = dogBreeds
+      navigationItem.title = "Dog Search"
       petimage.image = UIImage(named: "dogSearch")
       showPets.setTitle("Show dogs!", for: .normal)
       PetService.shared.parameters.type.append("type=dog")
    }
-   
    func catValues(){
+      navigationItem.title = "Cat Search"
       petimage.image = UIImage(named: "catSearch")!
       currentBreedArray = catBreeds
+      currentColorsArray = catColors
       showPets.setTitle("Show cats!", for: .normal)
       PetService.shared.parameters.type.append("type=cat")
    }
 }
-//if colorSelected == "Tricolor (Brown, Black, & White)" {
-//   PetService.shared.parameters.color.append("Tricolor+%28Brown%2C+Black%2C+%26+White%29") // Soucis %26 -> %25%26
-//} else {
-//   PetService.shared.parameters.color.append(colorSelected.replacingOccurrences(of: " ", with: "%20"))
-//}
+
 extension UIViewController {
-   func breedsOptions(tableview: UITableView, searchBar: UISearchBar, size: [UIButton]!) {
+   func tableOptions(tableview: UITableView, searchBar: UISearchBar, size: [UIButton]!) {
       if tableview.isHidden {
-         getBreedTable(to: tableview, searchBar: searchBar, toogle: true)
+         showHideTable(to: tableview, searchBar: searchBar, toogle: true)
          size.forEach { (button) in
             button.isEnabled = false
             button.layer.opacity = 0.5
          }
       } else {
-         getBreedTable(to: tableview, searchBar: searchBar, toogle: false)
+         showHideTable(to: tableview, searchBar: searchBar, toogle: false)
          size.forEach { (button) in
             button.isEnabled = true
             button.layer.opacity = 1
          }
       }
    }
-   func getBreedTable(to tableView: UITableView, searchBar: UISearchBar, toogle: Bool) {
+   func showHideTable(to tableView: UITableView, searchBar: UISearchBar, toogle: Bool) {
       if toogle {
          UIView.animate(withDuration: 0.3) {
             tableView.isHidden = false
@@ -129,8 +145,8 @@ extension UIViewController {
          parameters.append(value.lowercased() + ",")
       }  else if sender.isSelected {
          sender.isSelected = false
-         sender.backgroundColor = #colorLiteral(red: 1, green: 0.3724520802, blue: 0.3093305528, alpha: 1)
-         if let range = parameters.range(of: value + ",") {
+         sender.backgroundColor = #colorLiteral(red: 0.8000000119, green: 0.8000000119, blue: 0.8000000119, alpha: 1)
+         if let range = parameters.range(of: value.lowercased() + ",") {
             parameters.removeSubrange(range)
          }
       }
@@ -141,7 +157,7 @@ extension UIViewController {
       sender.backgroundColor = #colorLiteral(red: 0.1503180861, green: 1, blue: 0.4878128767, alpha: 1)
       for button in buttons where button.titleLabel!.text != "Any" {
          button.isSelected = false
-         button.backgroundColor = #colorLiteral(red: 1, green: 0.3724520802, blue: 0.3093305528, alpha: 1)
+         button.backgroundColor = #colorLiteral(red: 0.8000000119, green: 0.8000000119, blue: 0.8000000119, alpha: 1)
       }
    }
    
@@ -152,12 +168,6 @@ extension UIViewController {
       PetService.shared.parameters.environnement.removeAll()
       PetService.shared.parameters.gender.removeAll()
       PetService.shared.parameters.size.removeAll()
-   }
-   
-   private func deleteOption(on value: String, parameters: inout String) {
-      if let range = parameters.range(of: value + ",") {
-         parameters.removeSubrange(range)
-      }
    }
 }
 extension UIViewController {
@@ -170,27 +180,65 @@ extension UIViewController {
 
 extension PetSearchViewController : UITableViewDelegate, UITableViewDataSource {
    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+      if tableView == breedTableView {
       return currentBreedArray.count
+      } else if tableView == colorTableView {
+         return currentColorsArray.count
+      }
+      return 0
    }
    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-      guard let cell = tableView.dequeueReusableCell(withIdentifier: "breedName", for: indexPath)
-         as? BreedsTableViewCell else { return UITableViewCell() }
-      cell.breedBtn.setTitle(self.currentBreedArray[indexPath.row], for: .normal)
-      return cell
+      if tableView == breedTableView {
+         guard let breedCell = tableView.dequeueReusableCell(withIdentifier: "breedName", for: indexPath)
+            as? BreedsTableViewCell else { return UITableViewCell() }
+         breedCell.breedBtn.setTitle(self.currentBreedArray[indexPath.row], for: .normal)
+         return breedCell
+      } else if tableView == colorTableView {
+         guard let colorCell = tableView.dequeueReusableCell(withIdentifier: "colorName", for: indexPath)
+            as? ColorsTableViewCell else { return UITableViewCell() }
+         colorCell.colorBtn.setTitle(self.currentColorsArray[indexPath.row].name, for: .normal)
+         colorCell.colorBtn.setImage(self.currentColorsArray[indexPath.row].image, for: .normal)
+         return colorCell
+      }
+      return UITableViewCell()
    }
 }
 
 extension PetSearchViewController: UISearchBarDelegate {
-   
    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-      guard !searchText.isEmpty else {
-         currentBreedArray = dogBreeds
-         breedTableView.reloadData()
-         return }
-      currentBreedArray = dogBreeds.filter({ breed -> Bool in
-         breed.contains(searchText)
-      })
+      if buttonTag == 0 {
+         breedTypeTable(with: dogBreeds, search: searchText)
+         colorTypeTable(with: dogColors, search: searchText)
+      } else if buttonTag == 1{
+         breedTypeTable(with: catBreeds, search: searchText)
+         colorTypeTable(with: catColors, search: searchText)
+         //         guard !searchText.isEmpty else {
+         //            currentBreedArray = catBreeds
+         //            breedTableView.reloadData()
+         //            return }
+         //         currentBreedArray = catBreeds.filter({ breed -> Bool in
+         //            breed.contains(searchText)
+         //         })
+      }
       breedTableView.reloadData()
    }
    
+   func breedTypeTable(with breedArray: [String], search: String){
+      guard !search.isEmpty else {
+         currentBreedArray = breedArray
+         breedTableView.reloadData()
+         return }
+      currentBreedArray = breedArray.filter({ breed -> Bool in
+         breed.contains(search)
+      })
+   }
+   func colorTypeTable(with colorArray: [(String, UIImage)], search: String){
+      guard !search.isEmpty else {
+         currentColorsArray = colorArray
+         colorTableView.reloadData()
+         return }
+      currentColorsArray = colorArray.filter({ color -> Bool in
+         color.0.contains(search)
+      })
+   }
 }

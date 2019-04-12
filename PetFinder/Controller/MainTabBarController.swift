@@ -22,17 +22,21 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
                                    unSelected: "checkButtonOFF")
       let catVC = tabBarController(title: "Cat search", selected: "checkButtonON",
                                    unSelected: "checkButtonOFF")
+      //      let storyBoard = UIStoryboard(name:"Main" , bundle: nil)
+      //      let viewController = storyBoard.instantiateViewController(withIdentifier: "ChoiceVC")
+      //         as! ChoiceViewController
+      dogVC.shouldPerformSegue(withIdentifier: "ShowDogSearch", sender: nil)
+      catVC.shouldPerformSegue(withIdentifier: "ShowCatSearch", sender: nil)
       viewControllers = [dogVC, catVC]
    }
 }
 
 extension MainTabBarController {
-   func tabBarController(title: String, selected: String, unSelected: String) -> UIViewController {
-      let storyBoard = UIStoryboard(name:"Main" , bundle: nil)
-      let viewController = storyBoard.instantiateViewController(withIdentifier: "PetSearchVC")
-         as! PetSearchViewController
-      viewController.tabBarItem = UITabBarItem(title: title, image: UIImage(named: unSelected)!,
-                                               selectedImage: UIImage(named: selected)!)
-      return viewController
+   func tabBarController(title: String, selected: String, unSelected: String) -> UINavigationController {
+
+      let navigationController = UINavigationController(rootViewController: PetSearchViewController())
+      navigationController.tabBarItem = UITabBarItem(title: title, image: UIImage(named: unSelected)!,
+                                                     selectedImage: UIImage(named: selected)!)
+      return navigationController
    }
 }

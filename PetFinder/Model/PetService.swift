@@ -32,7 +32,7 @@ class PetService {
             if response.statusCode == 401 {
                print(response.statusCode)
                self.token.newToken()
-               self.task?.cancel()
+               self.task?.cancel() // relancer l'appel avec nouveau token
             } else {
                guard let data = data, error == nil else { return callback(false, nil)}
                do {
@@ -67,12 +67,12 @@ class PetService {
       for element in [parameters] {
          if !element.age.isEmpty{ values += "&age=" + element.age }
          if !element.breed.isEmpty{ values += "&breed=" + element.breed  }
-         if !element.color.isEmpty{ values += "&color[]=" + element.color}
+         if !element.color.isEmpty{ values += "&color=" + element.color}
          if !element.environnement.isEmpty{ values += "&environnement=" + element.environnement  }
          if !element.gender.isEmpty{ values += "&gender=" + element.gender  }
          if !element.size.isEmpty{ values += "&size=" + element.size  }
       }
       let stringParameters = parameters.type + values.replacingOccurrences(of: ",&", with: "&")
-      return  stringParameters
+      return  stringParameters.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
    }
 }

@@ -12,11 +12,11 @@ import Foundation
 class BreedsTableViewCell: UITableViewCell{
    @IBOutlet var breedBtn: UIButton!
    @IBAction func breedAction(_ sender: UIButton) {
-      guard let name = breedBtn.titleLabel?.text else {return}
-      print(name)
+      guard var name = breedBtn.titleLabel?.text else {return}
+      name = name.replacingOccurrences(of: " ", with: "%20")
       if !breedBtn.isSelected {
          breedBtn.isSelected = true
-         PetService.shared.parameters.breed.append(name.replacingOccurrences(of: " ", with: "%20") + ",")
+         PetService.shared.parameters.breed.append(name + ",")
          print(PetService.shared.parameters.breed)
       } else {
          breedBtn.isSelected = false
