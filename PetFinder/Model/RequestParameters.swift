@@ -11,7 +11,7 @@ import Foundation
 struct Parameters {
    var id = String()
    var location = String()
-   var distance = String()
+   var distance = Int()
    var type = String()
    var age = String()
    var breed = String()

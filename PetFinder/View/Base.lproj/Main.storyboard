@@ -21,69 +21,37 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3NN-dh-RwI">
                                 <rect key="frame" x="0.0" y="111" width="320" height="368"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zi8-Wu-KqW" userLabel="Location">
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zi8-Wu-KqW" userLabel="Location">
                                         <rect key="frame" x="20" y="220" width="280" height="50"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter City, State or ZIP" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hX1-44-x1q">
-                                                <rect key="frame" x="0.0" y="0.0" width="191" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="224" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="xZM-pI-MyM"/>
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
-                                            </textField>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zbg-AV-G5x">
-                                                <rect key="frame" x="181" y="0.0" width="10" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chn-Y4-lvB">
-                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="50"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="IrT-rq-xDN">
-                                                        <rect key="frame" x="10" y="0.0" width="0.0" height="51"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <segments>
-                                                            <segment title="10"/>
-                                                            <segment title="25"/>
-                                                            <segment title="50"/>
-                                                            <segment title="100"/>
-                                                            <segment title="Anywhere"/>
-                                                        </segments>
-                                                    </segmentedControl>
-                                                </subviews>
-                                                <variation key="default">
-                                                    <mask key="subviews">
-                                                        <exclude reference="chn-Y4-lvB"/>
-                                                        <exclude reference="IrT-rq-xDN"/>
-                                                    </mask>
-                                                </variation>
-                                            </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7H-uY-KR0">
-                                                <rect key="frame" x="196" y="0.0" width="84" height="50"/>
-                                                <color key="backgroundColor" red="1" green="0.080642361110000005" blue="0.1818865741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Miles" image="checkButtonOFF">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="location"/>
                                                 <connections>
-                                                    <action selector="milesOptions:" destination="Os6-gu-6Iv" eventType="touchUpInside" id="ziy-nZ-owy"/>
+                                                    <outlet property="delegate" destination="Os6-gu-6Iv" id="W5P-19-4an"/>
                                                 </connections>
-                                            </button>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="100" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="S3G-jq-NYL">
+                                                <rect key="frame" x="224" y="0.0" width="56" height="50"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="Os6-gu-6Iv" id="KJX-Pg-YLT"/>
+                                                </connections>
+                                            </textField>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="p7H-uY-KR0" firstAttribute="width" secondItem="zi8-Wu-KqW" secondAttribute="width" multiplier="0.3" id="szm-6q-tlN"/>
+                                            <constraint firstAttribute="bottom" secondItem="S3G-jq-NYL" secondAttribute="bottom" id="9a1-uH-pG9"/>
+                                            <constraint firstItem="S3G-jq-NYL" firstAttribute="width" secondItem="zi8-Wu-KqW" secondAttribute="width" multiplier="0.2" id="L3y-zF-5dV"/>
+                                            <constraint firstItem="S3G-jq-NYL" firstAttribute="top" secondItem="zi8-Wu-KqW" secondAttribute="top" id="sRI-DZ-ozY"/>
+                                            <constraint firstItem="S3G-jq-NYL" firstAttribute="leading" secondItem="hX1-44-x1q" secondAttribute="trailing" id="t0F-K4-QFw"/>
                                         </constraints>
-                                        <variation key="default">
-                                            <mask key="subviews">
-                                                <exclude reference="zbg-AV-G5x"/>
-                                            </mask>
-                                        </variation>
                                     </stackView>
                                     <stackView contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8pk-7V-In2" userLabel="ALL">
                                         <rect key="frame" x="20" y="290" width="280" height="354"/>
@@ -497,97 +465,11 @@
                                             <constraint firstAttribute="height" constant="200" id="1Vo-3k-uYL"/>
                                         </constraints>
                                     </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="55O-PN-9si">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="55O-PN-9si">
                                         <rect key="frame" x="216" y="270" width="84" height="0.0"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Wq9-to-qPG" userLabel="Distance">
-                                        <rect key="frame" x="216" y="270" width="84" height="0.0"/>
-                                        <subviews>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAl-G6-UlE">
-                                                <rect key="frame" x="0.0" y="0.0" width="84" height="30"/>
-                                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="eGW-gl-mny"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
-                                                <state key="normal" title="10 Miles">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="distanceList:" destination="Os6-gu-6Iv" eventType="touchUpInside" id="i0w-xA-GFq"/>
-                                                </connections>
-                                            </button>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86u-rM-fxZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="84" height="30"/>
-                                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="s3f-fG-lDD"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <state key="normal" title="25 Miles">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="distanceList:" destination="Os6-gu-6Iv" eventType="touchUpInside" id="L3q-yS-sRo"/>
-                                                </connections>
-                                            </button>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ee-36-KZZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="84" height="30"/>
-                                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="DvG-uE-3Qm"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <state key="normal" title="50 Miles">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="distanceList:" destination="Os6-gu-6Iv" eventType="touchUpInside" id="j3h-aq-Ilm"/>
-                                                </connections>
-                                            </button>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qcr-kf-LPi">
-                                                <rect key="frame" x="0.0" y="0.0" width="84" height="30"/>
-                                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="nVH-Vs-4MZ"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <state key="normal" title="100 Miles">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="distanceList:" destination="Os6-gu-6Iv" eventType="touchUpInside" id="Y5T-Fb-7NO"/>
-                                                </connections>
-                                            </button>
-                                            <button hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nub-F8-fhf" userLabel="AnyWhere">
-                                                <rect key="frame" x="0.0" y="0.0" width="84" height="30"/>
-                                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="qiu-Ot-p2y"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <state key="normal" title="Anywhere">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="distanceList:" destination="Os6-gu-6Iv" eventType="touchUpInside" id="HWJ-IY-Kce"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="7ee-36-KZZ" firstAttribute="leading" secondItem="Wq9-to-qPG" secondAttribute="leading" id="0xz-0F-fBS"/>
-                                            <constraint firstItem="Qcr-kf-LPi" firstAttribute="leading" secondItem="Wq9-to-qPG" secondAttribute="leading" id="G3V-DY-sFk"/>
-                                            <constraint firstItem="MAl-G6-UlE" firstAttribute="leading" secondItem="Wq9-to-qPG" secondAttribute="leading" id="PZw-hL-d4O"/>
-                                            <constraint firstAttribute="trailing" secondItem="MAl-G6-UlE" secondAttribute="trailing" id="RNt-Ub-mwF"/>
-                                            <constraint firstAttribute="trailing" secondItem="7ee-36-KZZ" secondAttribute="trailing" id="WDe-FF-aBT"/>
-                                            <constraint firstAttribute="trailing" secondItem="86u-rM-fxZ" secondAttribute="trailing" id="Ze3-0x-odi"/>
-                                            <constraint firstItem="86u-rM-fxZ" firstAttribute="leading" secondItem="Wq9-to-qPG" secondAttribute="leading" id="aHi-Dt-SBh"/>
-                                            <constraint firstAttribute="trailing" secondItem="Qcr-kf-LPi" secondAttribute="trailing" id="cbe-pO-8NO"/>
-                                            <constraint firstAttribute="trailing" secondItem="Nub-F8-fhf" secondAttribute="trailing" id="ehT-7H-7AC"/>
-                                            <constraint firstItem="Nub-F8-fhf" firstAttribute="leading" secondItem="Wq9-to-qPG" secondAttribute="leading" id="fuW-pP-MpG"/>
-                                        </constraints>
-                                    </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="8pk-7V-In2" secondAttribute="trailing" constant="20" id="3nK-BQ-YMo"/>
@@ -596,18 +478,10 @@
                                     <constraint firstItem="Fvf-YU-1JE" firstAttribute="top" secondItem="3NN-dh-RwI" secondAttribute="top" id="DdZ-de-VmE"/>
                                     <constraint firstItem="8pk-7V-In2" firstAttribute="leading" secondItem="3NN-dh-RwI" secondAttribute="leading" constant="20" id="Ezy-aS-9Oe"/>
                                     <constraint firstItem="8pk-7V-In2" firstAttribute="centerX" secondItem="3NN-dh-RwI" secondAttribute="centerX" id="GYa-mS-gbS"/>
-                                    <constraint firstItem="Wq9-to-qPG" firstAttribute="top" secondItem="55O-PN-9si" secondAttribute="top" id="HUJ-h1-rx6"/>
                                     <constraint firstItem="Fvf-YU-1JE" firstAttribute="centerX" secondItem="3NN-dh-RwI" secondAttribute="centerX" id="KYc-uf-zbU"/>
-                                    <constraint firstItem="Wq9-to-qPG" firstAttribute="leading" secondItem="p7H-uY-KR0" secondAttribute="leading" id="Q2V-Ij-YR2"/>
                                     <constraint firstAttribute="bottom" secondItem="8pk-7V-In2" secondAttribute="bottom" id="Seh-Rw-6lT"/>
-                                    <constraint firstItem="Wq9-to-qPG" firstAttribute="trailing" secondItem="p7H-uY-KR0" secondAttribute="trailing" id="UMN-38-kGd"/>
                                     <constraint firstItem="zi8-Wu-KqW" firstAttribute="width" secondItem="8pk-7V-In2" secondAttribute="width" id="c2U-wT-MDz"/>
-                                    <constraint firstItem="Wq9-to-qPG" firstAttribute="width" secondItem="p7H-uY-KR0" secondAttribute="width" id="eGI-uh-Qut"/>
-                                    <constraint firstItem="Wq9-to-qPG" firstAttribute="trailing" secondItem="55O-PN-9si" secondAttribute="trailing" id="iqi-ei-BDI"/>
-                                    <constraint firstItem="Wq9-to-qPG" firstAttribute="top" secondItem="zi8-Wu-KqW" secondAttribute="bottom" id="jBV-KG-CIw"/>
-                                    <constraint firstItem="Wq9-to-qPG" firstAttribute="leading" secondItem="55O-PN-9si" secondAttribute="leading" id="uoE-1y-f1s"/>
                                     <constraint firstItem="zi8-Wu-KqW" firstAttribute="centerX" secondItem="3NN-dh-RwI" secondAttribute="centerX" id="vfv-f7-WSZ"/>
-                                    <constraint firstItem="Wq9-to-qPG" firstAttribute="bottom" secondItem="55O-PN-9si" secondAttribute="bottom" id="z22-WK-PJV"/>
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4G3-Tw-mFj">
@@ -637,17 +511,19 @@
                             <constraint firstItem="3NN-dh-RwI" firstAttribute="trailing" secondItem="fbK-Qn-72F" secondAttribute="trailing" id="uoc-hn-1FB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fbK-Qn-72F"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="vNF-WT-Cvn" appends="YES" id="kwG-MH-nlo"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="PET SEARCH" largeTitleDisplayMode="always" id="4Rn-X9-BAh"/>
                     <connections>
-                        <outlet property="backGroundDistance" destination="55O-PN-9si" id="DcL-vx-dx2"/>
                         <outlet property="breedSearchBar" destination="pY3-rU-h9b" id="D9Z-qH-0Ja"/>
                         <outlet property="breedTableView" destination="jk4-7N-yDZ" id="4dJ-Hs-eLh"/>
                         <outlet property="colorSearchBar" destination="YiR-Yd-nlh" id="82y-vr-NGr"/>
                         <outlet property="colorTableView" destination="wwv-9n-pGk" id="A3c-rf-d7F"/>
-                        <outlet property="distanceBtn" destination="p7H-uY-KR0" id="lIi-0w-xRn"/>
                         <outlet property="gender" destination="5C4-7p-FHB" id="eHU-70-7la"/>
                         <outlet property="location" destination="hX1-44-x1q" id="6DB-oe-OSa"/>
+                        <outlet property="milesDistance" destination="S3G-jq-NYL" id="AbZ-ME-wVe"/>
                         <outlet property="petimage" destination="Fvf-YU-1JE" id="Cz9-PM-Typ"/>
                         <outlet property="showPets" destination="4G3-Tw-mFj" id="FPc-sm-ygD"/>
                         <outletCollection property="sizeBtns" destination="0jQ-HH-Wdb" collectionClass="NSMutableArray" id="FKM-zQ-Ziv"/>
@@ -664,14 +540,14 @@
                         <outletCollection property="envBtns" destination="jLK-IL-6pr" collectionClass="NSMutableArray" id="ZXX-uH-1g9"/>
                         <outletCollection property="envBtns" destination="N0N-c9-8Hy" collectionClass="NSMutableArray" id="Rih-E4-1Ho"/>
                         <outletCollection property="envBtns" destination="NfY-vi-65I" collectionClass="NSMutableArray" id="wxN-u8-grE"/>
-                        <outletCollection property="distance" destination="MAl-G6-UlE" collectionClass="NSMutableArray" id="IY2-oT-czc"/>
-                        <outletCollection property="distance" destination="86u-rM-fxZ" collectionClass="NSMutableArray" id="0TW-2c-8wy"/>
-                        <outletCollection property="distance" destination="7ee-36-KZZ" collectionClass="NSMutableArray" id="ydX-h1-Ycd"/>
-                        <outletCollection property="distance" destination="Qcr-kf-LPi" collectionClass="NSMutableArray" id="KiN-Lo-aJf"/>
-                        <outletCollection property="distance" destination="Nub-F8-fhf" collectionClass="NSMutableArray" id="sWv-3G-3eh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0do-UX-Cke" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="vNF-WT-Cvn">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="Os6-gu-6Iv" id="h9X-0j-kDr"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2489.8550724637685" y="-111.16071428571428"/>
         </scene>

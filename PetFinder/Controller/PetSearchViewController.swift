@@ -11,9 +11,7 @@ import UIKit
 class PetSearchViewController: UIViewController {
    
    @IBOutlet weak var location: UITextField!
-   @IBOutlet var distance: [UIButton]!
-   @IBOutlet weak var distanceBtn: UIButton!
-   @IBOutlet weak var backGroundDistance: UIView!
+   @IBOutlet weak var milesDistance: UITextField!
    
    @IBOutlet weak var petimage: UIImageView!
    
@@ -27,37 +25,7 @@ class PetSearchViewController: UIViewController {
    @IBOutlet var envBtns: [UIButton]!
    @IBOutlet weak var gender: UISegmentedControl!
    @IBOutlet weak var showPets: UIButton!
-   @IBAction func milesOptions(_ sender: UIButton) {
-      showDistance(on: sender)
-      //      if location.text?.isEmpty == false {
-      //         distanceBtn.isEnabled = true
-      //         distanceBtn.layer.opacity = 1
-      //         showDistance(on: sender)
-      //      }
-   }
-   @IBAction func distanceList(_ sender: UIButton) {
-      guard let miles = sender.titleLabel?.text else { return }
-      if !sender.isSelected && miles != "Anywhere" {
-         sender.isSelected = true
-         sender.backgroundColor = #colorLiteral(red: 0.1503180861, green: 1, blue: 0.4878128767, alpha: 1)
-         for button in distance where button != sender {
-            button.isSelected = false
-            button.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-         }
-         PetService.shared.parameters.distance = miles + ","
-      }  else if sender.isSelected && miles != "Anywhere" {
-         sender.isSelected = false
-         sender.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-         if let range = PetService.shared.parameters.distance.range(of: miles + ",") {
-            PetService.shared.parameters.distance.removeSubrange(range)
-         }
-      }
-      if miles == "Anywhere" {
-         resetButtons(sender: sender, buttons: distance)
-         PetService.shared.parameters.distance.removeAll()
-      }
-      print(PetService.shared.parameters.distance)
-   }
+   
    @IBAction func breedList(_ sender: UIButton) {
       tableOptions(tableview: breedTableView, searchBar: breedSearchBar, size: sizeBtns)
    }
@@ -85,6 +53,7 @@ class PetSearchViewController: UIViewController {
    var pet: Pet = .dog
    override func viewDidLoad() {
       super.viewDidLoad()
+      milesDistance.isHidden = true
       removeAll()
       corners(image: petimage)
       if pet == .dog {
@@ -110,27 +79,6 @@ class PetSearchViewController: UIViewController {
       showPets.setTitle("Show cats!", for: .normal)
       PetService.shared.parameters.type.append("?type=cat")
    }
-   
-   private func showDistance(on button: UIButton) {
-      if !button.isSelected {
-         button.isSelected = true
-         UIView.animate(withDuration: 0.3) {
-            self.backGroundDistance.isHidden = false
-            for button in self.distance {
-               button.isHidden = false
-            }
-         }
-      } else {
-         button.isSelected = false
-         UIView.animate(withDuration: 0.3) {
-            self.backGroundDistance.isHidden = true
-            for button in self.distance {
-               button.isHidden = true
-            }
-         }
-      }
-   }
-   
    func tableOptions(tableview: UITableView, searchBar: UISearchBar, size: [UIButton]!) {
       if tableview.isHidden {
          showHideTable(to: tableview, searchBar: searchBar, toogle: true)
@@ -196,6 +144,7 @@ class PetSearchViewController: UIViewController {
       }
    }
    func removeAll() {
+      PetService.shared.parameters.type.removeAll()
       PetService.shared.parameters.age.removeAll()
       PetService.shared.parameters.breed.removeAll()
       PetService.shared.parameters.color.removeAll()
@@ -231,13 +180,8 @@ extension PetSearchViewController : UITableViewDelegate, UITableViewDataSource {
 }
 extension PetSearchViewController: UISearchBarDelegate {
    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-      if pet == .dog {
-         breedTypeTable(with: BreedLists.dogBreed, search: searchText)
-         colorTypeTable(with: ColorsList.dogColors, search: searchText)
-      } else if pet == .cat {
-         breedTypeTable(with: BreedLists.catBreed, search: searchText)
-         colorTypeTable(with: ColorsList.catColors, search: searchText)
-      }
+         breedTypeTable(with: currentBreedArray, search: searchText)
+         colorTypeTable(with: currentColorsArray, search: searchText)
       breedTableView.reloadData()
    }
    
@@ -258,5 +202,39 @@ extension PetSearchViewController: UISearchBarDelegate {
       currentColorsArray = colorArray.filter({ color -> Bool in
          color.0.contains(search)
       })
+   }
+}
+extension PetSearchViewController: UITextFieldDelegate {
+   func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+      textField.resignFirstResponder()
+      if location.text?.isEmpty == false {
+         setLocation()
+         UIView.animate(withDuration: 0.3) {
+            self.milesDistance.isHidden = false
+            self.setDistance()
+         }
+      } else {
+         UIView.animate(withDuration: 0.3) {
+            self.milesDistance.isHidden = true
+         }
+         PetService.shared.parameters.location.removeAll()
+      }
+      print(PetService.shared.parameters.location)
+      return true
+   }
+   
+   @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
+      location.resignFirstResponder()
+      milesDistance.resignFirstResponder()
+   }
+   
+   func setLocation() {
+      guard let location = location.text else { return }
+      PetService.shared.parameters.location = location.replacingOccurrences(of: " ", with: "%20")
+   }
+   
+   func setDistance() {
+      guard let distance = Int(milesDistance.text!) else { return }
+      PetService.shared.parameters.distance = distance
    }
 }

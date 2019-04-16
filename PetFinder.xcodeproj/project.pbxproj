@@ -15,7 +15,6 @@
 		EC69DB0A224938EB0096EB8A /* JSON_Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69DB09224938EB0096EB8A /* JSON_Token.swift */; };
 		EC6A8F3A224CDCDC0053A278 /* PetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6A8F39224CDCDC0053A278 /* PetCollectionViewCell.swift */; };
 		EC735A52224A1C0600B792A5 /* PetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC735A51224A1C0600B792A5 /* PetService.swift */; };
-		ECD66CED226389F30031CD11 /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD66CEC226389F30031CD11 /* MapScreen.swift */; };
 		ECDD111C226087C40062409C /* PetSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDD1115226087C30062409C /* PetSearchViewController.swift */; };
 		ECDD111E226087C40062409C /* PetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDD1117226087C30062409C /* PetDetailViewController.swift */; };
 		ECDD111F226087C40062409C /* ColorsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDD1118226087C30062409C /* ColorsList.swift */; };
@@ -56,7 +55,6 @@
 		EC69DB09224938EB0096EB8A /* JSON_Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON_Token.swift; sourceTree = "<group>"; };
 		EC6A8F39224CDCDC0053A278 /* PetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCollectionViewCell.swift; sourceTree = "<group>"; };
 		EC735A51224A1C0600B792A5 /* PetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetService.swift; sourceTree = "<group>"; };
-		ECD66CEC226389F30031CD11 /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapScreen.swift; path = PetFinder/Controller/MapScreen.swift; sourceTree = SOURCE_ROOT; };
 		ECDD1115226087C30062409C /* PetSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetSearchViewController.swift; sourceTree = "<group>"; };
 		ECDD1117226087C30062409C /* PetDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetDetailViewController.swift; sourceTree = "<group>"; };
 		ECDD1118226087C30062409C /* ColorsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsList.swift; sourceTree = "<group>"; };
@@ -168,7 +166,6 @@
 			isa = PBXGroup;
 			children = (
 				ECFC65432247E00800AB3C56 /* Main.storyboard */,
-				ECD66CEC226389F30031CD11 /* MapScreen.swift */,
 				EC6A8F39224CDCDC0053A278 /* PetCollectionViewCell.swift */,
 				ECDD1123226088340062409C /* ColorsTableViewCell.swift */,
 				EC2B2C012252589F00612A77 /* BreedsTableViewCell.swift */,
@@ -295,7 +292,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECD66CED226389F30031CD11 /* MapScreen.swift in Sources */,
 				ECDD111F226087C40062409C /* ColorsList.swift in Sources */,
 				EC6A8F3A224CDCDC0053A278 /* PetCollectionViewCell.swift in Sources */,
 				ECDD112D22608DBB0062409C /* FavoritesViewCell.swift in Sources */,

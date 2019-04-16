@@ -79,6 +79,7 @@ class PetService {
                                timeoutInterval: 10.0)
       request.httpMethod = "GET"
       request.allHTTPHeaderFields = headers
+      print(request)
       return request
    }
    
@@ -86,11 +87,13 @@ class PetService {
       var values = String()
       for element in [parameters] {
          if !element.age.isEmpty{ values += "&age=" + element.age }
-         if !element.breed.isEmpty{ values += "&breed=" + element.breed  }
+         if !element.breed.isEmpty{ values += "&breed=" + element.breed }
          if !element.color.isEmpty{ values += "&color=" + element.color}
-         if !element.environnement.isEmpty{ values += "&environnement=" + element.environnement  }
-         if !element.gender.isEmpty{ values += "&gender=" + element.gender  }
-         if !element.size.isEmpty{ values += "&size=" + element.size  }
+         if !element.environnement.isEmpty{ values += "&environnement=" + element.environnement }
+         if !element.gender.isEmpty{ values += "&gender=" + element.gender }
+         if !element.size.isEmpty{ values += "&size=" + element.size }
+         if !element.location.isEmpty{ values += "&location=" + element.location }
+         if element.distance > 0 { values += "&distance=" + String(element.distance) }
          if !element.id.isEmpty{
             values.removeAll()
             values += "/" + element.id }
