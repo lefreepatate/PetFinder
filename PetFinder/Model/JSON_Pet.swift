@@ -10,6 +10,7 @@ import Foundation
 
 struct Pets: Codable {
    let animals: [Animal]?
+   let animal: Animal?
    let pagination: Pagination?
 }
 

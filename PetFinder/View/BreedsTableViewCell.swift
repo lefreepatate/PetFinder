@@ -17,7 +17,6 @@ class BreedsTableViewCell: UITableViewCell{
       if !breedBtn.isSelected {
          breedBtn.isSelected = true
          PetService.shared.parameters.breed.append(name + ",")
-         print(PetService.shared.parameters.breed)
       } else {
          breedBtn.isSelected = false
          if let range = PetService.shared.parameters.breed.range(of: name + ",") {
@@ -25,7 +24,6 @@ class BreedsTableViewCell: UITableViewCell{
          }
       }
    }
-   
    override func prepareForReuse() {
       super.prepareForReuse()
    }

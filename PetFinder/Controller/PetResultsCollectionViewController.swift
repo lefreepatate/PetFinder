@@ -10,31 +10,39 @@ import UIKit
 
 class PetsResultsCollectionViewController: UICollectionViewController {
    
+   @IBOutlet weak var activityView: UIView!
+   @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
    @IBOutlet var petsCollectionView: UICollectionView!
    var animals = [Animal]()
    var cacheImage = UIImage(named: "dogSearch")
    var parameters = Parameters()
+
    override func viewDidLoad() {
       super.viewDidLoad()
-      petResultsSettings()
+       petResultsSettings()
    }
-   
-   override func viewDidAppear(_ animated: Bool) {
-      super.viewDidAppear(animated)
+   override func viewWillAppear(_ animated: Bool) {
+      super.viewWillAppear(animated)
       let layout = petsCollectionView.collectionViewLayout as? UICollectionViewFlowLayout
-      let width = (view.frame.width*0.49)
+      let width = (view.frame.width*0.48)
       layout?.itemSize = CGSize(width: width, height: width)
    }
-   
    func petResultsSettings() {
       PetService.shared.getPets() { (success, response) in
-         if success, let response = response {
+         if success, let response = response as! [Animal]?{
             self.animals = response
             self.petsCollectionView.reloadData()
+            self.toggleActivityIndicator(shown: false)
          } else {
             self.presentAlert(with: "An error with the network occured")
+            self.toggleActivityIndicator(shown: false)
          }
       }
+   }
+   private func toggleActivityIndicator(shown: Bool) {
+      petsCollectionView.isHidden = shown
+      activityIndicator.isHidden = !shown
+      activityView.isHidden = !shown
    }
    // MARK: UICollectionViewDataSource
    override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -94,7 +102,7 @@ class PetsResultsCollectionViewController: UICollectionViewController {
       guard let destinationVC = storyBoard.instantiateViewController(
          withIdentifier: "PetDetailViewController") as? PetDetailViewController else { return }
       let pet = animals[indexPath.row]
-      destinationVC.petDetail = pet
+      destinationVC.id = "\(pet.id!)"
       destinationVC.petBreed = self.getBreedString(with: pet.breeds!)
       navigationController?.pushViewController(destinationVC, animated: true)
    }

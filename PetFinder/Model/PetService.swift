@@ -22,7 +22,24 @@ class PetService {
    var parameters = Parameters()
    var token = TokenNumber()
    
-   func getPets(_ callback: @escaping (Bool, [Animal]?) -> Void) {
+   func checkToken() {
+      let request = createRequest(with: token.code)
+      let session = URLSession.shared
+      task?.cancel()
+      task = session.dataTask(with: request){ (data, response, error) in
+         DispatchQueue.main.async {
+            guard let response = response as? HTTPURLResponse else { return }
+            if response.statusCode == 401 {
+               self.token.newToken()
+            } else {
+               return
+            }
+         }
+      }
+      task?.resume()
+   }
+   
+   func getPets(_ callback: @escaping (Bool, Any?) -> Void) {
       let request = createRequest(with: token.code)
       let session = URLSession.shared
       task?.cancel()
@@ -30,16 +47,20 @@ class PetService {
          DispatchQueue.main.async {
             guard let response = response as? HTTPURLResponse else { return callback(false, nil) }
             if response.statusCode == 401 {
-               print(response.statusCode)
-               self.token.newToken()
-               self.task?.cancel() // relancer l'appel avec nouveau token
+               self.checkToken()
+               self.task?.cancel()
             } else {
-               guard let data = data, error == nil else { return callback(false, nil)}
+               guard let data = data, error == nil else { return callback(false, nil) }
                do {
                   let decoder = JSONDecoder()
                   decoder.keyDecodingStrategy = .convertFromSnakeCase
-                  let response = try decoder.decode(Pets.self, from: data)
-                  callback(true, response.animals)
+                  if request.description.contains(self.parameters.type) {
+                     let response = try decoder.decode(Pets.self, from: data)
+                     callback(true, response.animals)
+                  } else if request.description.contains(self.parameters.id) {
+                     let response = try decoder.decode(Pets.self, from: data)
+                     callback(true,response.animal)
+                  }
                } catch { print("JSON ERROR") }
             }
          }
@@ -53,12 +74,11 @@ class PetService {
          "Authorization": "Bearer \(token)",
          "cache-control": "no-cache"
       ]
-      var request = URLRequest(url: URL(string: "https://api.petfinder.com/v2/animals?" + valuesString())!,
-                                        cachePolicy: .useProtocolCachePolicy,
-                                        timeoutInterval: 10.0)
+      var request = URLRequest(url: URL(string: "https://api.petfinder.com/v2/animals" + valuesString())!,
+                               cachePolicy: .useProtocolCachePolicy,
+                               timeoutInterval: 10.0)
       request.httpMethod = "GET"
       request.allHTTPHeaderFields = headers
-      print(request)
       return request
    }
    
@@ -71,8 +91,11 @@ class PetService {
          if !element.environnement.isEmpty{ values += "&environnement=" + element.environnement  }
          if !element.gender.isEmpty{ values += "&gender=" + element.gender  }
          if !element.size.isEmpty{ values += "&size=" + element.size  }
+         if !element.id.isEmpty{
+            values.removeAll()
+            values += "/" + element.id }
       }
       let stringParameters = parameters.type + values.replacingOccurrences(of: ",&", with: "&")
-      return  stringParameters.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+      return  stringParameters
    }
 }
