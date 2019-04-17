@@ -22,7 +22,6 @@ class TokenService {
    // MARK: -- GET REFRESH TOKEN CODE
    func getToken(_ callBack: @escaping (Bool, String?) -> Void) {
       let request = requestToken()
-      let session = URLSession.shared
       let dataTask = session.dataTask(with: request, completionHandler: { (data, response, error) in
          DispatchQueue.main.async {
             guard let data = data, error == nil else {
@@ -45,8 +44,8 @@ class TokenService {
       let headers = ["content-type": "application/json"]
       let parameters = [
          "grant_type": "client_credentials",
-         "client_id": "rJoTEqr58LIpI8PRnObE9rxHTUPknq8JnJxY4FbdjdTPSqvCO1",
-         "client_secret": "ZHyEpYCHycEHivcUvvJpGnfCcUEdxdSrtRbirthj",
+         "client_id": "***",
+         "client_secret": "***",
          "redirect_uri": "https://api.petfinder.com/v2/animals?"
       ]
       

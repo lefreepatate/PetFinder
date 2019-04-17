@@ -1,0 +1,1509 @@
+{
+   "animals": [
+      {
+         "id": 44476056,
+         "organization_id": "IA05",
+         "url": "https://www.petfinder.com/cat/pandora-44476056/ia/muscatine/muscatine-humane-society-ia05/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Cat",
+         "species": "Cat",
+         "breeds": {
+            "primary": "Domestic Medium Hair",
+            "secondary": null,
+            "mixed": false,
+            "unknown": false
+         },
+         "colors": {
+            "primary": null,
+            "secondary": null,
+            "tertiary": null
+         },
+         "age": "Young",
+         "gender": "Female",
+         "size": "Medium",
+         "coat": "Medium",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": true,
+            "declawed": false,
+            "special_needs": false,
+            "shots_current": false
+         },
+         "environment": {
+            "children": null,
+            "dogs": null,
+            "cats": null
+         },
+         "tags": [],
+         "name": "Pandora",
+         "description": "Pandora is a sweet girl. She loves her hammock.\n\nShe is spayed, current on boosters and she has a micro...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476056/1/?bust=1555424077&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476056/1/?bust=1555424077&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476056/1/?bust=1555424077&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476056/1/?bust=1555424077"
+            }
+         ],
+         "status": "adoptable",
+         "published_at": "2019-04-16T14:16:02+0000",
+         "contact": {
+            "email": "humanesoc@machlink.com",
+            "phone": "(563)263-7358 ",
+            "address": {
+               "address1": "920 South Houser",
+               "address2": null,
+               "city": "Muscatine",
+               "state": "IA",
+               "postcode": "52761",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/44476056"
+            },
+            "type": {
+               "href": "/v2/types/cat"
+            },
+            "organization": {
+               "href": "/v2/organizations/ia05"
+            }
+         }
+      },
+      {
+         "id": 44476050,
+         "organization_id": "IA05",
+         "url": "https://www.petfinder.com/cat/charlotte-44476050/ia/muscatine/muscatine-humane-society-ia05/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Cat",
+         "species": "Cat",
+         "breeds": {
+            "primary": "Domestic Short Hair",
+            "secondary": null,
+            "mixed": false,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Black",
+            "secondary": "Gray / Blue / Silver",
+            "tertiary": "Tabby (Tiger Striped)"
+         },
+         "age": "Young",
+         "gender": "Female",
+         "size": "Medium",
+         "coat": "Short",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": true,
+            "declawed": false,
+            "special_needs": false,
+            "shots_current": false
+         },
+         "environment": {
+            "children": null,
+            "dogs": null,
+            "cats": null
+         },
+         "tags": [],
+         "name": "Charlotte",
+         "description": "Charlotte is a young adult, medium in size.\n\nShe is current on boosters, spayed and she has a micro chip....",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476050/1/?bust=1555423995&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476050/1/?bust=1555423995&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476050/1/?bust=1555423995&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476050/1/?bust=1555423995"
+            }
+         ],
+         "status": "adoptable",
+         "published_at": "2019-04-16T14:14:02+0000",
+         "contact": {
+            "email": "humanesoc@machlink.com",
+            "phone": "(563)263-7358 ",
+            "address": {
+               "address1": "920 South Houser",
+               "address2": null,
+               "city": "Muscatine",
+               "state": "IA",
+               "postcode": "52761",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/44476050"
+            },
+            "type": {
+               "href": "/v2/types/cat"
+            },
+            "organization": {
+               "href": "/v2/organizations/ia05"
+            }
+         }
+      },
+      {
+         "id": 44476044,
+         "organization_id": "OH166",
+         "url": "https://www.petfinder.com/cat/dexter-44476044/oh/elyria/friendship-animal-protective-league-oh166/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Cat",
+         "species": "Cat",
+         "breeds": {
+            "primary": "Domestic Short Hair",
+            "secondary": null,
+            "mixed": false,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Brown / Chocolate",
+            "secondary": "White",
+            "tertiary": null
+         },
+         "age": "Young",
+         "gender": "Male",
+         "size": "Medium",
+         "coat": "Short",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": true,
+            "declawed": false,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": null,
+            "dogs": null,
+            "cats": null
+         },
+         "tags": [],
+         "name": "Dexter",
+         "description": "This wonderful cat&#039;s owners moved and couldn&#039;t take him. Here is what a volunteer said about 3 year old Dexter-...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476044/1/?bust=1555423931&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476044/1/?bust=1555423931&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476044/1/?bust=1555423931&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476044/1/?bust=1555423931"
+            }
+         ],
+         "status": "adoptable",
+         "published_at": "2019-04-16T14:13:53+0000",
+         "contact": {
+            "email": "adoptions@friendshipapl.org",
+            "phone": "440-322-4321   ",
+            "address": {
+               "address1": "8303 Murray Ridge Road",
+               "address2": null,
+               "city": "Elyria",
+               "state": "OH",
+               "postcode": "44035",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/44476044"
+            },
+            "type": {
+               "href": "/v2/types/cat"
+            },
+            "organization": {
+               "href": "/v2/organizations/oh166"
+            }
+         }
+      },
+      {
+         "id": 44476043,
+         "organization_id": "IA05",
+         "url": "https://www.petfinder.com/cat/purdy-44476043/ia/muscatine/muscatine-humane-society-ia05/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Cat",
+         "species": "Cat",
+         "breeds": {
+            "primary": "Domestic Short Hair",
+            "secondary": null,
+            "mixed": false,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Black",
+            "secondary": "Gray / Blue / Silver",
+            "tertiary": "Tabby (Tiger Striped)"
+         },
+         "age": "Baby",
+         "gender": "Female",
+         "size": "Medium",
+         "coat": "Short",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": true,
+            "declawed": false,
+            "special_needs": false,
+            "shots_current": false
+         },
+         "environment": {
+            "children": null,
+            "dogs": null,
+            "cats": null
+         },
+         "tags": [],
+         "name": "Purdy",
+         "description": "Those eyes!\n\nPuurdy is a domestic shorthair kitten.\nShe is current on boosters, spayed and she also has a micro...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476043/1/?bust=1555423899&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476043/1/?bust=1555423899&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476043/1/?bust=1555423899&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476043/1/?bust=1555423899"
+            }
+         ],
+         "status": "adoptable",
+         "published_at": "2019-04-16T14:12:25+0000",
+         "contact": {
+            "email": "humanesoc@machlink.com",
+            "phone": "(563)263-7358 ",
+            "address": {
+               "address1": "920 South Houser",
+               "address2": null,
+               "city": "Muscatine",
+               "state": "IA",
+               "postcode": "52761",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/44476043"
+            },
+            "type": {
+               "href": "/v2/types/cat"
+            },
+            "organization": {
+               "href": "/v2/organizations/ia05"
+            }
+         }
+      },
+      {
+         "id": 44476035,
+         "organization_id": "IA05",
+         "url": "https://www.petfinder.com/cat/purdy-44476035/ia/muscatine/muscatine-humane-society-ia05/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Cat",
+         "species": "Cat",
+         "breeds": {
+            "primary": "Domestic Short Hair",
+            "secondary": null,
+            "mixed": false,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Black",
+            "secondary": "Gray / Blue / Silver",
+            "tertiary": "Tabby (Tiger Striped)"
+         },
+         "age": "Baby",
+         "gender": "Female",
+         "size": "Medium",
+         "coat": "Short",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": true,
+            "declawed": false,
+            "special_needs": false,
+            "shots_current": false
+         },
+         "environment": {
+            "children": null,
+            "dogs": null,
+            "cats": null
+         },
+         "tags": [],
+         "name": "Purdy",
+         "description": "Those eyes!\n\nPurdy is a domestice shorthair kitten.\nCurrent on boosters, spayed and she has a micro chip.\n\nShe will...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476035/1/?bust=1555423737&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476035/1/?bust=1555423737&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476035/1/?bust=1555423737&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476035/1/?bust=1555423737"
+            }
+         ],
+         "status": "adopted",
+         "published_at": "2019-04-16T14:10:09+0000",
+         "contact": {
+            "email": "humanesoc@machlink.com",
+            "phone": "(563)263-7358 ",
+            "address": {
+               "address1": "920 South Houser",
+               "address2": null,
+               "city": "Muscatine",
+               "state": "IA",
+               "postcode": "52761",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/44476035"
+            },
+            "type": {
+               "href": "/v2/types/cat"
+            },
+            "organization": {
+               "href": "/v2/organizations/ia05"
+            }
+         }
+      },
+      {
+         "id": 44476024,
+         "organization_id": "PA971",
+         "url": "https://www.petfinder.com/cat/greta-44476024/pa/bensalem/lucky-you-animal-rescue-pa971/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Cat",
+         "species": "Cat",
+         "breeds": {
+            "primary": "Domestic Short Hair",
+            "secondary": null,
+            "mixed": false,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Black",
+            "secondary": null,
+            "tertiary": null
+         },
+         "age": "Baby",
+         "gender": "Female",
+         "size": "Medium",
+         "coat": "Short",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": false,
+            "declawed": false,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": true,
+            "dogs": true,
+            "cats": true
+         },
+         "tags": [],
+         "name": "Greta",
+         "description": "If you like black cats you will LOVE Greta. She is the perfect little panther. She is four pounds of...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476024/1/?bust=1555423572&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476024/1/?bust=1555423572&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476024/1/?bust=1555423572&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476024/1/?bust=1555423572"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476024/2/?bust=1555423580&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476024/2/?bust=1555423580&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476024/2/?bust=1555423580&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476024/2/?bust=1555423580"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476024/3/?bust=1555423593&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476024/3/?bust=1555423593&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476024/3/?bust=1555423593&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476024/3/?bust=1555423593"
+            }
+         ],
+         "status": "adoptable",
+         "published_at": "2019-04-16T14:09:37+0000",
+         "contact": {
+            "email": "luckyyouanimalrescue@gmail.com",
+            "phone": "215-821-8289",
+            "address": {
+               "address1": null,
+               "address2": null,
+               "city": "Bensalem",
+               "state": "PA",
+               "postcode": "19020",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/44476024"
+            },
+            "type": {
+               "href": "/v2/types/cat"
+            },
+            "organization": {
+               "href": "/v2/organizations/pa971"
+            }
+         }
+      },
+      {
+         "id": 44476008,
+         "organization_id": "SC19",
+         "url": "https://www.petfinder.com/cat/gallagher-44476008/sc/hilton-head-island/humane-association-hilton-head-bluffton-sc19/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Cat",
+         "species": "Cat",
+         "breeds": {
+            "primary": "Domestic Short Hair",
+            "secondary": null,
+            "mixed": false,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Orange / Red",
+            "secondary": "White",
+            "tertiary": null
+         },
+         "age": "Young",
+         "gender": "Male",
+         "size": "Small",
+         "coat": "Short",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": false,
+            "declawed": false,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": null,
+            "dogs": null,
+            "cats": null
+         },
+         "tags": [],
+         "name": "Gallagher",
+         "description": "This is Gallagher! He was brought to us from another rescue. Gallagher is a playful 8 month old DSH orange...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476008/1/?bust=1555423420&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476008/1/?bust=1555423420&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476008/1/?bust=1555423420&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476008/1/?bust=1555423420"
+            }
+         ],
+         "status": "adoptable",
+         "published_at": "2019-04-16T14:06:55+0000",
+         "contact": {
+            "email": "adoptions@hhhumane.org",
+            "phone": "843-681-8686  ",
+            "address": {
+               "address1": "PO Box 21790",
+               "address2": null,
+               "city": "Hilton Head Island",
+               "state": "SC",
+               "postcode": "29925",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/44476008"
+            },
+            "type": {
+               "href": "/v2/types/cat"
+            },
+            "organization": {
+               "href": "/v2/organizations/sc19"
+            }
+         }
+      },
+      {
+         "id": 44476010,
+         "organization_id": "ON543",
+         "url": "https://www.petfinder.com/cat/pharaoh-44476010/on/orleans/cherish-cat-rescue-on543/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Cat",
+         "species": "Cat",
+         "breeds": {
+            "primary": "Tabby",
+            "secondary": "Domestic Long Hair",
+            "mixed": true,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Gray / Blue / Silver",
+            "secondary": null,
+            "tertiary": null
+         },
+         "age": "Adult",
+         "gender": "Male",
+         "size": "Medium",
+         "coat": "Long",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": true,
+            "declawed": false,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": true,
+            "dogs": null,
+            "cats": null
+         },
+         "tags": [],
+         "name": "Pharaoh",
+         "description": "This GORGEOUS fluff, recently rescued from outside, is available for adoption! \n\nBecause he&#039;s so stunning, he turned heads at his...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476010/1/?bust=1555423813&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476010/1/?bust=1555423813&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476010/1/?bust=1555423813&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476010/1/?bust=1555423813"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476010/2/?bust=1555423394&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476010/2/?bust=1555423394&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476010/2/?bust=1555423394&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476010/2/?bust=1555423394"
+            }
+         ],
+         "status": "adoptable",
+         "published_at": "2019-04-16T14:06:44+0000",
+         "contact": {
+            "email": "cherishcatrescue@gmail.com",
+            "phone": null,
+            "address": {
+               "address1": null,
+               "address2": null,
+               "city": "Orleans",
+               "state": "ON",
+               "postcode": "K4A 3E3",
+               "country": "CA"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/44476010"
+            },
+            "type": {
+               "href": "/v2/types/cat"
+            },
+            "organization": {
+               "href": "/v2/organizations/on543"
+            }
+         }
+      },
+      {
+         "id": 44476003,
+         "organization_id": "TX934",
+         "url": "https://www.petfinder.com/cat/bitsy-44476003/tx/watauga/watauga-animal-shelter-tx934/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Cat",
+         "species": "Cat",
+         "breeds": {
+            "primary": "Domestic Short Hair",
+            "secondary": null,
+            "mixed": false,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Black",
+            "secondary": null,
+            "tertiary": null
+         },
+         "age": "Baby",
+         "gender": "Female",
+         "size": "Medium",
+         "coat": "Short",
+         "attributes": {
+            "spayed_neutered": false,
+            "house_trained": true,
+            "declawed": false,
+            "special_needs": false,
+            "shots_current": false
+         },
+         "environment": {
+            "children": true,
+            "dogs": true,
+            "cats": true
+         },
+         "tags": [],
+         "name": "Bitsy",
+         "description": "Available 4/17/19",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476003/1/?bust=1555423278&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476003/1/?bust=1555423278&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476003/1/?bust=1555423278&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476003/1/?bust=1555423278"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476003/2/?bust=1555423280&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476003/2/?bust=1555423280&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476003/2/?bust=1555423280&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476003/2/?bust=1555423280"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476003/3/?bust=1555423280&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476003/3/?bust=1555423280&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476003/3/?bust=1555423280&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44476003/3/?bust=1555423280"
+            }
+         ],
+         "status": "adoptable",
+         "published_at": "2019-04-16T14:01:29+0000",
+         "contact": {
+            "email": "WataugaTXanimals@yahoo.com",
+            "phone": "8176569614",
+            "address": {
+               "address1": "5203 Watauga Road",
+               "address2": null,
+               "city": "Watauga",
+               "state": "TX",
+               "postcode": "76148",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/44476003"
+            },
+            "type": {
+               "href": "/v2/types/cat"
+            },
+            "organization": {
+               "href": "/v2/organizations/tx934"
+            }
+         }
+      },
+      {
+         "id": 44475996,
+         "organization_id": "TX934",
+         "url": "https://www.petfinder.com/cat/bliss-44475996/tx/watauga/watauga-animal-shelter-tx934/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Cat",
+         "species": "Cat",
+         "breeds": {
+            "primary": "Domestic Short Hair",
+            "secondary": null,
+            "mixed": false,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Black",
+            "secondary": null,
+            "tertiary": null
+         },
+         "age": "Baby",
+         "gender": "Male",
+         "size": "Medium",
+         "coat": "Short",
+         "attributes": {
+            "spayed_neutered": false,
+            "house_trained": true,
+            "declawed": false,
+            "special_needs": false,
+            "shots_current": false
+         },
+         "environment": {
+            "children": true,
+            "dogs": true,
+            "cats": true
+         },
+         "tags": [],
+         "name": "Bliss",
+         "description": "Available 4/17/19",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475996/1/?bust=1555423166&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475996/1/?bust=1555423166&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475996/1/?bust=1555423166&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475996/1/?bust=1555423166"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475996/2/?bust=1555423167&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475996/2/?bust=1555423167&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475996/2/?bust=1555423167&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475996/2/?bust=1555423167"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475996/3/?bust=1555423169&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475996/3/?bust=1555423169&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475996/3/?bust=1555423169&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475996/3/?bust=1555423169"
+            }
+         ],
+         "status": "adoptable",
+         "published_at": "2019-04-16T13:59:51+0000",
+         "contact": {
+            "email": "WataugaTXanimals@yahoo.com",
+            "phone": "8176569614",
+            "address": {
+               "address1": "5203 Watauga Road",
+               "address2": null,
+               "city": "Watauga",
+               "state": "TX",
+               "postcode": "76148",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/44475996"
+            },
+            "type": {
+               "href": "/v2/types/cat"
+            },
+            "organization": {
+               "href": "/v2/organizations/tx934"
+            }
+         }
+      },
+      {
+         "id": 44475973,
+         "organization_id": "VA149",
+         "url": "https://www.petfinder.com/cat/unique-44475973/va/harrisonburg/rockingham-harrisonburg-spca-va149/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Cat",
+         "species": "Cat",
+         "breeds": {
+            "primary": "Dilute Tortoiseshell",
+            "secondary": null,
+            "mixed": false,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Dilute Tortoiseshell",
+            "secondary": null,
+            "tertiary": null
+         },
+         "age": "Adult",
+         "gender": "Female",
+         "size": "Medium",
+         "coat": "Short",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": true,
+            "declawed": false,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": true,
+            "dogs": null,
+            "cats": true
+         },
+         "tags": [],
+         "name": "Unique",
+         "description": "Shelter hours: 10-4 Monday-Saturday along with evening hours on Wednesdays 5-7. \n\nAdoption Fees: \nFemales $105 ($55 of that goes towards...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475973/1/?bust=1555422967&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475973/1/?bust=1555422967&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475973/1/?bust=1555422967&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475973/1/?bust=1555422967"
+            }
+         ],
+         "status": "adoptable",
+         "published_at": "2019-04-16T13:56:19+0000",
+         "contact": {
+            "email": "info@rhspca.org",
+            "phone": "(540) 434-5270",
+            "address": {
+               "address1": "2170 Old Furnace Rd.",
+               "address2": null,
+               "city": "Harrisonburg",
+               "state": "VA",
+               "postcode": "22801",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/44475973"
+            },
+            "type": {
+               "href": "/v2/types/cat"
+            },
+            "organization": {
+               "href": "/v2/organizations/va149"
+            }
+         }
+      },
+      {
+         "id": 44475966,
+         "organization_id": "VA149",
+         "url": "https://www.petfinder.com/cat/snookums-44475966/va/harrisonburg/rockingham-harrisonburg-spca-va149/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Cat",
+         "species": "Cat",
+         "breeds": {
+            "primary": "Domestic Short Hair",
+            "secondary": null,
+            "mixed": false,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Gray & White",
+            "secondary": "Gray / Blue / Silver",
+            "tertiary": "White"
+         },
+         "age": "Adult",
+         "gender": "Female",
+         "size": "Medium",
+         "coat": "Short",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": true,
+            "declawed": false,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": true,
+            "dogs": null,
+            "cats": true
+         },
+         "tags": [],
+         "name": "Snookums",
+         "description": "Shelter hours: 10-4 Monday-Saturday along with evening hours on Wednesdays 5-7. \n\nAdoption Fees: \nFemales $105 ($55 of that goes towards...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475966/2/?bust=1555422786&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475966/2/?bust=1555422786&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475966/2/?bust=1555422786&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475966/2/?bust=1555422786"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475966/1/?bust=1555422782&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475966/1/?bust=1555422782&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475966/1/?bust=1555422782&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475966/1/?bust=1555422782"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475966/3/?bust=1555422817&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475966/3/?bust=1555422817&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475966/3/?bust=1555422817&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475966/3/?bust=1555422817"
+            }
+         ],
+         "status": "adoptable",
+         "published_at": "2019-04-16T13:53:48+0000",
+         "contact": {
+            "email": "info@rhspca.org",
+            "phone": "(540) 434-5270",
+            "address": {
+               "address1": "2170 Old Furnace Rd.",
+               "address2": null,
+               "city": "Harrisonburg",
+               "state": "VA",
+               "postcode": "22801",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/44475966"
+            },
+            "type": {
+               "href": "/v2/types/cat"
+            },
+            "organization": {
+               "href": "/v2/organizations/va149"
+            }
+         }
+      },
+      {
+         "id": 44475957,
+         "organization_id": "VA149",
+         "url": "https://www.petfinder.com/cat/sammy-44475957/va/harrisonburg/rockingham-harrisonburg-spca-va149/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Cat",
+         "species": "Cat",
+         "breeds": {
+            "primary": "Tabby",
+            "secondary": null,
+            "mixed": false,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Cream / Ivory",
+            "secondary": "Tabby (Orange / Red)",
+            "tertiary": null
+         },
+         "age": "Young",
+         "gender": "Male",
+         "size": "Medium",
+         "coat": "Short",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": true,
+            "declawed": false,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": true,
+            "dogs": null,
+            "cats": true
+         },
+         "tags": [
+            "playful",
+            "silly"
+         ],
+         "name": "Sammy",
+         "description": "Shelter hours: 10-4 Monday-Saturday along with evening hours on Wednesdays 5-7. \n\nAdoption Fees: \nFemales $105 ($55 of that goes towards...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475957/1/?bust=1555422583&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475957/1/?bust=1555422583&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475957/1/?bust=1555422583&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475957/1/?bust=1555422583"
+            }
+         ],
+         "status": "adoptable",
+         "published_at": "2019-04-16T13:50:13+0000",
+         "contact": {
+            "email": "info@rhspca.org",
+            "phone": "(540) 434-5270",
+            "address": {
+               "address1": "2170 Old Furnace Rd.",
+               "address2": null,
+               "city": "Harrisonburg",
+               "state": "VA",
+               "postcode": "22801",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/44475957"
+            },
+            "type": {
+               "href": "/v2/types/cat"
+            },
+            "organization": {
+               "href": "/v2/organizations/va149"
+            }
+         }
+      },
+      {
+         "id": 44475951,
+         "organization_id": "VA149",
+         "url": "https://www.petfinder.com/cat/mufasa-44475951/va/harrisonburg/rockingham-harrisonburg-spca-va149/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Cat",
+         "species": "Cat",
+         "breeds": {
+            "primary": "Domestic Long Hair",
+            "secondary": "Tabby",
+            "mixed": true,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Tabby (Orange / Red)",
+            "secondary": null,
+            "tertiary": null
+         },
+         "age": "Senior",
+         "gender": "Male",
+         "size": "Medium",
+         "coat": "Long",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": true,
+            "declawed": false,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": true,
+            "dogs": null,
+            "cats": true
+         },
+         "tags": [
+            "sweet",
+            "chill",
+            "easy going"
+         ],
+         "name": "Mufasa",
+         "description": "My roar might be a little creaky these days, my walk a bit slower, but this old man is still...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475951/1/?bust=1555422434&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475951/1/?bust=1555422434&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475951/1/?bust=1555422434&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475951/1/?bust=1555422434"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475951/2/?bust=1555422437&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475951/2/?bust=1555422437&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475951/2/?bust=1555422437&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475951/2/?bust=1555422437"
+            }
+         ],
+         "status": "adoptable",
+         "published_at": "2019-04-16T13:48:07+0000",
+         "contact": {
+            "email": "info@rhspca.org",
+            "phone": "(540) 434-5270",
+            "address": {
+               "address1": "2170 Old Furnace Rd.",
+               "address2": null,
+               "city": "Harrisonburg",
+               "state": "VA",
+               "postcode": "22801",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/44475951"
+            },
+            "type": {
+               "href": "/v2/types/cat"
+            },
+            "organization": {
+               "href": "/v2/organizations/va149"
+            }
+         }
+      },
+      {
+         "id": 44475948,
+         "organization_id": "VA149",
+         "url": "https://www.petfinder.com/cat/meowdonna-44475948/va/harrisonburg/rockingham-harrisonburg-spca-va149/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Cat",
+         "species": "Cat",
+         "breeds": {
+            "primary": "Domestic Medium Hair",
+            "secondary": "Dilute Tortoiseshell",
+            "mixed": true,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Dilute Tortoiseshell",
+            "secondary": null,
+            "tertiary": null
+         },
+         "age": "Young",
+         "gender": "Female",
+         "size": "Medium",
+         "coat": "Medium",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": true,
+            "declawed": false,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": null,
+            "dogs": null,
+            "cats": true
+         },
+         "tags": [],
+         "name": "Meowdonna",
+         "description": "Shelter hours: 10-4 Monday-Saturday along with evening hours on Wednesdays 5-7. \n\nAdoption Fees: \nFemales $105 ($55 of that goes towards...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475948/1/?bust=1555422277&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475948/1/?bust=1555422277&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475948/1/?bust=1555422277&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475948/1/?bust=1555422277"
+            }
+         ],
+         "status": "adoptable",
+         "published_at": "2019-04-16T13:45:07+0000",
+         "contact": {
+            "email": "info@rhspca.org",
+            "phone": "(540) 434-5270",
+            "address": {
+               "address1": "2170 Old Furnace Rd.",
+               "address2": null,
+               "city": "Harrisonburg",
+               "state": "VA",
+               "postcode": "22801",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/44475948"
+            },
+            "type": {
+               "href": "/v2/types/cat"
+            },
+            "organization": {
+               "href": "/v2/organizations/va149"
+            }
+         }
+      },
+      {
+         "id": 44475947,
+         "organization_id": "ON496",
+         "url": "https://www.petfinder.com/cat/ice-queen-44475947/on/hamilton/pantry-four-paws-on496/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Cat",
+         "species": "Cat",
+         "breeds": {
+            "primary": "Domestic Short Hair",
+            "secondary": null,
+            "mixed": false,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Black & White / Tuxedo",
+            "secondary": null,
+            "tertiary": null
+         },
+         "age": "Adult",
+         "gender": "Female",
+         "size": "Large",
+         "coat": "Short",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": false,
+            "declawed": false,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": null,
+            "dogs": true,
+            "cats": null
+         },
+         "tags": [],
+         "name": "Ice Queen",
+         "description": "Ice Queen came to us after being found outside in the cold, with 4 babies. She is an amazing Mother,...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475947/1/?bust=1555422194&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475947/1/?bust=1555422194&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475947/1/?bust=1555422194&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475947/1/?bust=1555422194"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475947/2/?bust=1555422200&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475947/2/?bust=1555422200&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475947/2/?bust=1555422200&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475947/2/?bust=1555422200"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475947/3/?bust=1555422209&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475947/3/?bust=1555422209&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475947/3/?bust=1555422209&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475947/3/?bust=1555422209"
+            }
+         ],
+         "status": "adoptable",
+         "published_at": "2019-04-16T13:43:50+0000",
+         "contact": {
+            "email": "jupitersgirl@hotmail.ca",
+            "phone": "(905) 528-2855",
+            "address": {
+               "address1": null,
+               "address2": null,
+               "city": "Hamilton",
+               "state": "ON",
+               "postcode": "L8H 5N7",
+               "country": "CA"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/44475947"
+            },
+            "type": {
+               "href": "/v2/types/cat"
+            },
+            "organization": {
+               "href": "/v2/organizations/on496"
+            }
+         }
+      },
+      {
+         "id": 44475944,
+         "organization_id": "VA149",
+         "url": "https://www.petfinder.com/cat/katherine-hep-purrn-44475944/va/harrisonburg/rockingham-harrisonburg-spca-va149/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Cat",
+         "species": "Cat",
+         "breeds": {
+            "primary": "Tabby",
+            "secondary": null,
+            "mixed": false,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Tabby (Orange / Red)",
+            "secondary": "White",
+            "tertiary": null
+         },
+         "age": "Senior",
+         "gender": "Female",
+         "size": "Medium",
+         "coat": "Short",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": true,
+            "declawed": false,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": true,
+            "dogs": null,
+            "cats": true
+         },
+         "tags": [
+            "sweet",
+            "loving"
+         ],
+         "name": "Katherine Hep-Purrn",
+         "description": "Not to brag, but...I&#039;m kinda the best cat ever. I&#039;m laid-back, sweet, and - yes, it&#039;s true! - I LOVE...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475944/1/?bust=1555422152&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475944/1/?bust=1555422152&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475944/1/?bust=1555422152&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475944/1/?bust=1555422152"
+            }
+         ],
+         "status": "adoptable",
+         "published_at": "2019-04-16T13:43:07+0000",
+         "contact": {
+            "email": "info@rhspca.org",
+            "phone": "(540) 434-5270",
+            "address": {
+               "address1": "2170 Old Furnace Rd.",
+               "address2": null,
+               "city": "Harrisonburg",
+               "state": "VA",
+               "postcode": "22801",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/44475944"
+            },
+            "type": {
+               "href": "/v2/types/cat"
+            },
+            "organization": {
+               "href": "/v2/organizations/va149"
+            }
+         }
+      },
+      {
+         "id": 44475939,
+         "organization_id": "VA149",
+         "url": "https://www.petfinder.com/cat/debbie-gibson-44475939/va/harrisonburg/rockingham-harrisonburg-spca-va149/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Cat",
+         "species": "Cat",
+         "breeds": {
+            "primary": "Persian",
+            "secondary": null,
+            "mixed": true,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Black",
+            "secondary": null,
+            "tertiary": null
+         },
+         "age": "Young",
+         "gender": "Female",
+         "size": "Medium",
+         "coat": "Long",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": true,
+            "declawed": false,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": null,
+            "dogs": null,
+            "cats": true
+         },
+         "tags": [
+            "soft",
+            "fluffy"
+         ],
+         "name": "Debbie Gibson",
+         "description": "I might be named after a pop star, but, like a lot of celebrities, I&#039;m a bit on the shy...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475939/1/?bust=1555422006&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475939/1/?bust=1555422006&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475939/1/?bust=1555422006&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475939/1/?bust=1555422006"
+            }
+         ],
+         "status": "adoptable",
+         "published_at": "2019-04-16T13:40:52+0000",
+         "contact": {
+            "email": "info@rhspca.org",
+            "phone": "(540) 434-5270",
+            "address": {
+               "address1": "2170 Old Furnace Rd.",
+               "address2": null,
+               "city": "Harrisonburg",
+               "state": "VA",
+               "postcode": "22801",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/44475939"
+            },
+            "type": {
+               "href": "/v2/types/cat"
+            },
+            "organization": {
+               "href": "/v2/organizations/va149"
+            }
+         }
+      },
+      {
+         "id": 44475935,
+         "organization_id": "VA149",
+         "url": "https://www.petfinder.com/cat/aurora-44475935/va/harrisonburg/rockingham-harrisonburg-spca-va149/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Cat",
+         "species": "Cat",
+         "breeds": {
+            "primary": "Tortoiseshell",
+            "secondary": null,
+            "mixed": false,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Tortoiseshell",
+            "secondary": null,
+            "tertiary": null
+         },
+         "age": "Young",
+         "gender": "Female",
+         "size": "Medium",
+         "coat": "Short",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": true,
+            "declawed": false,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": true,
+            "dogs": null,
+            "cats": true
+         },
+         "tags": [
+            "sweet",
+            "curious"
+         ],
+         "name": "Aurora",
+         "description": "Shelter hours: 10-4 Monday-Saturday along with evening hours on Wednesdays 5-7. \n\nAdoption Fees: \nFemales $105 ($55 of that goes towards...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475935/1/?bust=1555421766&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475935/1/?bust=1555421766&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475935/1/?bust=1555421766&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475935/1/?bust=1555421766"
+            }
+         ],
+         "status": "adoptable",
+         "published_at": "2019-04-16T13:36:38+0000",
+         "contact": {
+            "email": "info@rhspca.org",
+            "phone": "(540) 434-5270",
+            "address": {
+               "address1": "2170 Old Furnace Rd.",
+               "address2": null,
+               "city": "Harrisonburg",
+               "state": "VA",
+               "postcode": "22801",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/44475935"
+            },
+            "type": {
+               "href": "/v2/types/cat"
+            },
+            "organization": {
+               "href": "/v2/organizations/va149"
+            }
+         }
+      },
+      {
+         "id": 44475921,
+         "organization_id": "LA329",
+         "url": "https://www.petfinder.com/cat/evan-44475921/la/baton-rouge/outlaw-kitties-la329/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Cat",
+         "species": "Cat",
+         "breeds": {
+            "primary": "Manx",
+            "secondary": null,
+            "mixed": true,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Black",
+            "secondary": null,
+            "tertiary": null
+         },
+         "age": "Baby",
+         "gender": "Male",
+         "size": "Large",
+         "coat": "Medium",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": true,
+            "declawed": false,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": true,
+            "dogs": null,
+            "cats": true
+         },
+         "tags": [],
+         "name": "Evan",
+         "description": "Super sweet and social, Evan is a wonderful, playful kitten.  His adoption fee is $65.00.  That includes his neuter, first...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475921/1/?bust=1555420946&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475921/1/?bust=1555420946&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475921/1/?bust=1555420946&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475921/1/?bust=1555420946"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475921/2/?bust=1555420963&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475921/2/?bust=1555420963&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475921/2/?bust=1555420963&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44475921/2/?bust=1555420963"
+            }
+         ],
+         "status": "adoptable",
+         "published_at": "2019-04-16T13:24:11+0000",
+         "contact": {
+            "email": "clr_210@yahoo.com",
+            "phone": "225-978-5200",
+            "address": {
+               "address1": null,
+               "address2": null,
+               "city": "Baton Rouge",
+               "state": "LA",
+               "postcode": "70806",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/44475921"
+            },
+            "type": {
+               "href": "/v2/types/cat"
+            },
+            "organization": {
+               "href": "/v2/organizations/la329"
+            }
+         }
+      }
+   ],
+   "pagination": {
+      "count_per_page": 20,
+      "total_count": 2554293,
+      "current_page": 1,
+      "total_pages": 127715,
+      "_links": {
+         "next": {
+            "href": "/v2/animals?type=cat&page=2"
+         }
+      }
+   }
+}

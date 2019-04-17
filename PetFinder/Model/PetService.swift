@@ -20,46 +20,26 @@ class PetService {
    }
    
    var parameters = Parameters()
-   var token = TokenNumber()
-   
-   func checkToken() {
-      let request = createRequest(with: token.code)
-      let session = URLSession.shared
-      task?.cancel()
-      task = session.dataTask(with: request){ (data, response, error) in
-         DispatchQueue.main.async {
-            guard let response = response as? HTTPURLResponse else { return }
-            if response.statusCode == 401 {
-               self.token.newToken()
-            } else {
-               return
-            }
-         }
-      }
-      task?.resume()
-   }
+   var token = TokenService()
    
    func getPets(_ callback: @escaping (Bool, Any?) -> Void) {
-      let request = createRequest(with: token.code)
-      let session = URLSession.shared
-      task?.cancel()
+      let request = createRequest(with: parameters.code)
       task = session.dataTask(with: request){ (data, response, error) in
          DispatchQueue.main.async {
             guard let response = response as? HTTPURLResponse else { return callback(false, nil) }
             if response.statusCode == 401 {
                self.checkToken()
-               self.task?.cancel()
             } else {
                guard let data = data, error == nil else { return callback(false, nil) }
                do {
                   let decoder = JSONDecoder()
                   decoder.keyDecodingStrategy = .convertFromSnakeCase
-                  if request.description.contains(self.parameters.type) {
+                  if !request.description.contains(self.parameters.id) {
                      let response = try decoder.decode(Pets.self, from: data)
                      callback(true, response.animals)
                   } else if request.description.contains(self.parameters.id) {
                      let response = try decoder.decode(Pets.self, from: data)
-                     callback(true,response.animal)
+                     callback(true, response.animal)
                   }
                } catch { print("JSON ERROR") }
             }
@@ -79,7 +59,6 @@ class PetService {
                                timeoutInterval: 10.0)
       request.httpMethod = "GET"
       request.allHTTPHeaderFields = headers
-      print(request)
       return request
    }
    
@@ -100,5 +79,31 @@ class PetService {
       }
       let stringParameters = parameters.type + values.replacingOccurrences(of: ",&", with: "&")
       return  stringParameters
+   }
+   
+   func checkToken() {
+      let request = createRequest(with: parameters.code)
+      task = session.dataTask(with: request){ (data, response, error) in
+         DispatchQueue.main.async {
+            guard let response = response as? HTTPURLResponse else { return }
+            if response.statusCode == 401 {
+               self.getNewToken()
+            } else {
+               return
+            }
+         }
+      }
+      task?.resume()
+   }
+   
+   func getNewToken() {
+      token.getToken { (success, token) in
+         if success, let token = token {
+            print("NEW TOKEN :\n\(token)\n")
+            self.parameters.code = token
+         } else {
+            
+         }
+      }
    }
 }

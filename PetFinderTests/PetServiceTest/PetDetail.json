@@ -1,0 +1,72 @@
+{
+   "animal": {
+      "id": 44482552,
+      "organization_id": "ON457",
+      "url": "https://www.petfinder.com/dog/zeus-44482552/on/st-catharines/pets-alive-niagara-on457/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+         "primary": "Husky",
+         "secondary": "Shepherd",
+         "mixed": true,
+         "unknown": false
+      },
+      "colors": {
+         "primary": "White / Cream",
+         "secondary": null,
+         "tertiary": null
+      },
+      "age": "Adult",
+      "gender": "Male",
+      "size": "Medium",
+      "coat": "Medium",
+      "attributes": {
+         "spayed_neutered": true,
+         "house_trained": false,
+         "declawed": null,
+         "special_needs": false,
+         "shots_current": true
+      },
+      "environment": {
+         "children": null,
+         "dogs": true,
+         "cats": null
+      },
+      "tags": [],
+      "name": "Zeus",
+      "description": "***Please be advised that Kijiji posts from Petfinder automatically. Please check our website at http://petsaliveniagara.ca/adopt/ to confirm if the dog...",
+      "photos": [
+         {
+            "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44482552/1/?bust=1555490850&width=100",
+            "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44482552/1/?bust=1555490850&width=300",
+            "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44482552/1/?bust=1555490850&width=600",
+            "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44482552/1/?bust=1555490850"
+         }
+      ],
+      "status": "adoptable",
+      "published_at": "2019-04-17T08:48:16+0000",
+      "contact": {
+         "email": "petsaliveniagara@gmail.com",
+         "phone": null,
+         "address": {
+            "address1": null,
+            "address2": null,
+            "city": "St. Catharines",
+            "state": "ON",
+            "postcode": "L2R 7J9",
+            "country": "CA"
+         }
+      },
+      "_links": {
+         "self": {
+            "href": "/v2/animals/44482552"
+         },
+         "type": {
+            "href": "/v2/types/dog"
+         },
+         "organization": {
+            "href": "/v2/organizations/on457"
+         }
+      }
+   }
+}

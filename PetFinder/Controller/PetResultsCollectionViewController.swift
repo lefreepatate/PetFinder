@@ -29,7 +29,7 @@ class PetsResultsCollectionViewController: UICollectionViewController {
    }
    func petResultsSettings() {
       PetService.shared.getPets() { (success, response) in
-         if success, let response = response as! [Animal]?{
+         if success, let response = response as! [Animal]? {
             self.animals = response
             self.petsCollectionView.reloadData()
             self.toggleActivityIndicator(shown: false)

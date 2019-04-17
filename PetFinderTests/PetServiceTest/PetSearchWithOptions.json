@@ -1,0 +1,1667 @@
+{
+   "animals": [
+      {
+         "id": 44139223,
+         "organization_id": "NY1218",
+         "url": "https://www.petfinder.com/dog/cocoa-44139223/ny/freeville/theres-hope-dog-rescue-ny1218/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Dog",
+         "species": "Dog",
+         "breeds": {
+            "primary": "German Shepherd Dog",
+            "secondary": "Boxer",
+            "mixed": true,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Bicolor",
+            "secondary": null,
+            "tertiary": null
+         },
+         "age": "Young",
+         "gender": "Female",
+         "size": "Medium",
+         "coat": "Short",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": true,
+            "declawed": null,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": true,
+            "dogs": true,
+            "cats": true
+         },
+         "tags": [
+            "loving",
+            "playful",
+            "smart",
+            "sweet",
+            "loyal",
+            "active",
+            ""
+         ],
+         "name": "Cocoa",
+         "description": "Name: Cocoa   \nBest Guess for Breed: Shepherd Mix\nBest Guess for Age: 1 year    \nSEX: female\nApproximate Weight: 40 lbs....",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44139223/1/?bust=1551548184&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44139223/1/?bust=1551548184&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44139223/1/?bust=1551548184&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44139223/1/?bust=1551548184"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44139223/2/?bust=1551548187&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44139223/2/?bust=1551548187&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44139223/2/?bust=1551548187&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44139223/2/?bust=1551548187"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44139223/3/?bust=1551548190&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44139223/3/?bust=1551548190&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44139223/3/?bust=1551548190&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44139223/3/?bust=1551548190"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44139223/4/?bust=1551548193&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44139223/4/?bust=1551548193&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44139223/4/?bust=1551548193&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44139223/4/?bust=1551548193"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44139223/5/?bust=1551548198&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44139223/5/?bust=1551548198&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44139223/5/?bust=1551548198&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44139223/5/?bust=1551548198"
+            }
+         ],
+         "status": "adoptable",
+         "published_at": "2019-03-02T17:37:39+0000",
+         "contact": {
+            "email": "thereshopedogrescue@yahoo.com",
+            "phone": null,
+            "address": {
+               "address1": null,
+               "address2": null,
+               "city": "Freeville",
+               "state": "NY",
+               "postcode": "13068",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/44139223"
+            },
+            "type": {
+               "href": "/v2/types/dog"
+            },
+            "organization": {
+               "href": "/v2/organizations/ny1218"
+            }
+         }
+      },
+      {
+         "id": 43919940,
+         "organization_id": "NY91",
+         "url": "https://www.petfinder.com/dog/luna-43919940/ny/auburn/finger-lakes-spca-of-central-new-york-ny91/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Dog",
+         "species": "Dog",
+         "breeds": {
+            "primary": "German Shepherd Dog",
+            "secondary": "Yellow Labrador Retriever",
+            "mixed": true,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Apricot / Beige",
+            "secondary": null,
+            "tertiary": null
+         },
+         "age": "Young",
+         "gender": "Female",
+         "size": "Large",
+         "coat": "Short",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": false,
+            "declawed": null,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": true,
+            "dogs": true,
+            "cats": null
+         },
+         "tags": [],
+         "name": "LUNA",
+         "description": "Luna came to the Shelter as an owner surrender. She is about 1 year of age. She is very sweet...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43919940/1/?bust=1549102636&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43919940/1/?bust=1549102636&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43919940/1/?bust=1549102636&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43919940/1/?bust=1549102636"
+            }
+         ],
+         "status": "adoptable",
+         "published_at": "2019-02-02T10:23:32+0000",
+         "contact": {
+            "email": "flspca_cny@yahoo.com",
+            "phone": "315-253-5841",
+            "address": {
+               "address1": "41 York Street",
+               "address2": null,
+               "city": "Auburn",
+               "state": "NY",
+               "postcode": "13021",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/43919940"
+            },
+            "type": {
+               "href": "/v2/types/dog"
+            },
+            "organization": {
+               "href": "/v2/organizations/ny91"
+            }
+         }
+      },
+      {
+         "id": 43899866,
+         "organization_id": "NY512",
+         "url": "https://www.petfinder.com/dog/bella-43899866/ny/syracuse/central-new-york-spca-ny512/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Dog",
+         "species": "Dog",
+         "breeds": {
+            "primary": "German Shepherd Dog",
+            "secondary": "Rottweiler",
+            "mixed": true,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Black",
+            "secondary": "Brown / Chocolate",
+            "tertiary": null
+         },
+         "age": "Young",
+         "gender": "Female",
+         "size": "Large",
+         "coat": "Short",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": false,
+            "declawed": null,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": null,
+            "dogs": null,
+            "cats": null
+         },
+         "tags": [],
+         "name": "Bella",
+         "description": "Bella was surrendered because she is too big for her owner.",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43899866/1/?bust=1548896863&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43899866/1/?bust=1548896863&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43899866/1/?bust=1548896863&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43899866/1/?bust=1548896863"
+            }
+         ],
+         "status": "adopted",
+         "published_at": "2019-01-31T01:09:15+0000",
+         "contact": {
+            "email": "mail@cnyspca.org",
+            "phone": "(315) 454-4479",
+            "address": {
+               "address1": "5878 East Molloy Road",
+               "address2": null,
+               "city": "Syracuse",
+               "state": "NY",
+               "postcode": "13211",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/43899866"
+            },
+            "type": {
+               "href": "/v2/types/dog"
+            },
+            "organization": {
+               "href": "/v2/organizations/ny512"
+            }
+         }
+      },
+      {
+         "id": 43693208,
+         "organization_id": "MS166",
+         "url": "https://www.petfinder.com/dog/tilly-gorgeous-girl-very-happy-43693208/ny/glenmont/mercer-animal-rescue-ms166/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Dog",
+         "species": "Dog",
+         "breeds": {
+            "primary": "German Shepherd Dog",
+            "secondary": null,
+            "mixed": true,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Black",
+            "secondary": "Golden",
+            "tertiary": null
+         },
+         "age": "Young",
+         "gender": "Female",
+         "size": "Medium",
+         "coat": "Short",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": true,
+            "declawed": null,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": true,
+            "dogs": true,
+            "cats": true
+         },
+         "tags": [],
+         "name": "Tilly - gorgeous girl, very happy",
+         "description": "Tilly is our 9-10 month old shepherd mix. Tilly is the MOST LOVABLE baby. If you are looking for a...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43693208/1/?bust=1546633895&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43693208/1/?bust=1546633895&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43693208/1/?bust=1546633895&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43693208/1/?bust=1546633895"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43693208/2/?bust=1546633897&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43693208/2/?bust=1546633897&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43693208/2/?bust=1546633897&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43693208/2/?bust=1546633897"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43693208/3/?bust=1546633899&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43693208/3/?bust=1546633899&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43693208/3/?bust=1546633899&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43693208/3/?bust=1546633899"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43693208/4/?bust=1546633901&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43693208/4/?bust=1546633901&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43693208/4/?bust=1546633901&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43693208/4/?bust=1546633901"
+            }
+         ],
+         "status": "adopted",
+         "published_at": "2019-01-04T20:31:57+0000",
+         "contact": {
+            "email": "merceranimalrescue@gmail.com",
+            "phone": "901-651-6322",
+            "address": {
+               "address1": null,
+               "address2": null,
+               "city": "Glenmont",
+               "state": "NY",
+               "postcode": "12077",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/43693208"
+            },
+            "type": {
+               "href": "/v2/types/dog"
+            },
+            "organization": {
+               "href": "/v2/organizations/ms166"
+            }
+         }
+      },
+      {
+         "id": 43650921,
+         "organization_id": "NY848",
+         "url": "https://www.petfinder.com/dog/luna-43650921/ny/albany/forever-home-dog-rescue-of-the-capital-district-ny848/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Dog",
+         "species": "Dog",
+         "breeds": {
+            "primary": "German Shepherd Dog",
+            "secondary": "Hound",
+            "mixed": true,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Black",
+            "secondary": "Yellow / Tan / Blond / Fawn",
+            "tertiary": null
+         },
+         "age": "Young",
+         "gender": "Female",
+         "size": "Medium",
+         "coat": "Short",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": false,
+            "declawed": null,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": null,
+            "dogs": true,
+            "cats": true
+         },
+         "tags": [],
+         "name": "Luna",
+         "description": "Forever Home Dog Rescue consists of all volunteer’s   The ONLY time to meet our dog’s is during our adoption event...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43650921/3/?bust=1546735136&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43650921/3/?bust=1546735136&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43650921/3/?bust=1546735136&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43650921/3/?bust=1546735136"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43650921/1/?bust=1546095823&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43650921/1/?bust=1546095823&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43650921/1/?bust=1546095823&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43650921/1/?bust=1546095823"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43650921/2/?bust=1546735094&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43650921/2/?bust=1546735094&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43650921/2/?bust=1546735094&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43650921/2/?bust=1546735094"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43650921/4/?bust=1546735186&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43650921/4/?bust=1546735186&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43650921/4/?bust=1546735186&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43650921/4/?bust=1546735186"
+            }
+         ],
+         "status": "adopted",
+         "published_at": "2018-12-29T15:04:04+0000",
+         "contact": {
+            "email": "Jeans-haven@nycap.rr.com",
+            "phone": null,
+            "address": {
+               "address1": null,
+               "address2": null,
+               "city": "Albany",
+               "state": "NY",
+               "postcode": "12205",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/43650921"
+            },
+            "type": {
+               "href": "/v2/types/dog"
+            },
+            "organization": {
+               "href": "/v2/organizations/ny848"
+            }
+         }
+      },
+      {
+         "id": 43621386,
+         "organization_id": "NY1325",
+         "url": "https://www.petfinder.com/dog/cheyenne-43621386/ny/delmar/german-shepherd-rescue-of-ny-inc-ny1325/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Dog",
+         "species": "Dog",
+         "breeds": {
+            "primary": "German Shepherd Dog",
+            "secondary": null,
+            "mixed": false,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Black",
+            "secondary": "Yellow / Tan / Blond / Fawn",
+            "tertiary": null
+         },
+         "age": "Young",
+         "gender": "Female",
+         "size": "Medium",
+         "coat": "Medium",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": true,
+            "declawed": null,
+            "special_needs": true,
+            "shots_current": true
+         },
+         "environment": {
+            "children": true,
+            "dogs": true,
+            "cats": null
+         },
+         "tags": [],
+         "name": "Cheyenne",
+         "description": "Please visit our website for adoption fees and adoption process: www.GSRNY.org, and if still interested, please submit an adoption application....",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43621386/1/?bust=1545682139&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43621386/1/?bust=1545682139&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43621386/1/?bust=1545682139&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43621386/1/?bust=1545682139"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43621386/2/?bust=1545682141&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43621386/2/?bust=1545682141&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43621386/2/?bust=1545682141&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43621386/2/?bust=1545682141"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43621386/3/?bust=1545682142&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43621386/3/?bust=1545682142&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43621386/3/?bust=1545682142&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43621386/3/?bust=1545682142"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43621386/4/?bust=1545682144&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43621386/4/?bust=1545682144&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43621386/4/?bust=1545682144&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43621386/4/?bust=1545682144"
+            }
+         ],
+         "status": "adoptable",
+         "published_at": "2018-12-24T20:14:04+0000",
+         "contact": {
+            "email": "GSRESCUENY@gmail.com",
+            "phone": null,
+            "address": {
+               "address1": "P.O. Box 242",
+               "address2": null,
+               "city": "Delmar",
+               "state": "NY",
+               "postcode": "12054",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/43621386"
+            },
+            "type": {
+               "href": "/v2/types/dog"
+            },
+            "organization": {
+               "href": "/v2/organizations/ny1325"
+            }
+         }
+      },
+      {
+         "id": 43244203,
+         "organization_id": "NY1325",
+         "url": "https://www.petfinder.com/dog/ari-and-hank-43244203/ny/delmar/german-shepherd-rescue-of-ny-inc-ny1325/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Dog",
+         "species": "Dog",
+         "breeds": {
+            "primary": "German Shepherd Dog",
+            "secondary": null,
+            "mixed": false,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Black",
+            "secondary": "Yellow / Tan / Blond / Fawn",
+            "tertiary": null
+         },
+         "age": "Young",
+         "gender": "Female",
+         "size": "Large",
+         "coat": "Medium",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": true,
+            "declawed": null,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": false,
+            "dogs": null,
+            "cats": false
+         },
+         "tags": [],
+         "name": "Ari and Hank",
+         "description": "Please visit our website for adoption fees and adoption process: www.GSRNY.org, and if still interested, please submit an adoption application....",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43244203/1/?bust=1544718291&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43244203/1/?bust=1544718291&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43244203/1/?bust=1544718291&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43244203/1/?bust=1544718291"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43244203/2/?bust=1544718291&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43244203/2/?bust=1544718291&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43244203/2/?bust=1544718291&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43244203/2/?bust=1544718291"
+            }
+         ],
+         "status": "adopted",
+         "published_at": "2018-11-09T00:32:49+0000",
+         "contact": {
+            "email": "GSRESCUENY@gmail.com",
+            "phone": null,
+            "address": {
+               "address1": "P.O. Box 242",
+               "address2": null,
+               "city": "Delmar",
+               "state": "NY",
+               "postcode": "12054",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/43244203"
+            },
+            "type": {
+               "href": "/v2/types/dog"
+            },
+            "organization": {
+               "href": "/v2/organizations/ny1325"
+            }
+         }
+      },
+      {
+         "id": 43211138,
+         "organization_id": "NY480",
+         "url": "https://www.petfinder.com/dog/cora-43211138/ny/albany/homeward-bound-dog-rescue-of-ny-ny480/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Dog",
+         "species": "Dog",
+         "breeds": {
+            "primary": "Anatolian Shepherd",
+            "secondary": "German Shepherd Dog",
+            "mixed": true,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Black",
+            "secondary": "Gray / Blue / Silver",
+            "tertiary": "White / Cream"
+         },
+         "age": "Young",
+         "gender": "Female",
+         "size": "Large",
+         "coat": "Short",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": false,
+            "declawed": null,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": true,
+            "dogs": true,
+            "cats": null
+         },
+         "tags": [],
+         "name": "Cora",
+         "description": "**WE ARE ALWAYS IN NEED OF FOSTER HOMES**  Homeward Bound Dog Rescue is an all volunteer rescue organization and all...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43211138/3/?bust=1541969215&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43211138/3/?bust=1541969215&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43211138/3/?bust=1541969215&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43211138/3/?bust=1541969215"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43211138/1/?bust=1541430066&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43211138/1/?bust=1541430066&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43211138/1/?bust=1541430066&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43211138/1/?bust=1541430066"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43211138/2/?bust=1541430072&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43211138/2/?bust=1541430072&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43211138/2/?bust=1541430072&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43211138/2/?bust=1541430072"
+            }
+         ],
+         "status": "adopted",
+         "published_at": "2018-11-05T15:31:14+0000",
+         "contact": {
+            "email": "info@homewardbounddogrescue.com",
+            "phone": "(518) 424-1738",
+            "address": {
+               "address1": "P.O. Box 5782",
+               "address2": null,
+               "city": "Albany",
+               "state": "NY",
+               "postcode": "12205",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/43211138"
+            },
+            "type": {
+               "href": "/v2/types/dog"
+            },
+            "organization": {
+               "href": "/v2/organizations/ny480"
+            }
+         }
+      },
+      {
+         "id": 43085623,
+         "organization_id": "NY966",
+         "url": "https://www.petfinder.com/dog/allie-43085623/ny/masonville/pibbles-and-more-animal-rescue-ny966/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Dog",
+         "species": "Dog",
+         "breeds": {
+            "primary": "German Shepherd Dog",
+            "secondary": "Pit Bull Terrier",
+            "mixed": true,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Black",
+            "secondary": "Yellow / Tan / Blond / Fawn",
+            "tertiary": null
+         },
+         "age": "Young",
+         "gender": "Female",
+         "size": "Medium",
+         "coat": "Short",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": true,
+            "declawed": null,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": true,
+            "dogs": true,
+            "cats": true
+         },
+         "tags": [],
+         "name": "Allie",
+         "description": "Allie is a pretty little gal, who was saved from a NC shelter due to Hurricane Florence. Local shelters were...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43085623/1/?bust=1540251969&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43085623/1/?bust=1540251969&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43085623/1/?bust=1540251969&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43085623/1/?bust=1540251969"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43085623/2/?bust=1540251972&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43085623/2/?bust=1540251972&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43085623/2/?bust=1540251972&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43085623/2/?bust=1540251972"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43085623/3/?bust=1540251974&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43085623/3/?bust=1540251974&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43085623/3/?bust=1540251974&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43085623/3/?bust=1540251974"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43085623/4/?bust=1540251976&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43085623/4/?bust=1540251976&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43085623/4/?bust=1540251976&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43085623/4/?bust=1540251976"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43085623/5/?bust=1540251979&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43085623/5/?bust=1540251979&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43085623/5/?bust=1540251979&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43085623/5/?bust=1540251979"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43085623/6/?bust=1540251982&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43085623/6/?bust=1540251982&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43085623/6/?bust=1540251982&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43085623/6/?bust=1540251982"
+            }
+         ],
+         "status": "adopted",
+         "published_at": "2018-10-22T23:46:57+0000",
+         "contact": {
+            "email": "pibblesrus33@gmail.com",
+            "phone": "347-613-2782",
+            "address": {
+               "address1": null,
+               "address2": null,
+               "city": "Masonville",
+               "state": "NY",
+               "postcode": "13804",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/43085623"
+            },
+            "type": {
+               "href": "/v2/types/dog"
+            },
+            "organization": {
+               "href": "/v2/organizations/ny966"
+            }
+         }
+      },
+      {
+         "id": 43002135,
+         "organization_id": "NY1325",
+         "url": "https://www.petfinder.com/dog/darya-43002135/ny/delmar/german-shepherd-rescue-of-ny-inc-ny1325/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Dog",
+         "species": "Dog",
+         "breeds": {
+            "primary": "German Shepherd Dog",
+            "secondary": null,
+            "mixed": false,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Black",
+            "secondary": null,
+            "tertiary": null
+         },
+         "age": "Young",
+         "gender": "Female",
+         "size": "Large",
+         "coat": "Medium",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": true,
+            "declawed": null,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": true,
+            "dogs": true,
+            "cats": true
+         },
+         "tags": [],
+         "name": "Darya",
+         "description": "Please visit our website for adoption fees and adoption process: www.GSRNY.org, and if still interested, please submit an adoption application....",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43002135/1/?bust=1539373402&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43002135/1/?bust=1539373402&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43002135/1/?bust=1539373402&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43002135/1/?bust=1539373402"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43002135/2/?bust=1539373448&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43002135/2/?bust=1539373448&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43002135/2/?bust=1539373448&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43002135/2/?bust=1539373448"
+            }
+         ],
+         "status": "adopted",
+         "published_at": "2018-10-12T19:48:17+0000",
+         "contact": {
+            "email": "GSRESCUENY@gmail.com",
+            "phone": null,
+            "address": {
+               "address1": "P.O. Box 242",
+               "address2": null,
+               "city": "Delmar",
+               "state": "NY",
+               "postcode": "12054",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/43002135"
+            },
+            "type": {
+               "href": "/v2/types/dog"
+            },
+            "organization": {
+               "href": "/v2/organizations/ny1325"
+            }
+         }
+      },
+      {
+         "id": 43002101,
+         "organization_id": "NY1325",
+         "url": "https://www.petfinder.com/dog/bonnie-43002101/ny/delmar/german-shepherd-rescue-of-ny-inc-ny1325/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Dog",
+         "species": "Dog",
+         "breeds": {
+            "primary": "German Shepherd Dog",
+            "secondary": null,
+            "mixed": false,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Black",
+            "secondary": "Yellow / Tan / Blond / Fawn",
+            "tertiary": null
+         },
+         "age": "Young",
+         "gender": "Female",
+         "size": "Large",
+         "coat": "Medium",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": true,
+            "declawed": null,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": true,
+            "dogs": true,
+            "cats": null
+         },
+         "tags": [],
+         "name": "Bonnie",
+         "description": "Please visit our website for adoption fees and adoption process: www.GSRNY.org, and if still interested, please submit an adoption application....",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43002101/2/?bust=1539372867&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43002101/2/?bust=1539372867&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43002101/2/?bust=1539372867&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/43002101/2/?bust=1539372867"
+            }
+         ],
+         "status": "adopted",
+         "published_at": "2018-10-12T19:41:08+0000",
+         "contact": {
+            "email": "GSRESCUENY@gmail.com",
+            "phone": null,
+            "address": {
+               "address1": "P.O. Box 242",
+               "address2": null,
+               "city": "Delmar",
+               "state": "NY",
+               "postcode": "12054",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/43002101"
+            },
+            "type": {
+               "href": "/v2/types/dog"
+            },
+            "organization": {
+               "href": "/v2/organizations/ny1325"
+            }
+         }
+      },
+      {
+         "id": 42993717,
+         "organization_id": "NY740",
+         "url": "https://www.petfinder.com/dog/gretchen-42993717/ny/manlius/dgi-paws-ny740/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Dog",
+         "species": "Dog",
+         "breeds": {
+            "primary": "Labrador Retriever",
+            "secondary": "German Shepherd Dog",
+            "mixed": true,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Black",
+            "secondary": "Brindle",
+            "tertiary": null
+         },
+         "age": "Young",
+         "gender": "Female",
+         "size": "Medium",
+         "coat": "Short",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": true,
+            "declawed": null,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": true,
+            "dogs": true,
+            "cats": true
+         },
+         "tags": [],
+         "name": "Gretchen",
+         "description": "Thank you for choosing rescue.  To begin the process please fill out an application here:  http://goo.gl/forms/XPuk6w9615GXqo0x2.  \n\nThis is my foster...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42993717/1/?bust=1539294343&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42993717/1/?bust=1539294343&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42993717/1/?bust=1539294343&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42993717/1/?bust=1539294343"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42993717/2/?bust=1539294346&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42993717/2/?bust=1539294346&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42993717/2/?bust=1539294346&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42993717/2/?bust=1539294346"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42993717/3/?bust=1539294350&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42993717/3/?bust=1539294350&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42993717/3/?bust=1539294350&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42993717/3/?bust=1539294350"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42993717/4/?bust=1539294357&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42993717/4/?bust=1539294357&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42993717/4/?bust=1539294357&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42993717/4/?bust=1539294357"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42993717/5/?bust=1539294359&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42993717/5/?bust=1539294359&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42993717/5/?bust=1539294359&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42993717/5/?bust=1539294359"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42993717/6/?bust=1539294364&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42993717/6/?bust=1539294364&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42993717/6/?bust=1539294364&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42993717/6/?bust=1539294364"
+            }
+         ],
+         "status": "adopted",
+         "published_at": "2018-10-11T21:46:19+0000",
+         "contact": {
+            "email": "DogGoneInn@Yahoo.com",
+            "phone": "(315) 728-9344",
+            "address": {
+               "address1": "315 Fayette Street",
+               "address2": "Suite 7",
+               "city": "Manlius",
+               "state": "NY",
+               "postcode": "13104",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/42993717"
+            },
+            "type": {
+               "href": "/v2/types/dog"
+            },
+            "organization": {
+               "href": "/v2/organizations/ny740"
+            }
+         }
+      },
+      {
+         "id": 42903186,
+         "organization_id": "NY360",
+         "url": "https://www.petfinder.com/dog/stormy-42903186/ny/sprakers/ayres-memorial-animal-shelter-ny360/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Dog",
+         "species": "Dog",
+         "breeds": {
+            "primary": "German Shepherd Dog",
+            "secondary": null,
+            "mixed": false,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Bicolor",
+            "secondary": null,
+            "tertiary": null
+         },
+         "age": "Young",
+         "gender": "Female",
+         "size": "Large",
+         "coat": null,
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": true,
+            "declawed": null,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": null,
+            "dogs": null,
+            "cats": false
+         },
+         "tags": [],
+         "name": "Stormy",
+         "description": "A stunning 4 year old spayed female German Shepherd.  \nThis beauty is Stormy. She is housebroken, rides great in the...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42903186/1/?bust=1538428244&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42903186/1/?bust=1538428244&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42903186/1/?bust=1538428244&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42903186/1/?bust=1538428244"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42903186/2/?bust=1538428271&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42903186/2/?bust=1538428271&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42903186/2/?bust=1538428271&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42903186/2/?bust=1538428271"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42903186/3/?bust=1538428280&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42903186/3/?bust=1538428280&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42903186/3/?bust=1538428280&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42903186/3/?bust=1538428280"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42903186/4/?bust=1538428289&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42903186/4/?bust=1538428289&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42903186/4/?bust=1538428289&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42903186/4/?bust=1538428289"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42903186/5/?bust=1538428314&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42903186/5/?bust=1538428314&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42903186/5/?bust=1538428314&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42903186/5/?bust=1538428314"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42903186/6/?bust=1538428314&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42903186/6/?bust=1538428314&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42903186/6/?bust=1538428314&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42903186/6/?bust=1538428314"
+            }
+         ],
+         "status": "adopted",
+         "published_at": "2018-10-01T21:13:02+0000",
+         "contact": {
+            "email": "ayres673@hotmail.com",
+            "phone": "(518) 673-5670",
+            "address": {
+               "address1": "133 Hilltop Road",
+               "address2": null,
+               "city": "Sprakers",
+               "state": "NY",
+               "postcode": "12166",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/42903186"
+            },
+            "type": {
+               "href": "/v2/types/dog"
+            },
+            "organization": {
+               "href": "/v2/organizations/ny360"
+            }
+         }
+      },
+      {
+         "id": 42877732,
+         "organization_id": "NY192",
+         "url": "https://www.petfinder.com/dog/riley-42877732/ny/cortland/cortland-community-spca-ny192/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Dog",
+         "species": "Dog",
+         "breeds": {
+            "primary": "German Shepherd Dog",
+            "secondary": "Husky",
+            "mixed": true,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Black",
+            "secondary": "Yellow / Tan / Blond / Fawn",
+            "tertiary": null
+         },
+         "age": "Young",
+         "gender": "Female",
+         "size": "Medium",
+         "coat": "Short",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": true,
+            "declawed": null,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": true,
+            "dogs": false,
+            "cats": true
+         },
+         "tags": [],
+         "name": "Riley",
+         "description": "Riley is only 10 months old and weighs 55 pounds.  She was surrendered by her owner&#039;s for financial and health...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42877732/1/?bust=1538144870&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42877732/1/?bust=1538144870&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42877732/1/?bust=1538144870&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42877732/1/?bust=1538144870"
+            }
+         ],
+         "status": "adopted",
+         "published_at": "2018-09-28T14:34:26+0000",
+         "contact": {
+            "email": "ccspca@cortlandspca.org",
+            "phone": "(607) 753-9386",
+            "address": {
+               "address1": "879 McLean Road",
+               "address2": null,
+               "city": "Cortland",
+               "state": "NY",
+               "postcode": "13045",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/42877732"
+            },
+            "type": {
+               "href": "/v2/types/dog"
+            },
+            "organization": {
+               "href": "/v2/organizations/ny192"
+            }
+         }
+      },
+      {
+         "id": 42460105,
+         "organization_id": "NY250",
+         "url": "https://www.petfinder.com/dog/holly-42460105/ny/schenectady/good-shepherd-k9-rescue-k9adopt-ny250/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Dog",
+         "species": "Dog",
+         "breeds": {
+            "primary": "Labrador Retriever",
+            "secondary": "German Shepherd Dog",
+            "mixed": true,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Brown / Chocolate",
+            "secondary": null,
+            "tertiary": null
+         },
+         "age": "Young",
+         "gender": "Female",
+         "size": "Medium",
+         "coat": "Medium",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": true,
+            "declawed": null,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": null,
+            "dogs": true,
+            "cats": null
+         },
+         "tags": [],
+         "name": "Holly",
+         "description": "HOLLY is a beautiful  girl, her and her sister were rescued from a shelter and are now safe in our...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42460105/1/?bust=1548635258&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42460105/1/?bust=1548635258&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42460105/1/?bust=1548635258&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42460105/1/?bust=1548635258"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42460105/2/?bust=1548635258&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42460105/2/?bust=1548635258&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42460105/2/?bust=1548635258&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42460105/2/?bust=1548635258"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42460105/3/?bust=1548635259&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42460105/3/?bust=1548635259&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42460105/3/?bust=1548635259&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42460105/3/?bust=1548635259"
+            }
+         ],
+         "status": "adopted",
+         "published_at": "2018-08-13T00:49:53+0000",
+         "contact": {
+            "email": "sherry427@verizon.net",
+            "phone": "518-393-0755  ",
+            "address": {
+               "address1": null,
+               "address2": null,
+               "city": "Schenectady",
+               "state": "NY",
+               "postcode": "12306",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/42460105"
+            },
+            "type": {
+               "href": "/v2/types/dog"
+            },
+            "organization": {
+               "href": "/v2/organizations/ny250"
+            }
+         }
+      },
+      {
+         "id": 42438334,
+         "organization_id": "NY1378",
+         "url": "https://www.petfinder.com/dog/kona-42438334/ny/ballston-spa/saratoga-county-animal-shelter-ny1378/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Dog",
+         "species": "Dog",
+         "breeds": {
+            "primary": "German Shepherd Dog",
+            "secondary": null,
+            "mixed": false,
+            "unknown": false
+         },
+         "colors": {
+            "primary": null,
+            "secondary": null,
+            "tertiary": null
+         },
+         "age": "Young",
+         "gender": "Female",
+         "size": "Large",
+         "coat": null,
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": false,
+            "declawed": null,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": true,
+            "dogs": true,
+            "cats": true
+         },
+         "tags": [],
+         "name": "Kona",
+         "description": "Meet Kona! Kona is a pure bred German Shepherd, with the energy and brain to match! Around 2 years old,...",
+         "photos": [],
+         "status": "adopted",
+         "published_at": "2018-08-10T18:19:53+0000",
+         "contact": {
+            "email": "KRussell@saratogacountyny.gov",
+            "phone": "(518) 885-4113",
+            "address": {
+               "address1": null,
+               "address2": null,
+               "city": "Ballston Spa",
+               "state": "NY",
+               "postcode": "12020",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/42438334"
+            },
+            "type": {
+               "href": "/v2/types/dog"
+            },
+            "organization": {
+               "href": "/v2/organizations/ny1378"
+            }
+         }
+      },
+      {
+         "id": 42432722,
+         "organization_id": "NY1325",
+         "url": "https://www.petfinder.com/dog/nyra-42432722/ny/delmar/german-shepherd-rescue-of-ny-inc-ny1325/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Dog",
+         "species": "Dog",
+         "breeds": {
+            "primary": "German Shepherd Dog",
+            "secondary": null,
+            "mixed": false,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Sable",
+            "secondary": null,
+            "tertiary": null
+         },
+         "age": "Young",
+         "gender": "Female",
+         "size": "Medium",
+         "coat": "Medium",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": true,
+            "declawed": null,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": true,
+            "dogs": true,
+            "cats": true
+         },
+         "tags": [],
+         "name": "Nyra",
+         "description": "Please visit our website for adoption fees and adoption process: www.GSRNY.org, and if still interested, please submit an adoption application....",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42432722/1/?bust=1533847626&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42432722/1/?bust=1533847626&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42432722/1/?bust=1533847626&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42432722/1/?bust=1533847626"
+            }
+         ],
+         "status": "adopted",
+         "published_at": "2018-08-09T21:06:02+0000",
+         "contact": {
+            "email": "GSRESCUENY@gmail.com",
+            "phone": null,
+            "address": {
+               "address1": "P.O. Box 242",
+               "address2": null,
+               "city": "Delmar",
+               "state": "NY",
+               "postcode": "12054",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/42432722"
+            },
+            "type": {
+               "href": "/v2/types/dog"
+            },
+            "organization": {
+               "href": "/v2/organizations/ny1325"
+            }
+         }
+      },
+      {
+         "id": 42268967,
+         "organization_id": "NY250",
+         "url": "https://www.petfinder.com/dog/molly-42268967/ny/schenectady/good-shepherd-k9-rescue-k9adopt-ny250/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Dog",
+         "species": "Dog",
+         "breeds": {
+            "primary": "Labrador Retriever",
+            "secondary": "German Shepherd Dog",
+            "mixed": true,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Brown / Chocolate",
+            "secondary": null,
+            "tertiary": null
+         },
+         "age": "Young",
+         "gender": "Female",
+         "size": "Medium",
+         "coat": "Medium",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": false,
+            "declawed": null,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": null,
+            "dogs": true,
+            "cats": null
+         },
+         "tags": [],
+         "name": "Molly",
+         "description": "Molly loves romping around the yard with other dogs or her human buddy. \nShe is crate trained and not a...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42268967/1/?bust=1548635366&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42268967/1/?bust=1548635366&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42268967/1/?bust=1548635366&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42268967/1/?bust=1548635366"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42268967/2/?bust=1548635367&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42268967/2/?bust=1548635367&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42268967/2/?bust=1548635367&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42268967/2/?bust=1548635367"
+            }
+         ],
+         "status": "adopted",
+         "published_at": "2018-07-24T00:42:43+0000",
+         "contact": {
+            "email": "sherry427@verizon.net",
+            "phone": "518-393-0755  ",
+            "address": {
+               "address1": null,
+               "address2": null,
+               "city": "Schenectady",
+               "state": "NY",
+               "postcode": "12306",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/42268967"
+            },
+            "type": {
+               "href": "/v2/types/dog"
+            },
+            "organization": {
+               "href": "/v2/organizations/ny250"
+            }
+         }
+      },
+      {
+         "id": 42185153,
+         "organization_id": "NY250",
+         "url": "https://www.petfinder.com/dog/blondie-42185153/ny/schenectady/good-shepherd-k9-rescue-k9adopt-ny250/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Dog",
+         "species": "Dog",
+         "breeds": {
+            "primary": "German Shepherd Dog",
+            "secondary": "Labrador Retriever",
+            "mixed": true,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Apricot / Beige",
+            "secondary": null,
+            "tertiary": null
+         },
+         "age": "Young",
+         "gender": "Female",
+         "size": "Medium",
+         "coat": "Medium",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": false,
+            "declawed": null,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": null,
+            "dogs": true,
+            "cats": null
+         },
+         "tags": [],
+         "name": "Blondie",
+         "description": "Blondie is sweet girlie who adores other dogs and a nice fence to keep them safe while playing. \nShe is...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42185153/1/?bust=1531624293&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42185153/1/?bust=1531624293&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42185153/1/?bust=1531624293&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42185153/1/?bust=1531624293"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42185153/2/?bust=1531624476&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42185153/2/?bust=1531624476&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42185153/2/?bust=1531624476&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42185153/2/?bust=1531624476"
+            }
+         ],
+         "status": "adopted",
+         "published_at": "2018-07-15T04:00:52+0000",
+         "contact": {
+            "email": "sherry427@verizon.net",
+            "phone": "518-393-0755  ",
+            "address": {
+               "address1": null,
+               "address2": null,
+               "city": "Schenectady",
+               "state": "NY",
+               "postcode": "12306",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/42185153"
+            },
+            "type": {
+               "href": "/v2/types/dog"
+            },
+            "organization": {
+               "href": "/v2/organizations/ny250"
+            }
+         }
+      },
+      {
+         "id": 41988040,
+         "organization_id": "NY1218",
+         "url": "https://www.petfinder.com/dog/domino-41988040/ny/freeville/theres-hope-dog-rescue-ny1218/?referrer_id=205ce951-e513-4f9c-93e1-186057d0a08a",
+         "type": "Dog",
+         "species": "Dog",
+         "breeds": {
+            "primary": "Husky",
+            "secondary": "German Shepherd Dog",
+            "mixed": true,
+            "unknown": false
+         },
+         "colors": {
+            "primary": "Bicolor",
+            "secondary": null,
+            "tertiary": null
+         },
+         "age": "Young",
+         "gender": "Female",
+         "size": "Medium",
+         "coat": "Medium",
+         "attributes": {
+            "spayed_neutered": true,
+            "house_trained": true,
+            "declawed": null,
+            "special_needs": false,
+            "shots_current": true
+         },
+         "environment": {
+            "children": true,
+            "dogs": true,
+            "cats": null
+         },
+         "tags": [
+            "High energy",
+            "active",
+            "loving",
+            "talkative"
+         ],
+         "name": "Domino",
+         "description": "Name: Domino    Best Guess for Breed: Husky/ Shepherd Mix\nBest Guess for Age: 6 months    SEX: female\nApproximate Weight: 30...",
+         "photos": [
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/41988040/3/?bust=1529795374&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/41988040/3/?bust=1529795374&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/41988040/3/?bust=1529795374&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/41988040/3/?bust=1529795374"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/41988040/1/?bust=1529770404&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/41988040/1/?bust=1529770404&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/41988040/1/?bust=1529770404&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/41988040/1/?bust=1529770404"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/41988040/2/?bust=1529770407&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/41988040/2/?bust=1529770407&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/41988040/2/?bust=1529770407&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/41988040/2/?bust=1529770407"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/41988040/4/?bust=1529770411&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/41988040/4/?bust=1529770411&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/41988040/4/?bust=1529770411&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/41988040/4/?bust=1529770411"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/41988040/5/?bust=1529770414&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/41988040/5/?bust=1529770414&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/41988040/5/?bust=1529770414&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/41988040/5/?bust=1529770414"
+            },
+            {
+               "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/41988040/6/?bust=1529795327&width=100",
+               "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/41988040/6/?bust=1529795327&width=300",
+               "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/41988040/6/?bust=1529795327&width=600",
+               "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/41988040/6/?bust=1529795327"
+            }
+         ],
+         "status": "adopted",
+         "published_at": "2018-06-23T16:16:31+0000",
+         "contact": {
+            "email": "thereshopedogrescue@yahoo.com",
+            "phone": null,
+            "address": {
+               "address1": null,
+               "address2": null,
+               "city": "Freeville",
+               "state": "NY",
+               "postcode": "13068",
+               "country": "US"
+            }
+         },
+         "_links": {
+            "self": {
+               "href": "/v2/animals/41988040"
+            },
+            "type": {
+               "href": "/v2/types/dog"
+            },
+            "organization": {
+               "href": "/v2/organizations/ny1218"
+            }
+         }
+      }
+   ],
+   "pagination": {
+      "count_per_page": 20,
+      "total_count": 169,
+      "current_page": 1,
+      "total_pages": 9,
+      "_links": {
+         "next": {
+            "href": "/v2/animals?age=young&breed=German%20Shepherd%20Dog&environnement=cats&gender=female&location=New%20York&type=dog&page=2"
+         }
+      }
+   }
+}
