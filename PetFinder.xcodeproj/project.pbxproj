@@ -13,7 +13,6 @@
 		EC1F83CE22661B01000C2671 /* PetSearch.json in Resources */ = {isa = PBXBuildFile; fileRef = EC1F83CD22661B01000C2671 /* PetSearch.json */; };
 		EC1F83D022661B11000C2671 /* PetSearchWithOptions.json in Resources */ = {isa = PBXBuildFile; fileRef = EC1F83CF22661B11000C2671 /* PetSearchWithOptions.json */; };
 		EC2B2C022252589F00612A77 /* BreedsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2B2C012252589F00612A77 /* BreedsTableViewCell.swift */; };
-		EC361EA1224D1F5F00638DE8 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC361EA0224D1F5F00638DE8 /* Token.swift */; };
 		EC3C587322636AC100AB76A6 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3C587222636AC100AB76A6 /* AnimationViewController.swift */; };
 		EC4EA7BE2250EB8E0029C6B5 /* RequestParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4EA7BD2250EB8E0029C6B5 /* RequestParameters.swift */; };
 		EC69DB0822491FB90096EB8A /* JSON_Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69DB0722491FB90096EB8A /* JSON_Pet.swift */; };
@@ -61,7 +60,6 @@
 		EC1F83CD22661B01000C2671 /* PetSearch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PetSearch.json; sourceTree = "<group>"; };
 		EC1F83CF22661B11000C2671 /* PetSearchWithOptions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PetSearchWithOptions.json; sourceTree = "<group>"; };
 		EC2B2C012252589F00612A77 /* BreedsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsTableViewCell.swift; sourceTree = "<group>"; };
-		EC361EA0224D1F5F00638DE8 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		EC3C587222636AC100AB76A6 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimationViewController.swift; path = PetFinder/Controller/AnimationViewController.swift; sourceTree = SOURCE_ROOT; };
 		EC4EA7BD2250EB8E0029C6B5 /* RequestParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RequestParameters.swift; path = PetFinder/Model/RequestParameters.swift; sourceTree = SOURCE_ROOT; };
 		EC69DB0722491FB90096EB8A /* JSON_Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON_Pet.swift; sourceTree = "<group>"; };
@@ -194,7 +192,6 @@
 				EC735A51224A1C0600B792A5 /* PetService.swift */,
 				ECDD112522608B180062409C /* FavoritePets.swift */,
 				ECFC65652247E0B800AB3C56 /* TokenService.swift */,
-				EC361EA0224D1F5F00638DE8 /* Token.swift */,
 				EC4EA7BD2250EB8E0029C6B5 /* RequestParameters.swift */,
 				EC69DB0722491FB90096EB8A /* JSON_Pet.swift */,
 				EC69DB09224938EB0096EB8A /* JSON_Token.swift */,
@@ -343,7 +340,6 @@
 				ECDD112622608B180062409C /* FavoritePets.swift in Sources */,
 				ECDD1120226087C40062409C /* BreedList.swift in Sources */,
 				ECDD111E226087C40062409C /* PetDetailViewController.swift in Sources */,
-				EC361EA1224D1F5F00638DE8 /* Token.swift in Sources */,
 				ECDD112F22608E9C0062409C /* FavoritesVC.swift in Sources */,
 				ECDD11332260C5530062409C /* FullScreenCollectionVC.swift in Sources */,
 				EC2B2C022252589F00612A77 /* BreedsTableViewCell.swift in Sources */,
