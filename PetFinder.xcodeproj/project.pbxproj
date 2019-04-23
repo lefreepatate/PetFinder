@@ -12,13 +12,17 @@
 		EC1F83CC22661AD3000C2671 /* URLSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F83CB22661AD3000C2671 /* URLSessionFake.swift */; };
 		EC1F83CE22661B01000C2671 /* PetSearch.json in Resources */ = {isa = PBXBuildFile; fileRef = EC1F83CD22661B01000C2671 /* PetSearch.json */; };
 		EC1F83D022661B11000C2671 /* PetSearchWithOptions.json in Resources */ = {isa = PBXBuildFile; fileRef = EC1F83CF22661B11000C2671 /* PetSearchWithOptions.json */; };
+		EC2195D1226B695500EF2CA9 /* PlayfairDisplay-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECEA5690226B1ADB0005BFFB /* PlayfairDisplay-BlackItalic.ttf */; };
+		EC2195D2226B695500EF2CA9 /* PlayfairDisplay-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECEA5692226B1ADC0005BFFB /* PlayfairDisplay-BoldItalic.ttf */; };
+		EC2195D3226B695500EF2CA9 /* PlayfairDisplay-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECEA568D226B1ADA0005BFFB /* PlayfairDisplay-Italic.ttf */; };
 		EC2B2C022252589F00612A77 /* BreedsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2B2C012252589F00612A77 /* BreedsTableViewCell.swift */; };
-		EC3C587322636AC100AB76A6 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3C587222636AC100AB76A6 /* AnimationViewController.swift */; };
 		EC4EA7BE2250EB8E0029C6B5 /* RequestParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4EA7BD2250EB8E0029C6B5 /* RequestParameters.swift */; };
 		EC69DB0822491FB90096EB8A /* JSON_Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69DB0722491FB90096EB8A /* JSON_Pet.swift */; };
 		EC69DB0A224938EB0096EB8A /* JSON_Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69DB09224938EB0096EB8A /* JSON_Token.swift */; };
 		EC6A8F3A224CDCDC0053A278 /* PetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6A8F39224CDCDC0053A278 /* PetCollectionViewCell.swift */; };
 		EC735A52224A1C0600B792A5 /* PetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC735A51224A1C0600B792A5 /* PetService.swift */; };
+		EC7A38222268555200440726 /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7A38212268555200440726 /* MapScreen.swift */; };
+		EC7A38262269A9E900440726 /* DesignExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7A38252269A9E900440726 /* DesignExtension.swift */; };
 		EC887A8F2267795F00B8E2CB /* FakeTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC887A8E22676FFC00B8E2CB /* FakeTokenResponse.swift */; };
 		EC887A9122677C3100B8E2CB /* TokenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC887A9022677C3100B8E2CB /* TokenTests.swift */; };
 		EC887A95226783F500B8E2CB /* NewToken.json in Resources */ = {isa = PBXBuildFile; fileRef = EC887A94226783F500B8E2CB /* NewToken.json */; };
@@ -34,6 +38,9 @@
 		ECDD112F22608E9C0062409C /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDD112E22608E9C0062409C /* FavoritesVC.swift */; };
 		ECDD11332260C5530062409C /* FullScreenCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDD11322260C5530062409C /* FullScreenCollectionVC.swift */; };
 		ECDD11352260D0460062409C /* FullScreenViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDD11342260D0460062409C /* FullScreenViewCell.swift */; };
+		ECEA5697226B21380005BFFB /* playfairDisplay-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECEA568E226B1ADB0005BFFB /* playfairDisplay-Black.ttf */; };
+		ECEA5698226B21380005BFFB /* PlayfairDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECEA5691226B1ADB0005BFFB /* PlayfairDisplay-Bold.ttf */; };
+		ECEA5699226B21380005BFFB /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECEA568F226B1ADB0005BFFB /* PlayfairDisplay-Regular.ttf */; };
 		ECFC65402247E00800AB3C56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFC653F2247E00800AB3C56 /* AppDelegate.swift */; };
 		ECFC65452247E00800AB3C56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECFC65432247E00800AB3C56 /* Main.storyboard */; };
 		ECFC65482247E00800AB3C56 /* PetFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECFC65462247E00800AB3C56 /* PetFinder.xcdatamodeld */; };
@@ -60,12 +67,13 @@
 		EC1F83CD22661B01000C2671 /* PetSearch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PetSearch.json; sourceTree = "<group>"; };
 		EC1F83CF22661B11000C2671 /* PetSearchWithOptions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PetSearchWithOptions.json; sourceTree = "<group>"; };
 		EC2B2C012252589F00612A77 /* BreedsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsTableViewCell.swift; sourceTree = "<group>"; };
-		EC3C587222636AC100AB76A6 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimationViewController.swift; path = PetFinder/Controller/AnimationViewController.swift; sourceTree = SOURCE_ROOT; };
 		EC4EA7BD2250EB8E0029C6B5 /* RequestParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RequestParameters.swift; path = PetFinder/Model/RequestParameters.swift; sourceTree = SOURCE_ROOT; };
 		EC69DB0722491FB90096EB8A /* JSON_Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON_Pet.swift; sourceTree = "<group>"; };
 		EC69DB09224938EB0096EB8A /* JSON_Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON_Token.swift; sourceTree = "<group>"; };
 		EC6A8F39224CDCDC0053A278 /* PetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCollectionViewCell.swift; sourceTree = "<group>"; };
 		EC735A51224A1C0600B792A5 /* PetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetService.swift; sourceTree = "<group>"; };
+		EC7A38212268555200440726 /* MapScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
+		EC7A38252269A9E900440726 /* DesignExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignExtension.swift; sourceTree = "<group>"; };
 		EC887A8E22676FFC00B8E2CB /* FakeTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeTokenResponse.swift; sourceTree = "<group>"; };
 		EC887A9022677C3100B8E2CB /* TokenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenTests.swift; sourceTree = "<group>"; };
 		EC887A94226783F500B8E2CB /* NewToken.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NewToken.json; sourceTree = "<group>"; };
@@ -81,6 +89,12 @@
 		ECDD112E22608E9C0062409C /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
 		ECDD11322260C5530062409C /* FullScreenCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCollectionVC.swift; sourceTree = "<group>"; };
 		ECDD11342260D0460062409C /* FullScreenViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenViewCell.swift; sourceTree = "<group>"; };
+		ECEA568D226B1ADA0005BFFB /* PlayfairDisplay-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Italic.ttf"; sourceTree = "<group>"; };
+		ECEA568E226B1ADB0005BFFB /* playfairDisplay-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "playfairDisplay-Black.ttf"; sourceTree = "<group>"; };
+		ECEA568F226B1ADB0005BFFB /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		ECEA5690226B1ADB0005BFFB /* PlayfairDisplay-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-BlackItalic.ttf"; sourceTree = "<group>"; };
+		ECEA5691226B1ADB0005BFFB /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		ECEA5692226B1ADC0005BFFB /* PlayfairDisplay-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-BoldItalic.ttf"; sourceTree = "<group>"; };
 		ECFC653C2247E00800AB3C56 /* PetFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECFC653F2247E00800AB3C56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECFC65442247E00800AB3C56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -134,13 +148,21 @@
 			path = TokenServiceTest;
 			sourceTree = "<group>";
 		};
-		ECDD112722608D0A0062409C /* Structs */ = {
+		ECDD112722608D0A0062409C /* helpers */ = {
 			isa = PBXGroup;
 			children = (
+				EC7A38252269A9E900440726 /* DesignExtension.swift */,
 				ECDD1118226087C30062409C /* ColorsList.swift */,
 				ECDD1119226087C40062409C /* BreedList.swift */,
 			);
-			path = Structs;
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		ECEA5694226B20A60005BFFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		ECFC65332247E00800AB3C56 = {
@@ -149,6 +171,7 @@
 				ECFC653E2247E00800AB3C56 /* PetFinder */,
 				ECFC65562247E00900AB3C56 /* PetFinderTests */,
 				ECFC653D2247E00800AB3C56 /* Products */,
+				ECEA5694226B20A60005BFFB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,6 +193,12 @@
 				ECFC653F2247E00800AB3C56 /* AppDelegate.swift */,
 				ECFC65492247E00900AB3C56 /* Assets.xcassets */,
 				ECFC654E2247E00900AB3C56 /* Info.plist */,
+				ECEA568E226B1ADB0005BFFB /* playfairDisplay-Black.ttf */,
+				ECEA5690226B1ADB0005BFFB /* PlayfairDisplay-BlackItalic.ttf */,
+				ECEA5691226B1ADB0005BFFB /* PlayfairDisplay-Bold.ttf */,
+				ECEA5692226B1ADC0005BFFB /* PlayfairDisplay-BoldItalic.ttf */,
+				ECEA568D226B1ADA0005BFFB /* PlayfairDisplay-Italic.ttf */,
+				ECEA568F226B1ADB0005BFFB /* PlayfairDisplay-Regular.ttf */,
 			);
 			path = PetFinder;
 			sourceTree = "<group>";
@@ -216,14 +245,14 @@
 		ECFC65642247E02F00AB3C56 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				EC3C587222636AC100AB76A6 /* AnimationViewController.swift */,
 				ECDD111A226087C40062409C /* ChoiceViewController.swift */,
 				ECDD1115226087C30062409C /* PetSearchViewController.swift */,
 				ECDD111B226087C40062409C /* PetResultsCollectionViewController.swift */,
 				ECDD1117226087C30062409C /* PetDetailViewController.swift */,
+				EC7A38212268555200440726 /* MapScreen.swift */,
 				ECDD112E22608E9C0062409C /* FavoritesVC.swift */,
 				ECDD11322260C5530062409C /* FullScreenCollectionVC.swift */,
-				ECDD112722608D0A0062409C /* Structs */,
+				ECDD112722608D0A0062409C /* helpers */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -278,6 +307,11 @@
 				TargetAttributes = {
 					ECFC653B2247E00800AB3C56 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					ECFC65522247E00900AB3C56 = {
 						CreatedOnToolsVersion = 10.1;
@@ -309,9 +343,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC2195D3226B695500EF2CA9 /* PlayfairDisplay-Italic.ttf in Resources */,
 				ECFC654D2247E00900AB3C56 /* LaunchScreen.storyboard in Resources */,
+				ECEA5697226B21380005BFFB /* playfairDisplay-Black.ttf in Resources */,
+				ECEA5699226B21380005BFFB /* PlayfairDisplay-Regular.ttf in Resources */,
 				ECFC654A2247E00900AB3C56 /* Assets.xcassets in Resources */,
+				EC2195D2226B695500EF2CA9 /* PlayfairDisplay-BoldItalic.ttf in Resources */,
+				ECEA5698226B21380005BFFB /* PlayfairDisplay-Bold.ttf in Resources */,
 				ECFC65452247E00800AB3C56 /* Main.storyboard in Resources */,
+				EC2195D1226B695500EF2CA9 /* PlayfairDisplay-BlackItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECDD111F226087C40062409C /* ColorsList.swift in Sources */,
+				EC7A38222268555200440726 /* MapScreen.swift in Sources */,
 				EC6A8F3A224CDCDC0053A278 /* PetCollectionViewCell.swift in Sources */,
 				ECDD112D22608DBB0062409C /* FavoritesViewCell.swift in Sources */,
 				ECFC65482247E00800AB3C56 /* PetFinder.xcdatamodeld in Sources */,
@@ -344,9 +385,9 @@
 				ECDD11332260C5530062409C /* FullScreenCollectionVC.swift in Sources */,
 				EC2B2C022252589F00612A77 /* BreedsTableViewCell.swift in Sources */,
 				ECDD11352260D0460062409C /* FullScreenViewCell.swift in Sources */,
-				EC3C587322636AC100AB76A6 /* AnimationViewController.swift in Sources */,
 				EC735A52224A1C0600B792A5 /* PetService.swift in Sources */,
 				EC4EA7BE2250EB8E0029C6B5 /* RequestParameters.swift in Sources */,
+				EC7A38262269A9E900440726 /* DesignExtension.swift in Sources */,
 				EC69DB0A224938EB0096EB8A /* JSON_Token.swift in Sources */,
 				ECDD1124226088340062409C /* ColorsTableViewCell.swift in Sources */,
 				ECDD111C226087C40062409C /* PetSearchViewController.swift in Sources */,

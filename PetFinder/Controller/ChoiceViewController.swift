@@ -10,7 +10,9 @@ import UIKit
 
 class ChoiceViewController: UIViewController {
    
-   @IBOutlet var btns: [UIButton]!
+   @IBOutlet weak var catButton: UIButton!
+   @IBOutlet weak var dogButton: UIButton!
+   
    @IBAction func dogsVC(_ sender: UIButton) {
       PetService.shared.parameters.type.removeAll()
       self.performSegue(withIdentifier: "ShowDogSearch", sender: self)
@@ -22,10 +24,19 @@ class ChoiceViewController: UIViewController {
    override func viewDidLoad() {
       super.viewDidLoad()
       PetService.shared.checkToken()
-      for button in btns {
-         corners(image: button)
+   }
+   
+   override func viewDidAppear(_ animated: Bool) {
+      super.viewDidAppear(animated)
+      UIView.animate(withDuration: 0.5) {
+         self.dogButton.isHidden = false
+         self.catButton.isHidden = false
+         
+         self.cornersOpposite(image: self.dogButton)
+         self.cornersOpposite(image: self.catButton)
       }
    }
+   
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
       if segue.identifier == "ShowDogSearch" {
          let VC2 : PetSearchViewController = segue.destination as! PetSearchViewController
@@ -37,16 +48,3 @@ class ChoiceViewController: UIViewController {
    }
 }
 
-extension UIViewController {
-   func corners(image: UIView) {
-      image.layer.borderWidth = 10
-      image.layer.borderColor = #colorLiteral(red: 1, green: 0.08064236111, blue: 0.1818865741, alpha: 1)
-      image.layer.cornerRadius = 25
-      image.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMaxYCorner]
-   }
-   func presentAlert(with message: String) {
-      let alertVC = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
-      alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-      present(alertVC, animated: true, completion: nil)
-   }
-}

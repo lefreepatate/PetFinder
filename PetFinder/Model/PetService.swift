@@ -21,7 +21,7 @@ class PetService {
    
    var parameters = Parameters()
    var token = TokenService()
-   
+   // PetFinder API CALL
    func getPets(_ callback: @escaping (Bool, Any?) -> Void) {
       let request = createRequest(with: parameters.code)
       task = session.dataTask(with: request){ (data, response, error) in
@@ -29,6 +29,7 @@ class PetService {
             guard let response = response as? HTTPURLResponse else { return callback(false, nil) }
             if response.statusCode == 401 {
                self.checkToken()
+               callback(false, nil)
             } else {
                guard let data = data, error == nil else { return callback(false, nil) }
                do {
@@ -41,7 +42,7 @@ class PetService {
                      let response = try decoder.decode(Pets.self, from: data)
                      callback(true, response.animal)
                   }
-               } catch { print("JSON ERROR") }
+               } catch { return callback(false, nil) }
             }
          }
       }
@@ -59,6 +60,7 @@ class PetService {
                                timeoutInterval: 10.0)
       request.httpMethod = "GET"
       request.allHTTPHeaderFields = headers
+      print(request)
       return request
    }
    
@@ -67,7 +69,11 @@ class PetService {
       for element in [parameters] {
          if !element.age.isEmpty{ values += "&age=" + element.age }
          if !element.breed.isEmpty{ values += "&breed=" + element.breed }
-         if !element.color.isEmpty{ values += "&color=" + element.color}
+         if !element.color.isEmpty{
+            if element.color.contains("Tricolor+%28Brown%2C+Black%2C+%26+White%29") {
+               values += "&color[]=Tricolor+%28Brown%2C+Black%2C+%26+White%29"
+            } else { values += "&color=" + element.color }
+         }
          if !element.environnement.isEmpty{ values += "&environnement=" + element.environnement }
          if !element.gender.isEmpty{ values += "&gender=" + element.gender }
          if !element.size.isEmpty{ values += "&size=" + element.size }
@@ -87,23 +93,17 @@ class PetService {
          DispatchQueue.main.async {
             guard let response = response as? HTTPURLResponse else { return }
             if response.statusCode == 401 {
-               self.getNewToken()
+               self.token.getToken { (success, token) in
+                  if success, let token = token {
+                     print("NEW TOKEN: \(token)")
+                     self.parameters.code = token
+                  }
+               }
             } else {
                return
             }
          }
       }
       task?.resume()
-   }
-   
-   func getNewToken() {
-      token.getToken { (success, token) in
-         if success, let token = token {
-            print("NEW TOKEN :\n\(token)\n")
-            self.parameters.code = token
-         } else {
-            
-         }
-      }
    }
 }

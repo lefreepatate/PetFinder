@@ -23,6 +23,7 @@ class FavoritesVC: UIViewController {
       checkFavorites()
       favoritesCollection.reloadData()
       print(favorites.count)
+      setGradientBackground(on: view)
    }
 }
 
@@ -38,10 +39,10 @@ extension FavoritesVC: UITableViewDataSource {
       cell.petName?.text = favorite.name
       cell.petBreed?.text = favorite.breed
       cell.petAge?.text = favorite.age
-      cell.petGender?.text = favorite.gender
       cell.petDescription?.text = favorite.descr
       cell.petImage.image = UIImage(data: favorite.image!)
       cell.petImage.contentMode = .scaleAspectFill
+      cornersOpposite(image: cell.petImage)
       return cell
    }
    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -55,12 +56,14 @@ extension FavoritesVC: UITableViewDataSource {
       if favorites.isEmpty {
          emptyResponse()
       } else {
+         emptyLabel.isHidden = true
          toggleActivityIndicator(shown: false)
       }
    }
    
    private func emptyResponse() {
-      self.emptyLabel.text = "Hey! You don't have any favorites yet.\n\nTo get favorites\npress the ★ button\non the top right corner\n;)"
+      emptyLabel.isHidden = false
+      self.emptyLabel.text = "You don't have any favorites yet.\n\nTo get favorites\npress the favorite button\n"
       self.favoritesCollection.isHidden = true
       self.activityIndicator.isHidden = true
    }
@@ -79,7 +82,7 @@ extension FavoritesVC: UITableViewDelegate {
       }
       if favorites.count == 0 {
          emptyResponse()
-      }
+      }      
       try? AppDelegate.viewContext.save()
    }
 }

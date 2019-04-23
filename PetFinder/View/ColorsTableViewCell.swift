@@ -10,15 +10,17 @@ import UIKit
 
 class ColorsTableViewCell: UITableViewCell {
    @IBOutlet var colorBtn: UIButton!
+   @IBOutlet var colorImage: UIImageView!
    @IBAction func colorAction(_ sender: UIButton) {
-      guard let name = colorBtn.titleLabel?.text else {return}
+      guard var name = colorBtn.titleLabel?.text else {return}
+      name = name.replacingOccurrences(of: " ", with: "%20")
       if !colorBtn.isSelected {
          colorBtn.isSelected = true
-         if name != "Tricolor (Brown, Black, & White)" {
-            PetService.shared.parameters.color.append(name + ",")
+         if name == "Tricolor%20(Brown,%20Black,%20&%20White)" {
+            PetService.shared.parameters.color.append("Tricolor+%28Brown%2C+Black%2C+%26+White%29" + ",")
             print(PetService.shared.parameters.color)
          } else {
-            PetService.shared.parameters.color.append("Tricolor+%28Brown%2C+Black%2C+%26+White%29" + ",")
+            PetService.shared.parameters.color.append(name + ",")
             print(PetService.shared.parameters.color)
          }
          
@@ -36,8 +38,8 @@ class ColorsTableViewCell: UITableViewCell {
    
    override func awakeFromNib() {
       super.awakeFromNib()
-      colorBtn.imageView?.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
-      colorBtn.imageView?.contentMode = .scaleAspectFit
-      colorBtn.setImage(UIImage(), for: .normal)
+      colorBtn.setTitleColor(#colorLiteral(red: 0.9450980392, green: 0.05882352941, blue: 0.3490196078, alpha: 1), for: .selected)
+      colorImage.layer.cornerRadius = colorImage.frame.height/2
+      colorImage.clipsToBounds = true
    }
 }

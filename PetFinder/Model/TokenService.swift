@@ -44,8 +44,8 @@ class TokenService {
       let headers = ["content-type": "application/json"]
       let parameters = [
          "grant_type": "client_credentials",
-         "client_id": "***",
-         "client_secret": "***",
+         "client_id": "rJoTEqr58LIpI8PRnObE9rxHTUPknq8JnJxY4FbdjdTPSqvCO1",
+         "client_secret": "ZHyEpYCHycEHivcUvvJpGnfCcUEdxdSrtRbirthj",
          "redirect_uri": "https://api.petfinder.com/v2/animals?"
       ]
       

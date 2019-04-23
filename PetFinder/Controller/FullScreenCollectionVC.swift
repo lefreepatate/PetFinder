@@ -18,6 +18,7 @@ class FullScreenCollectionVC: UICollectionViewController {
    
    override func viewDidAppear(_ animated: Bool) {
       super.viewDidAppear(animated)
+      setGradientBackground(on: view)
       let layout = imagesCollectionView.collectionViewLayout as? UICollectionViewFlowLayout
       let width = (view.frame.width)
       layout?.itemSize = CGSize(width: width, height: width)

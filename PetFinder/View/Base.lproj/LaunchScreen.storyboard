@@ -13,17 +13,44 @@
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Jdt-4M-3nx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="&amp; save lives" translatesAutoresizingMaskIntoConstraints="NO" id="02f-qN-Yx3">
+                                <rect key="frame" x="37.5" y="231.5" width="300" height="124"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="02f-qN-Yx3" secondAttribute="height" multiplier="75:31" id="SU6-DO-ywY"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.17254901959999999" green="0.1647058824" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Jdt-4M-3nx" secondAttribute="bottom" id="0lN-YH-Ndm"/>
+                            <constraint firstItem="02f-qN-Yx3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="95B-3r-vBN"/>
+                            <constraint firstItem="Jdt-4M-3nx" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="JhO-SM-AR9"/>
+                            <constraint firstItem="02f-qN-Yx3" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-50" id="Kbf-L1-UaY"/>
+                            <constraint firstItem="Jdt-4M-3nx" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Scx-eo-5nA"/>
+                            <constraint firstAttribute="trailing" secondItem="Jdt-4M-3nx" secondAttribute="trailing" id="ikT-pv-JEG"/>
+                            <constraint firstItem="02f-qN-Yx3" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.8" id="x37-jK-BrO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="&amp; save lives" width="448" height="124"/>
+        <image name="launchScreen" width="750" height="1334"/>
+    </resources>
 </document>
