@@ -54,7 +54,6 @@ class PetDetailViewController: UIViewController {
    var petDetail:Animal!
    var petBreed = String()
    var id = String()
-   let mapDirection = MapScreen()
    
    override func viewDidLoad() {
       super.viewDidLoad()

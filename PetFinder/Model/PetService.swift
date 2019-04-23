@@ -60,10 +60,9 @@ class PetService {
                                timeoutInterval: 10.0)
       request.httpMethod = "GET"
       request.allHTTPHeaderFields = headers
-      print(request)
       return request
    }
-   
+   // Getting the values for the api's search
    private func valuesString() -> String {
       var values = String()
       for element in [parameters] {
@@ -86,7 +85,7 @@ class PetService {
       let stringParameters = parameters.type + values.replacingOccurrences(of: ",&", with: "&")
       return  stringParameters
    }
-   
+   // Check if token is valid
    func checkToken() {
       let request = createRequest(with: parameters.code)
       task = session.dataTask(with: request){ (data, response, error) in
@@ -95,7 +94,6 @@ class PetService {
             if response.statusCode == 401 {
                self.token.getToken { (success, token) in
                   if success, let token = token {
-                     print("NEW TOKEN: \(token)")
                      self.parameters.code = token
                   }
                }

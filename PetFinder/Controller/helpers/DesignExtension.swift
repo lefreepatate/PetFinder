@@ -12,7 +12,7 @@ import UIKit
 extension UIViewController {
    func cornersOpposite(image: UIView) {
       image.layer.borderWidth = 5
-      image.layer.borderColor = #colorLiteral(red: 0.9450980392, green: 0.05882352941, blue: 0.3490196078, alpha: 1)
+      image.layer.borderColor = #colorLiteral(red: 0.8604020476, green: 0.2248342931, blue: 0.3607040644, alpha: 1)
       image.layer.cornerRadius = 25
       image.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMaxYCorner]
    }

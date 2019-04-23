@@ -14,7 +14,7 @@ class PetsResultsCollectionViewController: UICollectionViewController {
    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
    @IBOutlet var petsCollectionView: UICollectionView!
    var animals = [Animal]()
-   var cacheImage = UIImage(named: "dogSearch")
+   var cacheImage = UIImage()
    var parameters = Parameters()
 
    override func viewDidLoad() {
@@ -23,7 +23,6 @@ class PetsResultsCollectionViewController: UICollectionViewController {
    }
    override func viewWillAppear(_ animated: Bool) {
       super.viewWillAppear(animated)
-      print(self.animals.count)
       let layout = petsCollectionView.collectionViewLayout as? UICollectionViewFlowLayout
       let width = (view.frame.width*0.5)-5
       layout?.itemSize = CGSize(width: width, height: width)
@@ -76,6 +75,11 @@ class PetsResultsCollectionViewController: UICollectionViewController {
          }
       } else {
          cell.petImageLoader(shown: false)
+         if pet.type == "Dog" {
+            self.cacheImage = UIImage(named: "dogSearch")!
+         } else if pet.type == "Cat" {
+            self.cacheImage = UIImage(named: "catSearch")!
+         }
          cell.petImage.image = self.cacheImage
       }
       setGradientBackground(on: cell)

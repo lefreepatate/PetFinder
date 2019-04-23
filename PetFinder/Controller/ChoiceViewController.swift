@@ -36,7 +36,7 @@ class ChoiceViewController: UIViewController {
          self.cornersOpposite(image: self.catButton)
       }
    }
-   
+   // Changing PetSearchVC for cat or dog
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
       if segue.identifier == "ShowDogSearch" {
          let VC2 : PetSearchViewController = segue.destination as! PetSearchViewController

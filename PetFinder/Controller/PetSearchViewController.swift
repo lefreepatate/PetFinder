@@ -50,6 +50,8 @@ class PetSearchViewController: UIViewController {
    @IBAction func environnementTappedBtn(_ sender: UIButton) {
       options(on: sender, buttons: envBtns,parameters: &PetService.shared.parameters.environnement)
    }
+   
+   // Enum for change datas in searchPage
    enum Pet {
       case dog
       case cat
@@ -90,19 +92,19 @@ class PetSearchViewController: UIViewController {
    }
    func viewOptions(view: UIView, button: UIButton) {
       UIView.animate(withDuration: 0.3) {
-      if !button.isSelected {
-         button.isSelected = true
-         button.setTitleColor(#colorLiteral(red: 0.9450980392, green: 0.05882352941, blue: 0.3490196078, alpha: 1), for: .selected)
-         button.setTitle("⇣", for: .selected)
-         button.backgroundColor = .white
-         self.showHiddenView(to: view, toogle: true)
-      } else {
-         button.isSelected = false
-         button.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
-         button.backgroundColor = #colorLiteral(red: 0.9450980392, green: 0.05882352941, blue: 0.3490196078, alpha: 1)
-         button.setTitle("+", for: .normal)
-         self.showHiddenView(to: view, toogle: false)
-      }
+         if !button.isSelected {
+            button.isSelected = true
+            button.setTitleColor(#colorLiteral(red: 0.9450980392, green: 0.05882352941, blue: 0.3490196078, alpha: 1), for: .selected)
+            button.setTitle("⇣", for: .selected)
+            button.backgroundColor = .white
+            self.showHiddenView(to: view, toogle: true)
+         } else {
+            button.isSelected = false
+            button.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
+            button.backgroundColor = #colorLiteral(red: 0.9450980392, green: 0.05882352941, blue: 0.3490196078, alpha: 1)
+            button.setTitle("+", for: .normal)
+            self.showHiddenView(to: view, toogle: false)
+         }
       }
    }
    func showHiddenView(to view: UIView, toogle: Bool) {
@@ -260,7 +262,6 @@ extension PetSearchViewController: UITextFieldDelegate {
          }
          PetService.shared.parameters.location.removeAll()
       }
-      print(PetService.shared.parameters.location)
       return true
    }
    

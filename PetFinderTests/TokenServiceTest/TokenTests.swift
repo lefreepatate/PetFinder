@@ -48,7 +48,6 @@ class TokenTest: XCTestCase {
    
    func testGettingNewTokenWhenHTTPResponseIS401() {
       fakePetSearch.checkToken()
-      fakePetSearch.getNewToken()
       getTokenResponse(sessionData: FakeTokenResponse.TokenCorrectData,
                        response:FakeTokenResponse.responseOK, error: nil)
       XCTAssertTrue(success)

@@ -8,7 +8,7 @@
 
 import Foundation
 import CoreData
-
+// Core data for favorite pets
 class FavoritePets: NSManagedObject {
    static var pets: [FavoritePets] {
       let request: NSFetchRequest<FavoritePets> = FavoritePets.fetchRequest()

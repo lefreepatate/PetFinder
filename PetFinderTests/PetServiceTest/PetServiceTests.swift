@@ -31,7 +31,6 @@ class PetFinderServiceTests: XCTestCase {
       fakePetSearch.parameters.id = parameterID
       fakePetSearch.getPets { (success, response) in
         expectation.fulfill()
-         print(self.parameters)
          if success && !self.parameters.id.isEmpty, let response = response as! Animal? {
             self.pet = response
             self.success = success

@@ -22,7 +22,6 @@ class FavoritesVC: UIViewController {
       toggleActivityIndicator(shown: false)
       checkFavorites()
       favoritesCollection.reloadData()
-      print(favorites.count)
       setGradientBackground(on: view)
    }
 }

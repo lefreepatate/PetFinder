@@ -12,18 +12,19 @@ class ColorsTableViewCell: UITableViewCell {
    @IBOutlet var colorBtn: UIButton!
    @IBOutlet var colorImage: UIImageView!
    @IBAction func colorAction(_ sender: UIButton) {
+     saveColorOption()
+   }
+   
+   func saveColorOption() {
       guard var name = colorBtn.titleLabel?.text else {return}
       name = name.replacingOccurrences(of: " ", with: "%20")
       if !colorBtn.isSelected {
          colorBtn.isSelected = true
          if name == "Tricolor%20(Brown,%20Black,%20&%20White)" {
             PetService.shared.parameters.color.append("Tricolor+%28Brown%2C+Black%2C+%26+White%29" + ",")
-            print(PetService.shared.parameters.color)
          } else {
             PetService.shared.parameters.color.append(name + ",")
-            print(PetService.shared.parameters.color)
          }
-         
       } else {
          colorBtn.isSelected = false
          if let range = PetService.shared.parameters.color.range(of: name + ",") {
