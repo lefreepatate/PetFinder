@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad12_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,16 +15,17 @@
             <objects>
                 <viewController modalTransitionStyle="flipHorizontal" id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Jdt-4M-3nx">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="&amp; save lives" translatesAutoresizingMaskIntoConstraints="NO" id="02f-qN-Yx3">
-                                <rect key="frame" x="37.5" y="231.5" width="300" height="124"/>
+                                <rect key="frame" x="288" y="578" width="448" height="130"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="02f-qN-Yx3" secondAttribute="height" multiplier="75:31" id="SU6-DO-ywY"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="448" id="Rrf-ro-RUl"/>
+                                    <constraint firstAttribute="height" constant="130" id="X0n-OQ-IoT"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -36,7 +37,7 @@
                             <constraint firstItem="02f-qN-Yx3" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-50" id="Kbf-L1-UaY"/>
                             <constraint firstItem="Jdt-4M-3nx" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Scx-eo-5nA"/>
                             <constraint firstAttribute="trailing" secondItem="Jdt-4M-3nx" secondAttribute="trailing" id="ikT-pv-JEG"/>
-                            <constraint firstItem="02f-qN-Yx3" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.8" id="x37-jK-BrO"/>
+                            <constraint firstItem="02f-qN-Yx3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="50" id="uxM-ma-Vlf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

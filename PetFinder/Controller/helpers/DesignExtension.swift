@@ -25,7 +25,7 @@ extension UIViewController {
       image.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMaxXMaxYCorner]
    }
    func setCornerRadiusToCircle(on image: UIView){
-      image.layer.cornerRadius = image.frame.height/2
+      image.layer.cornerRadius = image.frame.width/2
       image.clipsToBounds = true
    }
    func setCornerRadius(on image: UIView){
