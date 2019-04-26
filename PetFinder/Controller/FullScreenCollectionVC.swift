@@ -8,17 +8,13 @@
 
 import UIKit
 
-
-
 class FullScreenCollectionVC: UICollectionViewController {
-   
    @IBOutlet var imagesCollectionView: UICollectionView!
    var imageArray = [Photo]()
    private let reuseIdentifier = "fullScreen"
-   
    override func viewDidAppear(_ animated: Bool) {
       super.viewDidAppear(animated)
-      setGradientBackground(on: view)
+      setGradient(on: view)
       let layout = imagesCollectionView.collectionViewLayout as? UICollectionViewFlowLayout
       let width = (view.frame.width)
       layout?.itemSize = CGSize(width: width, height: width)
@@ -38,6 +34,7 @@ class FullScreenCollectionVC: UICollectionViewController {
    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
       return imageArray.count
    }
+   // Getting image fullscreen on collectionViewcontroller
    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
       guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? FullScreenViewCell else { return UICollectionViewCell() }
       let image = imageArray[indexPath.row]

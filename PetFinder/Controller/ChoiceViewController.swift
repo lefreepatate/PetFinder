@@ -9,34 +9,45 @@
 import UIKit
 
 class ChoiceViewController: UIViewController {
-   
+   // MARK: IBOUTLET
    @IBOutlet weak var catButton: UIButton!
    @IBOutlet weak var dogButton: UIButton!
-   
+   // MARK: IBACTIONS
    @IBAction func dogsVC(_ sender: UIButton) {
-      PetService.shared.parameters.type.removeAll()
+      PetService.parameters.type.removeAll()
       self.performSegue(withIdentifier: "ShowDogSearch", sender: self)
    }
    @IBAction func catsVC(_ sender: UIButton) {
-      PetService.shared.parameters.type.removeAll()
+      PetService.parameters.type.removeAll()
       self.performSegue(withIdentifier: "ShowCatSearch", sender: self)
    }
    override func viewDidLoad() {
       super.viewDidLoad()
-      PetService.shared.checkToken()
+      removeAll()
+      PetService().checkToken()
    }
-   
    override func viewDidAppear(_ animated: Bool) {
       super.viewDidAppear(animated)
-      UIView.animate(withDuration: 0.5) {
-         self.dogButton.isHidden = false
-         self.catButton.isHidden = false
-         
+      UIView.animate(withDuration: 0.3) {
+         self.setGradient(on: self.view)
+         self.dogButton.widthAnchor.constraint(equalToConstant: self.view.frame.width*0.3).isActive = true
+         self.catButton.widthAnchor.constraint(equalToConstant: self.view.frame.width*0.3).isActive = true
          self.cornersOpposite(image: self.dogButton)
          self.cornersOpposite(image: self.catButton)
       }
    }
-   // Changing PetSearchVC for cat or dog
+   // MARK: RESET PARAMETERS
+   func removeAll() {
+      PetService.parameters.id.removeAll()
+      PetService.parameters.type.removeAll()
+      PetService.parameters.age.removeAll()
+      PetService.parameters.breed.removeAll()
+      PetService.parameters.color.removeAll()
+      PetService.parameters.environnement.removeAll()
+      PetService.parameters.gender.removeAll()
+      PetService.parameters.size.removeAll()
+   }
+   // Changing PetSearchVC for cat or dog's options
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
       if segue.identifier == "ShowDogSearch" {
          let VC2 : PetSearchViewController = segue.destination as! PetSearchViewController

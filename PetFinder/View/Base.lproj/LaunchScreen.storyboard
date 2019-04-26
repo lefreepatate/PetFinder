@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="ipad12_9" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,17 +15,18 @@
             <objects>
                 <viewController modalTransitionStyle="flipHorizontal" id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Jdt-4M-3nx">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="&amp; save lives" translatesAutoresizingMaskIntoConstraints="NO" id="02f-qN-Yx3">
-                                <rect key="frame" x="288" y="578" width="448" height="130"/>
+                                <rect key="frame" x="41.5" y="472" width="331" height="92"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="02f-qN-Yx3" secondAttribute="height" multiplier="112:31" id="Dlb-ec-q2g"/>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="448" id="Rrf-ro-RUl"/>
-                                    <constraint firstAttribute="height" constant="130" id="X0n-OQ-IoT"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="124" id="X0n-OQ-IoT"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -34,10 +35,10 @@
                             <constraint firstAttribute="bottom" secondItem="Jdt-4M-3nx" secondAttribute="bottom" id="0lN-YH-Ndm"/>
                             <constraint firstItem="02f-qN-Yx3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="95B-3r-vBN"/>
                             <constraint firstItem="Jdt-4M-3nx" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="JhO-SM-AR9"/>
-                            <constraint firstItem="02f-qN-Yx3" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-50" id="Kbf-L1-UaY"/>
                             <constraint firstItem="Jdt-4M-3nx" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Scx-eo-5nA"/>
+                            <constraint firstItem="02f-qN-Yx3" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.8" id="iAC-9A-9P5"/>
                             <constraint firstAttribute="trailing" secondItem="Jdt-4M-3nx" secondAttribute="trailing" id="ikT-pv-JEG"/>
-                            <constraint firstItem="02f-qN-Yx3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="50" id="uxM-ma-Vlf"/>
+                            <constraint firstItem="02f-qN-Yx3" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="70" id="imy-tJ-IeE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

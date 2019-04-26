@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-
+// STRUCT FOR DOGS AND CATS COLORS 
 struct ColorsList {
    static let dogColors: [(name: String, image: UIImage)] = [
       ("Apricot / Beige", UIImage(named:"apricot_beige")!),

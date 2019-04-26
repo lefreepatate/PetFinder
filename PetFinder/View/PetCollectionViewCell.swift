@@ -16,18 +16,14 @@ class PetCollectionViewCell: UICollectionViewCell {
    @IBOutlet weak var petName: UILabel!
    @IBOutlet weak var breedLabel: UILabel!
    @IBOutlet weak var genderLabel: UILabel!
-   override func awakeFromNib() {
-      super.awakeFromNib()
-   }
-   func setGradientBackground() {
+   
+   func blackToTransparentGradient() -> CAGradientLayer {
       let gradientLayer = CAGradientLayer()
-      gradientLayer.colors = [ #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1).cgColor,#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0).cgColor]
-      gradientLayer.startPoint = CGPoint(x: 0.5, y: 1.0)
-      gradientLayer.endPoint = CGPoint(x: 0.5, y: 0.6)
-      gradientLayer.locations = [0, 1]
+      gradientLayer.colors = [#colorLiteral(red: 0.1725490196, green: 0.1647058824, blue: 0.1647058824, alpha: 0.7998983305).cgColor, #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0).cgColor,]
+      gradientLayer.startPoint = CGPoint(x: 0, y: 0.9)
+      gradientLayer.endPoint = CGPoint(x: 0, y: 0.4)
       gradientLayer.frame = bounds
-     
-      petImage.layer.insertSublayer(gradientLayer, at: 0)
+      return gradientLayer
    }
    func petImageLoader(shown: Bool) {
       petImage.isHidden = shown

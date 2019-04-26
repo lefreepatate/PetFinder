@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+// STRUCT FOR ALL BREEDS DOGS & CATS
 struct BreedLists {
    static let dogBreed = [
       "Affenpinscher",

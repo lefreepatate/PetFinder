@@ -20,11 +20,11 @@ class BreedsTableViewCell: UITableViewCell {
       name = name.replacingOccurrences(of: " ", with: "%20")
       if !button.isSelected {
          button.isSelected = true
-         PetService.shared.parameters.breed.append(name + ",")
+         PetService.parameters.breed.append(name + ",")
       } else {
          button.isSelected = false
-         if let range = PetService.shared.parameters.breed.range(of: name + ",") {
-            PetService.shared.parameters.breed.removeSubrange(range)
+         if let range = PetService.parameters.breed.range(of: name + ",") {
+            PetService.parameters.breed.removeSubrange(range)
          }
       }
    }

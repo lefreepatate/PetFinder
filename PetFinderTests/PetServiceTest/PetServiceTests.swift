@@ -5,7 +5,6 @@
 //  Created by Carlos Garcia-Muskat on 24/03/2019.
 //  Copyright © 2019 Carlos Garcia-Muskat. All rights reserved.
 //
-
 import XCTest
 @testable import PetFinder
 
@@ -23,14 +22,16 @@ class PetFinderServiceTests: XCTestCase {
       success = Bool()
    }
    func getPetResponse(parameterID: String, sessionData: Foundation.Data?,
-                       response: URLResponse?, error: Error?)
-   {
+                       response: URLResponse?, error: Error?) {
+      
       let expectation = XCTestExpectation(description: "Wait for queue change")
       fakePetSearch = PetService(session: URLSessionFake(data: sessionData, response: response, error: error))
+      if parameterID != "" {
       parameters.id = parameterID
-      fakePetSearch.parameters.id = parameterID
+      }
+      PetService.parameters.id = parameterID
       fakePetSearch.getPets { (success, response) in
-        expectation.fulfill()
+         expectation.fulfill()
          if success && !self.parameters.id.isEmpty, let response = response as! Animal? {
             self.pet = response
             self.success = success
@@ -45,63 +46,64 @@ class PetFinderServiceTests: XCTestCase {
    
    func testGivenEmptyAgeWhenAddingAgeTypeThenAgeParametersIsNotEmpty() {
       let ageType = "Adult"
-      fakePetSearch.parameters.age.append(ageType)
-      XCTAssertNotNil(fakePetSearch.parameters.age)
-      XCTAssertFalse(fakePetSearch.parameters.age.isEmpty)
+      PetService.parameters.age.append(ageType)
+      XCTAssertNotNil(PetService.parameters.age)
+      XCTAssertFalse(PetService.parameters.age.isEmpty)
    }
    func testGivenEmptyBreedWhenAddingBreedTypeThenBreedParametersIsNotEmpty() {
-      let breed = "German Shepherd Dog"
-      fakePetSearch.parameters.breed.append(breed)
-      XCTAssertNotNil(fakePetSearch.parameters.breed)
-      XCTAssertFalse(fakePetSearch.parameters.breed.isEmpty)
+      let breed = "German%20Shepherd%20Dog"
+      PetService.parameters.breed.append(breed)
+      XCTAssertNotNil(PetService.parameters.breed)
+      XCTAssertFalse(PetService.parameters.breed.isEmpty)
    }
    func testGivenEmptySizeWhenAddingSizeTypeThenSizeParametersIsNotEmpty() {
       let size = "Medium"
-      fakePetSearch.parameters.size.append(size)
-      XCTAssertNotNil(fakePetSearch.parameters.size)
-      XCTAssertFalse(fakePetSearch.parameters.size.isEmpty)
+      PetService.parameters.size.append(size)
+      XCTAssertNotNil(PetService.parameters.size)
+      XCTAssertFalse(PetService.parameters.size.isEmpty)
    }
    func testGivenEmptyGenderWhenAddingGenderTypeThenGenderParametersIsNotEmpty() {
       let gender = "Female"
-      fakePetSearch.parameters.gender.append(gender)
-      XCTAssertNotNil(fakePetSearch.parameters.gender)
-      XCTAssertFalse(fakePetSearch.parameters.gender.isEmpty)
+      PetService.parameters.gender.append(gender)
+      XCTAssertNotNil(PetService.parameters.gender)
+      XCTAssertFalse(PetService.parameters.gender.isEmpty)
    }
    func testGivenEmptyColorWhenAddingColorTypeThenColorParametersIsNotEmpty() {
       let color = "Bicolor"
-      fakePetSearch.parameters.color.append(color)
-      XCTAssertNotNil(fakePetSearch.parameters.color)
-      XCTAssertFalse(fakePetSearch.parameters.color.isEmpty)
+      PetService.parameters.color.append(color)
+      XCTAssertNotNil(PetService.parameters.color)
+      XCTAssertFalse(PetService.parameters.color.isEmpty)
    }
    func testGivenEmptyIDWhenAddingIDTypeThenIDParametersIsNotEmpty() {
       let id = "44482552"
-      fakePetSearch.parameters.id.append(id)
-      XCTAssertNotNil(fakePetSearch.parameters.id)
-      XCTAssertFalse(fakePetSearch.parameters.id.isEmpty)
+      PetService.parameters.id.append(id)
+      XCTAssertNotNil(PetService.parameters.id)
+      XCTAssertFalse(PetService.parameters.id.isEmpty)
    }
-   func testGivenEmptyEnvironnementWhenAddingEnvironnementTypeThenEnvironnementParametersIsNotEmpty() {
+   func testGivenEmptyEnvironnementWhenAddingEnvironnementTypeThenParametersIsNotEmpty() {
       let environnement = "dogs"
-      fakePetSearch.parameters.environnement.append(environnement)
-      XCTAssertNotNil(fakePetSearch.parameters.environnement)
-      XCTAssertFalse(fakePetSearch.parameters.environnement.isEmpty)
+      PetService.parameters.environnement.append(environnement)
+      XCTAssertNotNil(PetService.parameters.environnement)
+      XCTAssertFalse(PetService.parameters.environnement.isEmpty)
    }
    
    func testGivenEmptyLocationWhenAddingLocationTypeThenLocationParametersIsNotEmpty() {
-      let location = "New‰20York"
-      fakePetSearch.parameters.location = location
-      XCTAssertNotNil(fakePetSearch.parameters.location)
-      XCTAssertEqual(location, fakePetSearch.parameters.location)
+      let location = "New%20York"
+      PetService.parameters.location = location
+      XCTAssertNotNil(PetService.parameters.location)
+      XCTAssertEqual(location, PetService.parameters.location)
    }
    
    func testGivenEmptyDistanceWhenAddingDistanceTypeThenDistanceParametersIsNotEmpty() {
-      let distance = 50
-      fakePetSearch.parameters.distance = distance
-      XCTAssertNotNil(fakePetSearch.parameters.distance)
-      XCTAssertEqual(distance, fakePetSearch.parameters.distance)
+      let distance = "50"
+      PetService.parameters.distance = distance
+      XCTAssertNotNil(PetService.parameters.distance)
+      XCTAssertEqual(distance, PetService.parameters.distance)
    }
    
    func testPetServiceShouldPostFailedCallBackIfError() {
-      getPetResponse(parameterID: "", sessionData: nil, response: nil, error: FakePetServiceResponse.error)
+      getPetResponse(parameterID: "", sessionData: nil,
+                     response: nil, error: FakePetServiceResponse.error)
       XCTAssertNil(pets)
       XCTAssertFalse(success)
    }
@@ -113,31 +115,44 @@ class PetFinderServiceTests: XCTestCase {
    }
    
    func testPetServiceShouldPostFailedCallBackIfIncorrectData() {
-      getPetResponse(parameterID: "", sessionData: FakePetServiceResponse.incorrectPetData, response: nil, error: nil)
+      getPetResponse(parameterID: "", sessionData: FakePetServiceResponse.incorrectPetData,
+                     response: nil, error: nil)
       XCTAssertNil(pets)
       XCTAssertFalse(success)
    }
    
    func testPetServiceShouldPostFailedCallBackIfResponse500() {
-      getPetResponse(parameterID: "", sessionData: nil, response: FakePetServiceResponse.responseKO, error: nil)
+      getPetResponse(parameterID: "", sessionData: nil,
+                     response: FakePetServiceResponse.responseKO, error: nil)
+      XCTAssertNil(pets)
+      XCTAssertFalse(success)
+   }
+   
+   func testPetServiceShouldPostFailedCallBackIfResponse401() {
+      getPetResponse(parameterID: "", sessionData: nil,
+                     response: FakePetServiceResponse.responseToken, error: nil)
       XCTAssertNil(pets)
       XCTAssertFalse(success)
    }
    
    func testPetServiceShouldPostSuccessCallBackIfCorrectData() {
-      getPetResponse(parameterID: "", sessionData: FakePetServiceResponse.PetCorrectData, response: FakePetServiceResponse.responseOK, error: nil)
+      getPetResponse(parameterID: "", sessionData: FakePetServiceResponse.PetCorrectData,
+                     response: FakePetServiceResponse.responseOK, error: nil)
       XCTAssertTrue(success)
       XCTAssertNotNil(pets)
       XCTAssertEqual(pets?[0].age, "Young")
    }
    func testPetServiceShouldPostSuccessCallBackIfCorrectDataWithOptions() {
-      getPetResponse(parameterID: "", sessionData: FakePetServiceResponse.PetCorrectDataWithOptions, response: FakePetServiceResponse.responseOK, error: nil)
+      getPetResponse(parameterID: "", sessionData: FakePetServiceResponse.PetCorrectDataWithOptions,
+                     response: FakePetServiceResponse.responseOK, error: nil)
       XCTAssertTrue(success)
       XCTAssertNotNil(pets)
       XCTAssertEqual(pets?[0].name, "Cocoa")
    }
    func testPetServiceShouldPostSuccessCallBackIfCorrectDataWithPetDetail() {
-      getPetResponse(parameterID: "44482552", sessionData: FakePetServiceResponse.PetCorrectDataPetDetail, response: FakePetServiceResponse.responseOK, error: nil)
+      getPetResponse(parameterID: "44482552",
+                     sessionData: FakePetServiceResponse.PetCorrectDataPetDetail,
+                     response: FakePetServiceResponse.responseOK, error: nil)
       XCTAssertTrue(success)
       XCTAssertNotNil(pet)
       XCTAssertEqual(pet?.id, 44482552)
@@ -146,8 +161,9 @@ class PetFinderServiceTests: XCTestCase {
    }
    
    func testCheckTokenServiceWhenHTTPResponseIS401() {
-      fakePetSearch = PetService(session: URLSessionFake(data: FakeTokenResponse.TokenCorrectData,
-                                                         response:FakeTokenResponse.responseOK, error: nil))
+      fakePetSearch = PetService(session: URLSessionFake(
+         data: FakeTokenResponse.TokenCorrectData,
+         response:FakeTokenResponse.responseOK, error: nil))
       fakePetSearch.checkToken()
       
    }

@@ -9,18 +9,15 @@
 import Foundation
 
 class TokenService {
-   
-   static var shared = TokenService()
    init() {}
-   
-   private var task: URLSessionDataTask?
+   static private var task: URLSessionDataTask?
    // MARK: -- FAKE DATATASK FOR TESTING
-   private var session = URLSession.init(configuration: .default)
+   static private var session = URLSession.init(configuration: .default)
    init(session: URLSession) {
-      self.session = session
+      TokenService.session = session
    }
    // MARK: -- GET REFRESH TOKEN CODE
-   func getToken(_ callBack: @escaping (Bool, String?) -> Void) {
+   static func getToken(_ callBack: @escaping (Bool, String?) -> Void) {
       let request = requestToken()
       let dataTask = session.dataTask(with: request, completionHandler: { (data, response, error) in
          DispatchQueue.main.async {
@@ -40,7 +37,7 @@ class TokenService {
       dataTask.resume()
    }
    
-   func requestToken() -> URLRequest {
+   static func requestToken() -> URLRequest {
       let headers = ["content-type": "application/json"]
       let parameters = [
          "grant_type": "client_credentials",

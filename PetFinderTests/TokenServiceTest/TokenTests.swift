@@ -26,7 +26,7 @@ class TokenTest: XCTestCase {
       let expectation = XCTestExpectation(description: "Wait for queue change")
       
       fakeToken = TokenService(session: URLSessionFake(data: sessionData, response: response, error: error))
-      fakeToken.getToken { (success, response) in
+      TokenService.getToken { (success, response) in
          expectation.fulfill()
          if success, let response = response {
             self.token = response
@@ -36,6 +36,15 @@ class TokenTest: XCTestCase {
       wait(for: [expectation], timeout: 0.05)
    }
    
+   func testCheckTokenServiceShouldPostFailedWhenDataisIncorrect() {
+      fakePetSearch = PetService(session: URLSessionFake(data: FakePetServiceResponse.incorrectPetData,
+                                                         response:FakeTokenResponse.responseKO, error: nil))
+      getTokenResponse(sessionData: FakeTokenResponse.tokenIncorrectData,
+                       response: nil, error: FakeTokenResponse.error)
+      fakePetSearch.checkToken()
+      XCTAssertFalse(success)
+      XCTAssertNil(token)
+   }
    func testCheckTokenServiceWhenHTTPResponseIS401() {
       fakePetSearch = PetService(session: URLSessionFake(data: FakeTokenResponse.TokenCorrectData,
                                                          response:FakeTokenResponse.responseKO, error: nil))

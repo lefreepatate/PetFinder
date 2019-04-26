@@ -9,87 +9,106 @@
 import UIKit
 
 class PetSearchViewController: UIViewController {
-   
-   @IBOutlet weak var searchSV: UIScrollView!
+   // MARK: IBOUTLETS
+   // MARK: -- LOCATION
    @IBOutlet weak var location: UITextField!
    @IBOutlet weak var milesDistance: UITextField!
    
-   @IBOutlet weak var petimage: UIImageView!
-   @IBOutlet weak var breedView: UIView!
-   
-   @IBOutlet weak var breedSearchBar: UISearchBar!
-   @IBOutlet weak var breedTableView: UITableView!
+   // MARK: -- COLORS OUTLETS
    @IBOutlet weak var colorsView: UIView!
+   @IBOutlet weak var showColors: UIButton!
    @IBOutlet weak var colorSearchBar: UISearchBar!
    @IBOutlet weak var colorTableView: UITableView!
+   
+   // MARK: -- BREEDS OUTLETS
+   @IBOutlet weak var breedView: UIView!
+   @IBOutlet weak var showBreeds: UIButton!
+   @IBOutlet weak var breedSearchBar: UISearchBar!
+   @IBOutlet weak var breedTableView: UITableView!
+   
+   // MARK: OPTIONS BUTTONS
    @IBOutlet var ageBtns: [UIButton]!
    @IBOutlet var sizeBtns: [UIButton]!
    @IBOutlet var envBtns: [UIButton]!
    @IBOutlet weak var gender: UISegmentedControl!
-   @IBOutlet weak var showPets: UIButton!
-   @IBOutlet weak var showColors: UIButton!
-   @IBOutlet weak var showBreeds: UIButton!
    
+   // MARK: LAUNCH SEARCH BUTTON
+   @IBOutlet weak var showPets: UIButton!
+   
+   // OTHERS
+   @IBOutlet weak var searchSV: UIScrollView!
+   @IBOutlet weak var petimage: UIImageView!
+   
+   // MARK: IBACTIONS
+   // MARK: BREED TABLEVIEW
    @IBAction func breedList(_ sender: UIButton) {
       viewOptions(view: breedView, button: sender)
    }
+   // COLOR TABLEVIEW
    @IBAction func colorList(_ sender: UIButton) {
       viewOptions(view: colorsView, button: sender)
    }
+   
+   // MARK: BUTTONS ARRAY'S OPTIONS
    @IBAction func ageTappedBtn(_ sender: UIButton) {
-      options(on: sender, buttons: ageBtns, parameters: &PetService.shared.parameters.age)
+      options(on: sender, buttons: ageBtns, parameters: &PetService.parameters.age)
    }
    @IBAction func sizeTappedBtn(_ sender: UIButton) {
-      options(on: sender, buttons: sizeBtns, parameters: &PetService.shared.parameters.size)
-   }
-   @IBAction func genderTappedBtn(_ sender: UISegmentedControl) {
-      PetService.shared.parameters.gender.removeAll()
-      guard let text = gender.titleForSegment(at: sender.selectedSegmentIndex) else { return }
-      PetService.shared.parameters.gender.append(text.lowercased())
+      options(on: sender, buttons: sizeBtns, parameters: &PetService.parameters.size)
    }
    @IBAction func environnementTappedBtn(_ sender: UIButton) {
-      options(on: sender, buttons: envBtns,parameters: &PetService.shared.parameters.environnement)
+      options(on: sender, buttons: envBtns,parameters: &PetService.parameters.environnement)
    }
    
+   // GENDER OPTIONS
+   @IBAction func genderTappedBtn(_ sender: UISegmentedControl) {
+      PetService.parameters.gender.removeAll()
+      guard let text = gender.titleForSegment(at: sender.selectedSegmentIndex) else { return }
+      PetService.parameters.gender.append(text.lowercased())
+   }
    // Enum for change datas in searchPage
    enum Pet {
       case dog
       case cat
    }
+   // VARIABLE TO CHOSSE TYPE OF PET
    var pet: Pet = .dog
    override func viewDidLoad() {
       super.viewDidLoad()
       getdesign()
    }
-   
    override func viewWillAppear(_ animated: Bool) {
       super.viewWillAppear(animated)
-      removeAll()
       milesDistance.isHidden = true
+      PetService.parameters.id.removeAll()
+      PetService.parameters.type.removeAll()
       if pet == .dog {
          setAsDogSearch()
       } else if pet == .cat {
          setAsCatSearch()
       }
    }
-   
+   // INITIALIZING COLOR AND BREED ARRAYS
    var currentBreedArray = BreedLists.dogBreed
    var currentColorsArray = ColorsList.dogColors
-   
+   // MARK: OPTIONS
+   // SETTING OPTIONS FOR DOG SEARCH
    func setAsDogSearch() {
       navigationItem.title = "Dog Search"
       petimage.image = UIImage(named: "dogSearch")
       currentBreedArray = BreedLists.dogBreed
       currentColorsArray = ColorsList.dogColors
-      PetService.shared.parameters.type.append("?type=dog")
+      PetService.parameters.type.append("?type=dog")
    }
+   // SETTING OPTIONS FOR CAT SEARCH
    func setAsCatSearch(){
       navigationItem.title = "Cat Search"
       petimage.image = UIImage(named: "catSearch")!
       currentBreedArray = BreedLists.catBreed
       currentColorsArray = ColorsList.catColors
-      PetService.shared.parameters.type.append("?type=cat")
+      PetService.parameters.type.append("?type=cat")
    }
+   // SHOWING/HIDDING TABLEVIEWS FOR COLORS AND BREEDS
    func viewOptions(view: UIView, button: UIButton) {
       UIView.animate(withDuration: 0.3) {
          if !button.isSelected {
@@ -118,9 +137,10 @@ class PetSearchViewController: UIViewController {
          }
       }
    }
+   // CHOOSING OPTIONS ON ARRAY AND BUTTONS STATEMENTS
    func options(on button: UIButton, buttons: [UIButton]!, parameters: inout String) {
       guard let value = button.titleLabel?.text as String? else { return }
-      if !button.isSelected && button.tag == 1 {
+      if button.tag == 1 {
          parameters.removeAll()
          resetButtons(sender: button, buttons: buttons)
       } else {
@@ -131,6 +151,7 @@ class PetSearchViewController: UIViewController {
          saveValues(sender: button, value: value, parameters: &parameters)
       }
    }
+   // MARK: SAVING VALUES ON MODEL PARAMETERS
    func saveValues(sender: UIButton, value: String, parameters: inout String){
       if !sender.isSelected {
          UIView.animate(withDuration: 0.3) {
@@ -148,7 +169,8 @@ class PetSearchViewController: UIViewController {
          }
       }
    }
-   func resetButtons(sender: UIButton, buttons: [UIButton]!) {
+   // RESET BUTTONS TO 'UNSELECTED' IF ANY IS SELECTED
+   func resetButtons(sender: UIButton, buttons: [UIButton]) {
       UIView.animate(withDuration: 0.3) {
          sender.isSelected = true
          sender.backgroundColor = #colorLiteral(red: 0.9450980392, green: 0.05882352941, blue: 0.3490196078, alpha: 1)
@@ -158,17 +180,8 @@ class PetSearchViewController: UIViewController {
          }
       }
    }
-   func removeAll() {
-      PetService.shared.parameters.id.removeAll()
-      PetService.shared.parameters.type.removeAll()
-      PetService.shared.parameters.age.removeAll()
-      PetService.shared.parameters.breed.removeAll()
-      PetService.shared.parameters.color.removeAll()
-      PetService.shared.parameters.environnement.removeAll()
-      PetService.shared.parameters.gender.removeAll()
-      PetService.shared.parameters.size.removeAll()
-   }
 }
+// MARK: EXTENSION FOR TABLEVIEW
 extension PetSearchViewController : UITableViewDelegate, UITableViewDataSource {
    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
       if tableView == breedTableView {
@@ -179,15 +192,14 @@ extension PetSearchViewController : UITableViewDelegate, UITableViewDataSource {
       return 0
    }
    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+      // Returns data depending on wich tableView is selected
       if tableView == breedTableView {
          guard let breedCell = tableView.dequeueReusableCell(
             withIdentifier: "breedName", for: indexPath)
             as? BreedsTableViewCell else { return UITableViewCell() }
          breedCell.breedBtn.setTitle(self.currentBreedArray[indexPath.row], for: .normal)
-         checkIfSelected(on: breedCell.breedBtn, parameter: PetService.shared.parameters.breed)
-         
+         checkIfSelected(on: breedCell.breedBtn, parameter: PetService.parameters.breed)
          return breedCell
-         
       } else if tableView == colorTableView {
          guard let colorCell = tableView.dequeueReusableCell(
             withIdentifier: "colorName", for: indexPath)
@@ -195,13 +207,12 @@ extension PetSearchViewController : UITableViewDelegate, UITableViewDataSource {
          let cellImage = currentColorsArray[indexPath.row].1
          colorCell.colorImage.image = cellImage
          colorCell.colorBtn.setTitle(self.currentColorsArray[indexPath.row].0, for: .normal)
-         checkIfSelected(on: colorCell.colorBtn, parameter: PetService.shared.parameters.color)
-         
+         checkIfSelected(on: colorCell.colorBtn, parameter: PetService.parameters.color)
          return colorCell
       }
       return UITableViewCell()
    }
-   
+   // Function that guard selected state even if cell are reused
    func checkIfSelected(on button: UIButton, parameter: String) {
       guard var name = button.titleLabel?.text else {return}
       name = name.replacingOccurrences(of: " ", with: "%20")
@@ -212,6 +223,7 @@ extension PetSearchViewController : UITableViewDelegate, UITableViewDataSource {
       }
    }
 }
+// MARK: EXTENSION FOR SEARCHBAR
 extension PetSearchViewController: UISearchBarDelegate {
    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
       breedTypeTable(with: currentBreedArray, search: searchText)
@@ -219,7 +231,7 @@ extension PetSearchViewController: UISearchBarDelegate {
       colorTableView.reloadData()
       breedTableView.reloadData()
    }
-   
+   // Returns breeds search
    func breedTypeTable(with breedArray: [String], search: String){
       guard !search.isEmpty else {
          emptyArray(on: breedTableView)
@@ -228,6 +240,7 @@ extension PetSearchViewController: UISearchBarDelegate {
          breed.contains(search)
       })
    }
+   // Returns color search
    func colorTypeTable(with colorArray: [(String, UIImage)], search: String){
       guard !search.isEmpty else {
          emptyArray(on: colorTableView)
@@ -236,6 +249,7 @@ extension PetSearchViewController: UISearchBarDelegate {
          color.0.contains(search)
       })
    }
+   // Re-initialize arrays
    func emptyArray(on table: UITableView) {
       if pet == .dog {
          currentBreedArray = BreedLists.dogBreed
@@ -247,6 +261,7 @@ extension PetSearchViewController: UISearchBarDelegate {
       table.reloadData()
    }
 }
+// MARK: EXTENSION FOR LOCATION + DISTANCE TEXTFIELD SEARCH
 extension PetSearchViewController: UITextFieldDelegate {
    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
       textField.resignFirstResponder()
@@ -260,40 +275,43 @@ extension PetSearchViewController: UITextFieldDelegate {
          UIView.animate(withDuration: 0.3) {
             self.milesDistance.isHidden = true
          }
-         PetService.shared.parameters.location.removeAll()
+         PetService.parameters.location.removeAll()
       }
       return true
    }
-   
    @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
       breedSearchBar.resignFirstResponder()
       colorSearchBar.resignFirstResponder()
       location.resignFirstResponder()
       milesDistance.resignFirstResponder()
    }
-   
+   // MARK: SAVING LOCATION & DISTANCE IN PARAMETERS
    func setLocation() {
       guard let location = location.text else { return }
-      PetService.shared.parameters.location = location.replacingOccurrences(of: " ", with: "%20")
+      PetService.parameters.location = location.replacingOccurrences(of: " ", with: "%20")
    }
-   
    func setDistance() {
-      guard let distance = Int(milesDistance.text!) else { return }
-      PetService.shared.parameters.distance = distance
+      guard let distance = milesDistance.text else { return }
+      PetService.parameters.distance = distance
    }
 }
-
+// MARK: EXTENSION FOR DESIGN PROGRAMMATICALY
 extension PetSearchViewController {
    func getdesign(){
-      self.showPets.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-      self.showPets.layer.borderWidth = 5
       roundedButtons()
       setArrayButtons()
-      setCornerRadius(on: searchSV)
-      setGradientBackground(on: view)
-      milesDistance.attributedPlaceholder = NSAttributedString(string: "Miles", attributes:  [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)])
-      location.attributedPlaceholder = NSAttributedString(
-         string: "Enter City, State or ZIP", attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)])
+      setGradient(on: view)
+      LocationDistancePresentation()
+      cornersBottom(on: showPets)
+      setGradientButton(on: showPets)
+      cornersTop(on: searchSV)
+   }
+   
+   func LocationDistancePresentation() {
+      milesDistance.attributedPlaceholder = NSAttributedString(string: "Miles", attributes:
+         [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)])
+      location.attributedPlaceholder = NSAttributedString(string: "Enter City, State or ZIP", attributes:
+         [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)])
       milesDistance.borderStyle = .roundedRect
       milesDistance.layer.borderWidth = 2
       milesDistance.layer.cornerRadius = 8
@@ -303,10 +321,10 @@ extension PetSearchViewController {
       location.layer.cornerRadius = 8
       location.layer.borderColor = #colorLiteral(red: 0.9450980392, green: 0.05882352941, blue: 0.3490196078, alpha: 1)
    }
+   
    func roundedButtons() {
       setCornerRadiusToCircle(on: showBreeds)
       setCornerRadiusToCircle(on: showColors)
-      setCornerRadiusToCircle(on: showPets)
    }
    func setArrayButtons() {
       for buttons in [ageBtns, sizeBtns, envBtns] {

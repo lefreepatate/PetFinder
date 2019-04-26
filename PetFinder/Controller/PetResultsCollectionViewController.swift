@@ -9,27 +9,28 @@
 import UIKit
 
 class PetsResultsCollectionViewController: UICollectionViewController {
-   
+   // MARK: IBOUTLETS
    @IBOutlet weak var activityView: UIView!
    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
    @IBOutlet var petsCollectionView: UICollectionView!
+   // MARK: VARIABLES TO GET DATA'S FROM SEARCH
    var animals = [Animal]()
    var cacheImage = UIImage()
    var parameters = Parameters()
-
    override func viewDidLoad() {
       super.viewDidLoad()
-       petResultsSettings()
+      petResultsSettings()
    }
    override func viewWillAppear(_ animated: Bool) {
       super.viewWillAppear(animated)
+      // Setting with of cells results : half of the view's size
       let layout = petsCollectionView.collectionViewLayout as? UICollectionViewFlowLayout
-      let width = (view.frame.width*0.5)-5
+      let width = (view.frame.width*0.5)-5/2
       layout?.itemSize = CGSize(width: width, height: width)
    }
-   
+   // MARK: API CALL TO GET ANIMALS SEARCH CALLING ON VIEWDIDLOAD
    func petResultsSettings() {
-      PetService.shared.getPets() { (success, response) in
+      PetService().getPets() { (success, response) in
          if success, let response = response as! [Animal]? {
             self.animals = response
             self.petsCollectionView.reloadData()
@@ -48,8 +49,6 @@ class PetsResultsCollectionViewController: UICollectionViewController {
       activityIndicator.isHidden = !shown
       activityView.isHidden = !shown
    }
-   
-   
    // MARK: UICollectionViewDataSource
    override func numberOfSections(in collectionView: UICollectionView) -> Int {
       return 1
@@ -60,14 +59,26 @@ class PetsResultsCollectionViewController: UICollectionViewController {
    }
    override func collectionView(_ collectionView: UICollectionView,
                                 cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-      guard let cell =
-         collectionView.dequeueReusableCell(withReuseIdentifier: "PetsResults", for: indexPath)
-            as? PetCollectionViewCell else { return UICollectionViewCell() }
+      guard let cell = collectionView.dequeueReusableCell( withReuseIdentifier: "PetsResults",
+                                                           for: indexPath)  as? PetCollectionViewCell
+         else { return UICollectionViewCell() }
       cell.petImageLoader(shown: true)
       let pet = animals[indexPath.row]
+      loadImage(on: indexPath, cell: cell)
       cell.petName.text = pet.name?.capitalized
-      cell.breedLabel.text = self.getBreedString(with: pet.breeds!)
+      cell.breedLabel.text = self.getBreedString(with: pet.breeds)
       cell.genderLabel.text = "\(pet.gender ?? "") - \(pet.age ?? "")"
+      setGradient(on: cell)
+      setCornerRadius(on: cell)
+      setCornerRadius(on: cell.petImage)
+      if (cell.petImage.layer.sublayers == nil) {
+         cell.petImage.layer.insertSublayer(cell.blackToTransparentGradient(), at: 1)
+      }
+      return cell
+   }
+   // Setting petImage if empty response, getting default image
+   func loadImage(on indexPath: IndexPath, cell: PetCollectionViewCell) {
+      let pet = animals[indexPath.row]
       if pet.photos?.isEmpty == false {
          let image = pet.photos?[0].medium
          if let imageURL = URL(string: image!) {
@@ -82,13 +93,8 @@ class PetsResultsCollectionViewController: UICollectionViewController {
          }
          cell.petImage.image = self.cacheImage
       }
-      setGradientBackground(on: cell)
-      setCornerRadius(on: cell)
-      setCornerRadius(on: cell.petImage)
-      cell.setGradientBackground()
-      return cell
    }
-   
+   // Getting images from URL
    func imageFrom(with stringURL: URL, cell: PetCollectionViewCell) {
       URLSession.shared.dataTask(with: stringURL) { (data, response, error) in
          if error != nil { return }
@@ -97,18 +103,18 @@ class PetsResultsCollectionViewController: UICollectionViewController {
             cell.petImage.image = UIImage(data: data)
             cell.petImageLoader(shown: false)
          }
-      }.resume()
+         }.resume()
    }
-   
-   func getBreedString(with breed: Breeds) -> String {
+   // Transforming Boolean into String 
+   func getBreedString(with breed: Breeds?) -> String {
       var breedString = String()
-      if breed.primary != "" {
-         breedString = (breed.primary ?? "")
+      if breed?.primary != "" {
+         breedString = (breed?.primary ?? "")
       }
-      if breed.secondary != nil {
-         breedString += " & " + (breed.secondary ?? "")
+      if breed?.secondary != nil {
+         breedString += " & " + (breed?.secondary ?? "")
       }
-      if breed.mixed == true {
+      if breed?.mixed == true {
          breedString += " Mix"
       }
       return breedString.capitalized
@@ -121,8 +127,8 @@ class PetsResultsCollectionViewController: UICollectionViewController {
       guard let destinationVC = storyBoard.instantiateViewController(
          withIdentifier: "PetDetailViewController") as? PetDetailViewController else { return }
       let pet = animals[indexPath.row]
-      destinationVC.id = "\(pet.id!)"
-      destinationVC.petBreed = self.getBreedString(with: pet.breeds!)
+      destinationVC.id = "\(pet.id ?? 0)"
+      destinationVC.petBreed = self.getBreedString(with: pet.breeds)
       navigationController?.pushViewController(destinationVC, animated: true)
    }
 }

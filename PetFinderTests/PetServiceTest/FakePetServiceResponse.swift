@@ -33,6 +33,8 @@ class FakePetServiceResponse {
    
    static let responseKO = HTTPURLResponse(url: URL(string: "petfinder.com")!,
                                            statusCode: 500, httpVersion: nil, headerFields: nil)
+   static let responseToken = HTTPURLResponse(url: URL(string: "petfinder.com")!,
+                                           statusCode: 401, httpVersion: nil, headerFields: nil)
    
    static let incorrectPetData = "erreur".data(using: .utf8)
    

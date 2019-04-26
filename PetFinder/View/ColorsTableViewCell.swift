@@ -21,14 +21,14 @@ class ColorsTableViewCell: UITableViewCell {
       if !colorBtn.isSelected {
          colorBtn.isSelected = true
          if name == "Tricolor%20(Brown,%20Black,%20&%20White)" {
-            PetService.shared.parameters.color.append("Tricolor+%28Brown%2C+Black%2C+%26+White%29" + ",")
+            PetService.parameters.color.append("Tricolor+%28Brown%2C+Black%2C+%26+White%29" + ",")
          } else {
-            PetService.shared.parameters.color.append(name + ",")
+            PetService.parameters.color.append(name + ",")
          }
       } else {
          colorBtn.isSelected = false
-         if let range = PetService.shared.parameters.color.range(of: name + ",") {
-            PetService.shared.parameters.color.removeSubrange(range)
+         if let range = PetService.parameters.color.range(of: name + ",") {
+            PetService.parameters.color.removeSubrange(range)
          }
       }
    }

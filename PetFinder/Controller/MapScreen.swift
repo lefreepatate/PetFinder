@@ -11,19 +11,20 @@ import MapKit
 import CoreLocation
 
 class MapScreen: UIViewController {
+   // MARK: OUTLETS
    @IBOutlet weak var goBtn: UIButton!
    @IBOutlet weak var dissMissBtn: UIButton!
    @IBOutlet weak var mapView: MKMapView!
+   // MARK: VARIABLES TO SET LOCATION
    let locationManager = CLLocationManager()
    let regionInMeters:Double = 10000
    var previousLocation: CLLocation?
    var address = String()
-   
+   // MARK: ACTION TO GET PLANS FOR GPS
    @IBAction func mapButton(_ sender: UIButton) {
      viewDirectionsOnMaps()
    }
-   
-    override func viewDidLoad() {
+   override func viewDidLoad() {
         super.viewDidLoad()
       // Check if options in settings are allowed
       checkLocationServices()
@@ -49,7 +50,6 @@ class MapScreen: UIViewController {
          mapItem.openInMaps(launchOptions: options)
       }
    }
-   
    // Look at coordinates from organization's address
    func coordinates(forAddress address: String, completion: @escaping (CLLocationCoordinate2D?) -> Void) {
       let geocoder = CLGeocoder()
@@ -68,12 +68,10 @@ class MapScreen: UIViewController {
          completion(placemarks?.first?.location?.coordinate)
       }
    }
-   
    func setupLocationManager() {
       locationManager.delegate = self
       locationManager.desiredAccuracy = kCLLocationAccuracyBest
    }
-   
    func centerViewOnUserLocation() {
       if let location = locationManager.location?.coordinate {
          
@@ -84,7 +82,6 @@ class MapScreen: UIViewController {
          mapView.setRegion(region, animated: true)
       }
    }
-   
    func checkLocationServices() {
       if CLLocationManager.locationServicesEnabled() {
          setupLocationManager()
@@ -93,7 +90,7 @@ class MapScreen: UIViewController {
          presentAlert(with: "We could not be able to locate your position, please turn on Location Service")
       }
    }
-   
+   // MARK: CHECKING LOCATION AUTORIZATION AND ASING IF APP CAN ACCESS TO
    func checkLocationAuthorization() {
       switch CLLocationManager.authorizationStatus() {
       case .authorizedWhenInUse:
@@ -110,20 +107,18 @@ class MapScreen: UIViewController {
          break
       }
    }
-   
    func startTackingUserLocation() {
       mapView.showsUserLocation = true
       centerViewOnUserLocation()
       locationManager.startUpdatingLocation()
       previousLocation = getCenterLocation(for: mapView)
    }
-   
    func getCenterLocation(for mapView: MKMapView) -> CLLocation {
       let latitude = mapView.centerCoordinate.latitude
       let longitude = mapView.centerCoordinate.longitude
       return CLLocation(latitude: latitude, longitude: longitude)
    }
-   
+   // MARK: GETTING DIRECTIONS FROM ORGANIZATION ADDRESS
    func getDirections(location: CLLocationCoordinate2D) {
       let request = createDirectionRequest(from: location)
       let directions = MKDirections(request: request)
@@ -137,7 +132,6 @@ class MapScreen: UIViewController {
             }
          }
       }
-   
    func createDirectionRequest(from coordinate: CLLocationCoordinate2D) -> MKDirections.Request {
       let destinationLocation 	= getCenterLocation(for: mapView).coordinate
       let startingLocation 		= MKPlacemark(coordinate: coordinate)
@@ -174,7 +168,12 @@ extension MapScreen: MKMapViewDelegate {
 
 extension MapScreen {
    func getDesign() {
-      setCornerRadiusToCircle(on: goBtn)
+      cornersTop(on: mapView)
+      cornersBottom(on: goBtn)
+      setGradientButton(on: goBtn)
+      setGradientButton(on: dissMissBtn)
+      dissMissBtn.layer.borderWidth = 3
+      dissMissBtn.layer.borderColor = #colorLiteral(red: 0.1725490196, green: 0.1647058824, blue: 0.1647058824, alpha: 0.5)
       setCornerRadiusToCircle(on: dissMissBtn)
    }
 }

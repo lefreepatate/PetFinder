@@ -16,26 +16,14 @@ class FakeTokenResponse {
       return try! Data(contentsOf: bundleUrl!)
    }
    
-//   static var PetCorrectDataWithOptions: Data? {
-//      let bundle = Bundle(for: FakePetServiceResponse.self)
-//      let bundleUrl = bundle.url(forResource: "PetSearchWithOptions", withExtension: "json")
-//      return try! Data(contentsOf: bundleUrl!)
-//   }
-//
-//   static var PetCorrectDataPetDetail: Data? {
-//      let bundle = Bundle(for: FakePetServiceResponse.self)
-//      let bundleUrl = bundle.url(forResource: "PetDetail", withExtension: "json")
-//      return try! Data(contentsOf: bundleUrl!)
-//   }
-   
    static let responseOK = HTTPURLResponse(url: URL(string: "http://www.petfinder.com")!,
                                            statusCode: 200, httpVersion: nil, headerFields: nil)
    
    static let responseKO = HTTPURLResponse(url: URL(string: "petfinder.com")!,
                                            statusCode: 401, httpVersion: nil, headerFields: nil)
    
-   static let incorrectPetData = "erreur".data(using: .utf8)
+   static let tokenIncorrectData = "erreur".data(using: .utf8)
    
-   class PetDataError: Error {}
-   static let error = PetDataError()
+   class TokenDataError: Error {}
+   static let error = TokenDataError()
 }
