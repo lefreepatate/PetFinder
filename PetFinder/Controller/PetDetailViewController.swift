@@ -241,6 +241,7 @@ class PetDetailViewController: UIViewController {
    }
    // MARK: ACTIVITYS INDICATORS
    func toggleActivityIndicator(shown: Bool) {
+      moreDetailsBtn.isHidden = shown
       scrollView.isHidden = shown
       activityIndicator.isHidden = !shown
    }

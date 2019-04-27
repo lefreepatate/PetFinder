@@ -44,11 +44,11 @@ extension UIViewController {
    
    func setGradientButton(on view: UIView) -> Void {
       let gradientLayer = CAGradientLayer()
-      gradientLayer.frame = self.view.bounds
+      gradientLayer.frame = view.bounds
       gradientLayer.locations = [0.0, 1.0]
-      gradientLayer.colors = [#colorLiteral(red: 0.9450980392, green: 0.05882352941, blue: 0.3490196078, alpha: 1).cgColor, #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1).cgColor]
-      gradientLayer.startPoint = CGPoint(x: 0, y: 0)
-      gradientLayer.endPoint = CGPoint(x: 1, y: 1)
+      gradientLayer.colors = [#colorLiteral(red: 0.9450980392, green: 0.05882352941, blue: 0.3490196078, alpha: 1).cgColor, #colorLiteral(red: 0.9450980392, green: 0.05882352941, blue: 0.6285316781, alpha: 1).cgColor]
+      gradientLayer.startPoint = CGPoint(x: 0.5, y: 0)
+      gradientLayer.endPoint = CGPoint(x: 0.5, y: 1)
       view.layer.insertSublayer(gradientLayer, at: 0)
    }
    

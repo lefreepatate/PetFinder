@@ -148,14 +148,14 @@
 			path = TokenServiceTest;
 			sourceTree = "<group>";
 		};
-		ECDD112722608D0A0062409C /* helpers */ = {
+		ECDD112722608D0A0062409C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				EC7A38252269A9E900440726 /* DesignExtension.swift */,
 				ECDD1118226087C30062409C /* ColorsList.swift */,
 				ECDD1119226087C40062409C /* BreedList.swift */,
 			);
-			path = helpers;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		ECEA5694226B20A60005BFFB /* Frameworks */ = {
@@ -245,6 +245,7 @@
 		ECFC65642247E02F00AB3C56 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				ECDD112722608D0A0062409C /* Helpers */,
 				ECDD111A226087C40062409C /* ChoiceViewController.swift */,
 				ECDD1115226087C30062409C /* PetSearchViewController.swift */,
 				ECDD111B226087C40062409C /* PetResultsCollectionViewController.swift */,
@@ -252,7 +253,6 @@
 				EC7A38212268555200440726 /* MapScreen.swift */,
 				ECDD112E22608E9C0062409C /* FavoritesVC.swift */,
 				ECDD11322260C5530062409C /* FullScreenCollectionVC.swift */,
-				ECDD112722608D0A0062409C /* helpers */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

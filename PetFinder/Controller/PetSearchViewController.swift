@@ -300,6 +300,8 @@ extension PetSearchViewController {
    func getdesign(){
       roundedButtons()
       setArrayButtons()
+      setGradientButton(on: showBreeds)
+      setGradientButton(on: showColors)
       setGradient(on: view)
       LocationDistancePresentation()
       cornersBottom(on: showPets)
