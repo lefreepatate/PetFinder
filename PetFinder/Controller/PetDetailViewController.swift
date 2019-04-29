@@ -262,7 +262,7 @@ extension PetDetailViewController {
       setCornerRadiusToCircle(on: mapButton)
       cornersTop(on: meetMeview)
       setCornerRadius(on: aboutView)
-      cornersBottom(on: petImage)
+      cornersTop(on: petImage)
       setCornerRadius(on: statusLabel)
       setCornerRadius(on: imgCounter)
       cornersBottom(on: moreDetailsBtn)

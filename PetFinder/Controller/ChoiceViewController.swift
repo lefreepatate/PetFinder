@@ -23,13 +23,13 @@ class ChoiceViewController: UIViewController {
    }
    override func viewDidLoad() {
       super.viewDidLoad()
-      removeAll()
       PetService().checkToken()
    }
-   override func viewDidAppear(_ animated: Bool) {
-      super.viewDidAppear(animated)
-      UIView.animate(withDuration: 0.3) {
-         self.setGradient(on: self.view)
+   
+   override func viewWillAppear(_ animated: Bool) {
+      super.viewWillAppear(animated)
+      removeAll()
+      UIView.animate(withDuration: 1) {
          self.dogButton.widthAnchor.constraint(equalToConstant: self.view.frame.width*0.3).isActive = true
          self.catButton.widthAnchor.constraint(equalToConstant: self.view.frame.width*0.3).isActive = true
          self.cornersOpposite(image: self.dogButton)

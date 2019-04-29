@@ -110,18 +110,14 @@ class PetSearchViewController: UIViewController {
    }
    // SHOWING/HIDDING TABLEVIEWS FOR COLORS AND BREEDS
    func viewOptions(view: UIView, button: UIButton) {
-      UIView.animate(withDuration: 0.3) {
-         if !button.isSelected {
+      if !button.isSelected {
+         UIView.animate(withDuration: 0.3) {
             button.isSelected = true
-            button.setTitleColor(#colorLiteral(red: 0.9450980392, green: 0.05882352941, blue: 0.3490196078, alpha: 1), for: .selected)
-            button.setTitle("⇣", for: .selected)
-            button.backgroundColor = .white
             self.showHiddenView(to: view, toogle: true)
-         } else {
+         }
+      } else if button.isSelected {
+         UIView.animate(withDuration: 0.3) {
             button.isSelected = false
-            button.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
-            button.backgroundColor = #colorLiteral(red: 0.9450980392, green: 0.05882352941, blue: 0.3490196078, alpha: 1)
-            button.setTitle("+", for: .normal)
             self.showHiddenView(to: view, toogle: false)
          }
       }
