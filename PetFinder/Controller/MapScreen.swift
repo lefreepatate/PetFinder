@@ -105,6 +105,8 @@ class MapScreen: UIViewController {
          break
       case .authorizedAlways:
          break
+      @unknown default:
+         fatalError()
       }
    }
    func startTackingUserLocation() {
@@ -161,7 +163,7 @@ extension MapScreen: CLLocationManagerDelegate {
 extension MapScreen: MKMapViewDelegate {
    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
       let renderer = MKPolylineRenderer(overlay: overlay as! MKPolyline)
-      renderer.strokeColor = #colorLiteral(red: 0.1433381736, green: 0.7988106608, blue: 0.3885706067, alpha: 1)
+      renderer.strokeColor = .green
       return renderer
    }
 }
@@ -170,8 +172,6 @@ extension MapScreen {
    func getDesign() {
       cornersTop(on: mapView)
       cornersBottom(on: goBtn)
-      setGradientButton(on: goBtn)
-      setGradientButton(on: dissMissBtn)
       dissMissBtn.layer.borderWidth = 3
       dissMissBtn.layer.borderColor = #colorLiteral(red: 0.1725490196, green: 0.1647058824, blue: 0.1647058824, alpha: 0.5)
       setCornerRadiusToCircle(on: dissMissBtn)

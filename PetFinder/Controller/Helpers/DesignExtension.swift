@@ -9,12 +9,20 @@
 import Foundation
 import UIKit
 // SOME FUNCTIONS CALLED TO HAVE DESIGN CHANGES
+
+extension CGColor {
+   static var red: CGColor { return #colorLiteral(red: 1, green: 0, blue: 0.5471669436, alpha: 1) }
+   static var dark: CGColor { return  #colorLiteral(red: 0.1725490196, green: 0.1647058824, blue: 0.1647058824, alpha: 1) }
+   static var green: CGColor { return #colorLiteral(red: 0.2823529412, green: 0.5882352941, blue: 0.4705882353, alpha: 1) }
+   static var fontColor: CGColor { return #colorLiteral(red: 0.337254902, green: 0.3647058824, blue: 0.4078431373, alpha: 1) }
+   static var blue: CGColor { return #colorLiteral(red: 0.07843137255, green: 0.5568627451, blue: 0.7921568627, alpha: 1) }
+}
+
 extension UIViewController {
    func cornersOpposite(image: UIView) {
       image.layer.borderWidth = 5
-      image.layer.borderColor = #colorLiteral(red: 0.9450980392, green: 0.05882352941, blue: 0.3490196078, alpha: 1)
+      image.layer.borderColor = .red
       image.layer.cornerRadius = 25
-      image.backgroundColor = #colorLiteral(red: 0.1064236111, green: 0.09467592593, blue: 0.09769199351, alpha: 0.5)
       image.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMaxYCorner]
       image.clipsToBounds = true
    }
@@ -40,16 +48,6 @@ extension UIViewController {
       let alertVC = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
       alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
       present(alertVC, animated: true, completion: nil)
-   }
-   
-   func setGradientButton(on view: UIView) -> Void {
-      let gradientLayer = CAGradientLayer()
-      gradientLayer.frame = view.bounds
-      gradientLayer.locations = [0.0, 1.0]
-      gradientLayer.colors = [#colorLiteral(red: 0.9450980392, green: 0.05882352941, blue: 0.3490196078, alpha: 1).cgColor, #colorLiteral(red: 0.9450980392, green: 0.05882352941, blue: 0.6285316781, alpha: 1).cgColor]
-      gradientLayer.startPoint = CGPoint(x: 0.5, y: 0)
-      gradientLayer.endPoint = CGPoint(x: 0.5, y: 1)
-      view.layer.insertSublayer(gradientLayer, at: 0)
    }
    
    func setGradient(on view: UIView) -> Void {

@@ -41,7 +41,6 @@ extension FavoritesVC: UITableViewDataSource {
       cell.petName?.text = favorite.name
       cell.petBreed?.text = favorite.breed
       cell.petAge?.text = favorite.age
-      cell.petDescription?.text = favorite.descr
       cell.petImage.image = UIImage(data: favorite.image!)
       cell.petImage.contentMode = .scaleAspectFill
       cornersOpposite(image: cell.petImage)

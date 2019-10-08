@@ -54,7 +54,7 @@ class PetDetailViewController: UIViewController {
       UIApplication.shared.open(url!, options: [:], completionHandler: nil)
    }
    // MARK: VARIABLES FROM PET
-   var petDetail:Animal!
+   var petDetail: Animal!
    var petBreed = String()
    var id = String()
    override func viewDidLoad() {
@@ -143,7 +143,8 @@ class PetDetailViewController: UIViewController {
    private func getAdressString(with adress: Address?) -> String {
       var contact = String()
       if adress?.address1?.description != nil {
-         contact += (adress?.address1 ?? "") + ", " + (adress?.address2 ?? "") + "\n"
+         contact += (adress?.address1 ?? "") + ", "
+         contact += (adress?.address2 ?? "") + "\n"
       }
       contact += (adress?.city ?? "") + ", " + (adress?.country ?? "")
       return contact
@@ -152,11 +153,11 @@ class PetDetailViewController: UIViewController {
       if petDetail.status == "adopted" {
          statusLabel.text = "Adopted"
          statusLabel.textColor = .white
-         statusLabel.backgroundColor = #colorLiteral(red: 0.9450980392, green: 0.05882352941, blue: 0.3490196078, alpha: 1)
+         statusLabel.backgroundColor = .red
       } else if petDetail.status == "adoptable" {
          statusLabel.text = "Adoptable"
-         statusLabel.textColor = #colorLiteral(red: 0.1725490196, green: 0.1647058824, blue: 0.1647058824, alpha: 1)
-         statusLabel.backgroundColor = #colorLiteral(red: 0.1503180861, green: 1, blue: 0.4878128767, alpha: 1)
+         statusLabel.textColor = UIColor(cgColor: .dark)
+         statusLabel.backgroundColor = .green
       }
    }
    // Check if pet have some pictures and displays if true
@@ -219,7 +220,6 @@ class PetDetailViewController: UIViewController {
       favorites.age = ageSize.text ?? "Age"
       favorites.breed = petBreed
       favorites.id = String(petDetail.id ?? 0)
-      favorites.descr = hisStory.text ?? "No Description"
       if petImage.image != nil {
          favorites.image = petImage.image?.pngData()
       }
@@ -260,13 +260,14 @@ extension PetDetailViewController {
       setGradient(on: view)
       cornersTop(on: scrollView)
       setCornerRadiusToCircle(on: mapButton)
+      mapButton.layer.borderWidth = 2
+      mapButton.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
       cornersTop(on: meetMeview)
       setCornerRadius(on: aboutView)
       cornersTop(on: petImage)
       setCornerRadius(on: statusLabel)
       setCornerRadius(on: imgCounter)
       cornersBottom(on: moreDetailsBtn)
-      setGradientButton(on: moreDetailsBtn)
    }
    // State of fabButton
    func favButtonState() {
@@ -275,11 +276,11 @@ extension PetDetailViewController {
       favButton.setImage(tintedImage, for: .normal)
       UIView.animate(withDuration: 0.3) {
          if self.favButton.isSelected == true {
-            self.favButton.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-            self.favButton.tintColor = #colorLiteral(red: 0.9450980392, green: 0.05882352941, blue: 0.3490196078, alpha: 1)
+            self.favButton.backgroundColor = .white
+            self.favButton.tintColor = .red
          } else if self.favButton.isSelected == false {
-            self.favButton.backgroundColor = #colorLiteral(red: 0.9450980392, green: 0.05882352941, blue: 0.3490196078, alpha: 1)
-            self.favButton.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+            self.favButton.backgroundColor = .red
+            self.favButton.tintColor = .white
          }
       }
    }

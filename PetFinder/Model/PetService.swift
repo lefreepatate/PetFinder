@@ -74,7 +74,9 @@ class PetService {
             } else { values += "&color=" + element.color }
          }
          if !element.environnement.isEmpty{ values += "&environnement=" + element.environnement }
-         if !element.gender.isEmpty{ values += "&gender=" + element.gender }
+         if !element.gender.isEmpty {
+            if element.gender.contains("any") { return "" } else { values += "&gender=" + element.gender }
+         }
          if !element.size.isEmpty{ values += "&size=" + element.size }
          if !element.location.isEmpty{ values += "&location=" + element.location }
          if !element.distance.isEmpty{ values += "&distance=" + element.distance }
@@ -83,7 +85,7 @@ class PetService {
             values += "/" + element.id }
       }
       let stringParameters = PetService.parameters.type + values.replacingOccurrences(of: ",&", with: "&")
-      return  stringParameters
+      return  stringParameters + "&status=adoptable"
    }
    // Check if token is valid
    func checkToken() {

@@ -39,7 +39,7 @@ class ColorsTableViewCell: UITableViewCell {
    
    override func awakeFromNib() {
       super.awakeFromNib()
-      colorBtn.setTitleColor(#colorLiteral(red: 0.9450980392, green: 0.05882352941, blue: 0.3490196078, alpha: 1), for: .selected)
+      colorBtn.setTitleColor(.red, for: .selected)
       colorImage.layer.cornerRadius = colorImage.frame.height/2
       colorImage.clipsToBounds = true
    }

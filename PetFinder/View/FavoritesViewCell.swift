@@ -7,11 +7,12 @@
 //
 
 import UIKit
-
+import CoreData
 class FavoritesViewCell: UITableViewCell {
    @IBOutlet weak var petImage: UIImageView!
    @IBOutlet weak var petName: UILabel!
    @IBOutlet weak var petBreed: UILabel!
    @IBOutlet weak var petAge: UILabel!
-   @IBOutlet weak var petDescription: UILabel!
 }
+
+

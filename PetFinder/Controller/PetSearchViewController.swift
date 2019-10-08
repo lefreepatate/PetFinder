@@ -113,11 +113,15 @@ class PetSearchViewController: UIViewController {
       if !button.isSelected {
          UIView.animate(withDuration: 0.3) {
             button.isSelected = true
+            button.backgroundColor = .white
+            button.setTitleColor(UIColor(cgColor: .red), for: .selected)
             self.showHiddenView(to: view, toogle: true)
          }
       } else if button.isSelected {
          UIView.animate(withDuration: 0.3) {
             button.isSelected = false
+            button.backgroundColor = UIColor(cgColor: .red)
+            button.setTitleColor(.white, for: .normal)
             self.showHiddenView(to: view, toogle: false)
          }
       }
@@ -152,7 +156,7 @@ class PetSearchViewController: UIViewController {
       if !sender.isSelected {
          UIView.animate(withDuration: 0.3) {
             sender.isSelected = true
-            sender.backgroundColor = #colorLiteral(red: 0.9450980392, green: 0.05882352941, blue: 0.3490196078, alpha: 1)
+            sender.backgroundColor = #colorLiteral(red: 0.07843137255, green: 0.5568627451, blue: 0.7921568627, alpha: 1)
          }
          parameters.append(value.lowercased() + ",")
       }  else if sender.isSelected {
@@ -169,7 +173,7 @@ class PetSearchViewController: UIViewController {
    func resetButtons(sender: UIButton, buttons: [UIButton]) {
       UIView.animate(withDuration: 0.3) {
          sender.isSelected = true
-         sender.backgroundColor = #colorLiteral(red: 0.9450980392, green: 0.05882352941, blue: 0.3490196078, alpha: 1)
+         sender.backgroundColor = #colorLiteral(red: 0.07843137255, green: 0.5568627451, blue: 0.7921568627, alpha: 1)
          for button in buttons where button.tag != 1 {
             button.isSelected = false
             button.backgroundColor = #colorLiteral(red: 0.1725490196, green: 0.1647058824, blue: 0.1647058824, alpha: 1)
@@ -296,28 +300,27 @@ extension PetSearchViewController {
    func getdesign(){
       roundedButtons()
       setArrayButtons()
-      setGradientButton(on: showBreeds)
-      setGradientButton(on: showColors)
       setGradient(on: view)
       LocationDistancePresentation()
       cornersBottom(on: showPets)
-      setGradientButton(on: showPets)
       cornersTop(on: searchSV)
+      gender.setTitleTextAttributes([.foregroundColor:UIColor.white], for: .normal)
+      gender.setTitleTextAttributes([.foregroundColor:UIColor.white], for: .selected)
    }
    
    func LocationDistancePresentation() {
       milesDistance.attributedPlaceholder = NSAttributedString(string: "Miles", attributes:
-         [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)])
+         [NSAttributedString.Key.foregroundColor:#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)])
       location.attributedPlaceholder = NSAttributedString(string: "Enter City, State or ZIP", attributes:
-         [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)])
+         [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)])
       milesDistance.borderStyle = .roundedRect
       milesDistance.layer.borderWidth = 2
       milesDistance.layer.cornerRadius = 8
-      milesDistance.layer.borderColor = #colorLiteral(red: 0.9450980392, green: 0.05882352941, blue: 0.3490196078, alpha: 1)
+      milesDistance.layer.borderColor = .red
       location.borderStyle = .roundedRect
       location.layer.borderWidth = 2
       location.layer.cornerRadius = 8
-      location.layer.borderColor = #colorLiteral(red: 0.9450980392, green: 0.05882352941, blue: 0.3490196078, alpha: 1)
+      location.layer.borderColor = .red
    }
    
    func roundedButtons() {
@@ -329,9 +332,9 @@ extension PetSearchViewController {
          for button in buttons! {
             setCornerRadius(on: button)
             button.layer.borderWidth = 2
-            button.layer.borderColor = #colorLiteral(red: 0.9450980392, green: 0.05882352941, blue: 0.3490196078, alpha: 1)
-            button.setTitleColor(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1), for: .normal)
-            button.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .selected)
+            button.layer.borderColor = .blue
+            button.setTitleColor(#colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1), for: .normal)
+            button.setTitleColor(.white, for: .selected)
          }
       }
    }

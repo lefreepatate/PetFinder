@@ -132,8 +132,8 @@
 				ECFC65572247E00900AB3C56 /* PetServiceTests.swift */,
 				EC1F83C922661AC4000C2671 /* FakePetServiceResponse.swift */,
 				EC1F83CD22661B01000C2671 /* PetSearch.json */,
-				EC1F83CF22661B11000C2671 /* PetSearchWithOptions.json */,
 				EC1ECB6822672E99000EBD3A /* PetDetail.json */,
+				EC1F83CF22661B11000C2671 /* PetSearchWithOptions.json */,
 			);
 			path = PetServiceTest;
 			sourceTree = "<group>";
@@ -206,9 +206,9 @@
 		ECFC65562247E00900AB3C56 /* PetFinderTests */ = {
 			isa = PBXGroup;
 			children = (
+				EC1F83CB22661AD3000C2671 /* URLSessionFake.swift */,
 				EC887A8C22676F3200B8E2CB /* PetServiceTest */,
 				EC887A8D22676F4900B8E2CB /* TokenServiceTest */,
-				EC1F83CB22661AD3000C2671 /* URLSessionFake.swift */,
 				ECFC65592247E00900AB3C56 /* Info.plist */,
 			);
 			path = PetFinderTests;
@@ -307,6 +307,7 @@
 				TargetAttributes = {
 					ECFC653B2247E00800AB3C56 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1100;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
 								enabled = 0;
@@ -315,6 +316,7 @@
 					};
 					ECFC65522247E00900AB3C56 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1100;
 						TestTargetID = ECFC653B2247E00800AB3C56;
 					};
 				};
@@ -570,7 +572,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cgmuskat.PetFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -588,7 +590,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cgmuskat.PetFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -608,7 +610,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cgmuskat.PetFinderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PetFinder.app/PetFinder";
 			};
@@ -629,7 +631,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cgmuskat.PetFinderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PetFinder.app/PetFinder";
 			};
